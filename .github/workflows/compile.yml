@@ -13,7 +13,7 @@ jobs:
             main.tex
             resume.cls
       - name: Upload PDF
-        uses: actions/upload-release-asset@v2
+        uses: actions/upload-artifact@v2
         with:
           name: PDF
           path: main.pdf
