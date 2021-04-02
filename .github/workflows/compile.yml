@@ -10,6 +10,11 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: main.tex
+      - name: Commit Change
+        uses: EndBug/add-and-commit@v7.0.0
+        with:
+          author_name: Spencer Elkington (auto)
+          author_email: spelkington@gmail.com
       - name: Upload PDF
         uses: ad-m/github-push-action@master
         with:
