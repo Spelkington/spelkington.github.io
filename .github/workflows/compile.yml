@@ -11,7 +11,6 @@ jobs:
         with:
           root_file: main.tex
       - name: Upload PDF
-        uses: actions/upload-artifact@v2
+        uses: ad-m/github-push-action@master
         with:
-          name: PDF
-          path: main.pdf
+          github_token: ${{ secrets.GITHUB_TOKEN }}
