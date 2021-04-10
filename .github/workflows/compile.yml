@@ -1,5 +1,9 @@
 name: Build LaTeX document
-on: [push]
+on:
+  push:
+    paths:
+      - 'resume/Elkington_Resume.tex'
+      - 'resume/resume.cls'
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -9,12 +13,13 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: resume/main.tex
+          root_file: resume/Elkington_Resume.tex
       - name: Commit Change
         uses: EndBug/add-and-commit@v7.0.0
         with:
           author_name: Spencer Elkington (auto)
           author_email: spelkington@gmail.com
+          message: 'TeX compile'
       - name: Upload PDF
         uses: ad-m/github-push-action@master
         with:
