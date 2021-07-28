@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello, World!
+title: Hello, Blog!
 ---
 
 Look at that - a whole blog, just for me! At this rate, the last thing I need to do to be a *real* tech guru is start a podcast.
