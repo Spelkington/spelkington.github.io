@@ -1,7 +1,6 @@
-
 ---
 layout: post
-title: Applying for Jobs is a Waking Nightmare.
+title: Job Searching is a Waking Nightmare (Part 1).
 ---
 
 After trying - and failing - to *constantly* keep my resume up-to-date in a dozen different places, I took a page out of the wild world of software development and found the solution: **continuous integration.**
