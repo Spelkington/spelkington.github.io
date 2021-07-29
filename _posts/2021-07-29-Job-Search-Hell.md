@@ -4,8 +4,6 @@ layout: post
 title: Applying for Jobs is a Waking Nightmare.
 ---
 
-[TODO: An introduction that doesn't sound like garbage.]
-
 After trying - and failing - to *constantly* keep my resume up-to-date in a dozen different places, I took a page out of the wild world of software development and found the solution: **continuous integration.**
 
 It used to be the case that software would release in massive updates. A bunch of big changes, tweaks, and bug fixes would be shoved together in a tidy package and delivered out all at once. As development became faster, though, development teams created **continuous integration** pipelines to constantly push changes out to their users. Rather than waiting until the next big change to release patches, small changes could be pushed out automatically.
