@@ -49,7 +49,7 @@ In 2014 - following what could only be described as a complete COPPA clusterfuck
 
 #### 1. Filtering Enabled
 
-To fix the *slightly* problematic client exploit issue, the company introduced the [Filtering Enabled](https://blog.roblox.com/2014/05/game-creation-gets-bigger-faster-and-more-lucrative-in-2014/https://developer.roblox.com/en-us/api-reference/property/Workspace/FilteringEnabled) feature to their game engine in 2016. Filtering Enabled locked down what types of information game servers would accept from the game client and fixed that little *whoopsies* mistake made in the younger days of the platform. However, development became a trickier after this feature was rolled out - many older games needed to be re-made to conform to the communication boundary between the server and client, and required a bit more formal knowledge of game development to make.
+To fix the *slightly* problematic client exploit issue, the company introduced the [Filtering Enabled](https://blog.roblox.com/2014/05/game-creation-gets-bigger-faster-and-more-lucrative-in-2014/https://developer.roblox.com/en-us/api-reference/property/Workspace/FilteringEnabled) feature to their game engine. Filtering Enabled locked down what types of information game servers would accept from the game client and fixed that little *whoopsies* mistake made in the younger days of the platform. However, development became a trickier after this feature was rolled out - many older games needed to be re-made to conform to the communication boundary between the server and client, and required a bit more formal knowledge of game development to make.
 
 (For reference, I didn't learn anything about server and client relationships until my third year into a computer science degree.)
 
