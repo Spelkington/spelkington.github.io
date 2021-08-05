@@ -79,11 +79,11 @@ The game offers users a premium pass as an in-game purchase. This is a pretty co
 
 Unfortunately for us, exact numbers are hard to find. ROBLOX stopped showing how many times in-game purchases were sold, no doubt to stop people from snooping around at how much developers make. That being said, we'll make an assumption off of *ROBLOXaville*'s conversion rates: For every 10,000 player visits, 5 people will splurge on a premium pass at a purchase rate of 0.05%. That doesn't look too impressive - *yet.*
 
-At a 0.05% purchase rate against - and I cannot emphasize this enough - **4.8 billion** visits, we could estimate that *BLOXburg*'s premium pass has been purchased **2.4 million** times. Each game pass is 400 **Robux** (R$), ROBLOX's in-game currency. If memory serves, ROBLOX keeps 30% of in-game player-to-player purchases (because, as we know, the only certainties are death and Robux taxation). We can assume, then, that the developers of *BLOXburg* received **~960 million** R$ for that premium pass.
+At a 0.05% purchase rate against - and I cannot emphasize this enough - **4.8 billion** visits, we could estimate that *BLOXburg*'s premium pass has been purchased **2.4 million** times. Each game pass is **400 Robux** (R$), ROBLOX's in-game currency. If memory serves, ROBLOX keeps 30% of in-game player-to-player purchases (because, as we know, the only certainties are death and Robux taxation). We can assume, then, that the developers of *BLOXburg* received **~960 million** R$ for that premium pass.
 
 That golden parachute is starting to look *real* good.
 
-What does 960 million R$ payout look like? The current DevEx exchange rate as of writing is [0.0035 USD for every 1 Robux](https://roblox.fandom.com/wiki/Create#:~:text=The%20Developer%20Exchange%2C%20also%20called,equivalent%20to%20approximately%20286%20Robux.) (Robuck?) at the time of writing. This means that the estimated worth of that *one* premium pass for that *one* game is...
+What might a 960 million R$ payout look like? The current DevEx exchange rate as of writing is [0.0035 USD for every 1 Robux](https://roblox.fandom.com/wiki/Create#:~:text=The%20Developer%20Exchange%2C%20also%20called,equivalent%20to%20approximately%20286%20Robux.) (Robuck?) at the time of writing. This means that the estimated worth of that *one* premium pass for that *one* game is...
 
 **3.6 million dollars.**
 
