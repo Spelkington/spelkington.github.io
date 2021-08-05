@@ -13,7 +13,7 @@ Flash back to 2007: Spencer Elkington, 4th grade extraordinaire. Oh, to be at my
 
 Around that same time, I made an account on what was, at the time, the year-old game platform ROBLOX. Founded originally as a physics engine by mechanical engineers, it transitioned into a gaming platform after (I can only assume) the founders decided simulating viable buildings was far less fun than blowing up non-viable buildings. One of the coolest features was ROBLOX Studio, an IDE for developing user-made games and content in Lua. Always looking for ways to hang out with her son, my mom - who is and always will be the biggest, coolest dork I have ever met and will ever will meet - joined the platform in 2008.w
 
-With a background in coding from her physics, geology, and chemistry studies at BYU during her undergraduate (because just studying *one* STEM field would be *too* easy, obviously), she had a ball making games for her kids to play. Over time, this developed into a project called [ROBLOXaville](https://www.roblox.com/games/272941/Robloxaville) that she actively developed on from 2008 to 2012. The game became [one of the most played games on ROBLOX during that period](https://blog.roblox.com/2010/10/the-next-generation-of-indie-game-developers/), later superceded by a follow-on project called Lakeside that became [one of the fastest-growing projects made on the platform](https://blog.roblox.com/2012/07/the-first-2012-game-to-1-million-and-how-it-got-there/) within two months of its' initial release.
+With a background in coding from her physics, geology, and chemistry studies at BYU during her undergraduate (because just studying *one* STEM field would be *too* easy, obviously), she had a ball making games for her kids to play. Over time, this developed into a project called [ROBLOXaville](https://www.roblox.com/games/272941/ROBLOXaville) that she actively developed on from 2008 to 2012. The game became [one of the most played games on ROBLOX during that period](https://blog.roblox.com/2010/10/the-next-generation-of-indie-game-developers/), later superceded by a follow-on project called Lakeside that became [one of the fastest-growing projects made on the platform](https://blog.roblox.com/2012/07/the-first-2012-game-to-1-million-and-how-it-got-there/) within two months of its' initial release.
 
 This success was in no small part due to a feature she developed in 2009 called **Morph Magic**, a wildly clever, wildly hack-y workaround she discovered to modify the underlying skeleton of the ROBLOX player model and transform players into fully-animated dogs, cats, giants, or any of a dozen other models. The *ad-hoc* rigging method originally used in **Morph Magic** was the only method for modifying the player skeleton until ROBLOX added official rigging support - *six years later.*
 
@@ -53,7 +53,7 @@ To fix the *slightly* problematic client exploit issue, the company introduced t
 
 (For reference, I didn't learn anything about server and client relationships until my third year into a computer science degree.)
 
-Even though this feature [could be disabled](https://developer.roblox.com/en-us/articles/Converting-From-Experimental-Mode) to allow legacy games to keep functioning (and yes, ROBLOXaville is legacy now - it even has [a Fandom Wiki page](https://roblox.fandom.com/wiki/Community:Playrobot/Robloxaville#:~:text=Robloxaville%20is%20a%20game%20created%20by%20Playrobot.&text=Robloxaville%20is%20a%20role%2Dplaying,prisoner%20or%20a%20police%20officer.)), ROBLOX's featured games algorithm wouldn't touch your project with a ten-foot pole for risk of traumatizing even more unsuspecting children. This was especially important for the next major change,
+Even though this feature [could be disabled](https://developer.roblox.com/en-us/articles/Converting-From-Experimental-Mode) to allow legacy games to keep functioning (and yes, ROBLOXaville is legacy now - it even has [the Fandom Wiki page](https://roblox.fandom.com/wiki/Community:Playrobot/ROBLOXaville#:~:text=Robloxaville%20is%20a%20game%20created%20by%20Playrobot.&text=Robloxaville%20is%20a%20role%2Dplaying,prisoner%20or%20a%20police%20officer.)to prove it), ROBLOX's featured games algorithm wouldn't touch your project with a ten-foot pole for risk of traumatizing even more unsuspecting children. This was especially important for the next major change,
 
 
 #### 2. Monetization
@@ -64,18 +64,18 @@ With the introduction of the [Developer Exchange (DevEx)](https://blog.roblox.co
 
 > [A] power-user [could cash] cash out and [buy] a car to get to and from college – all from developing a popular game on ROBLOX. This is the kind of story we can’t wait to tell.
 
-Hm. Interesting.
+That's not *quite* the direction things went.
 
 
 ### The Part Where Spencer Does Some Math
 
-Since DevEx was released, I've heard stories of full-time developers *leaving their jobs* to develop on the platform. Success could be lucrative: [Welcome to Bloxburg](https://www.roblox.com/games/185655149/Welcome-to-Bloxburg?refPageId=1a66a306-0aaf-43d7-b20e-70b66bf107f4#!/about), one of a number of games that filled in the *Town And City* genre gap after *Robloxaville* and *Lakeside* became deprecated by the Filtering Enabled update, has been played **4.8 billion** times as of writing.
+Since DevEx was released, I've heard stories of full-time developers *leaving their jobs* to develop on the platform. Success could be lucrative: [Welcome to Bloxburg](https://www.roblox.com/games/185655149/Welcome-to-Bloxburg?refPageId=1a66a306-0aaf-43d7-b20e-70b66bf107f4#!/about), one of a number of games that filled in the *Town And City* genre gap after *ROBLOXaville* and *Lakeside* became deprecated by the Filtering Enabled update, has been played **4.8 billion** times as of writing.
 
 **Billion.** With a *"B"*. 4,800,000,000.
 
 That's a lot of zeroes.
 
-The game offers users a premium pass as an in-game purchase. This is a pretty common way to offer users a bit of extra bang for their buck by providing small bonus features - *Robloxaville* did the same thing at one point. How much do you think they could make off of a feature like that?
+The game offers users a premium pass as an in-game purchase. This is a pretty common way to offer users a bit of extra bang for their buck by providing small bonus features - *ROBLOXaville* did the same thing at one point. How much do you think they could make off of a feature like that?
 
 Unfortunately for us, exact numbers are hard to find. ROBLOX stopped showing how many times in-game purchases were sold, no doubt to stop people from snooping around at how much developers make. That being said, we'll make an assumption off of *ROBLOXaville*'s conversion rates: For every 10,000 player visits, 5 people will splurge on a premium pass at a purchase rate of 0.05%. That doesn't look too impressive - *yet.*
 
@@ -83,13 +83,13 @@ At a 0.05% purchase rate against - and I cannot emphasize this enough - **4.8 bi
 
 That golden parachute is starting to look *real* good.
 
-How much does that single payout look like? The current DevEx exchange rate as of writing is [0.0035 USD for every 1 Robux](https://roblox.fandom.com/wiki/Create#:~:text=The%20Developer%20Exchange%2C%20also%20called,equivalent%20to%20approximately%20286%20Robux.) (Robuck?) at the time of writing. This means that the estimated worth of that *one* premium pass for that *one* game is...
+What does 960 million R$ payout look like? The current DevEx exchange rate as of writing is [0.0035 USD for every 1 Robux](https://roblox.fandom.com/wiki/Create#:~:text=The%20Developer%20Exchange%2C%20also%20called,equivalent%20to%20approximately%20286%20Robux.) (Robuck?) at the time of writing. This means that the estimated worth of that *one* premium pass for that *one* game is...
 
-[3.6 million dollars.](https://www.youtube.com/watch?v=HMuYfScGpbE)
+**3.6 million dollars.**
 
 Hm.
 
-*Hmmm.*
+[Hmmm.](https://www.youtube.com/watch?v=HMuYfScGpbE)
 
 Of course, this does not come without some caveats. First: this is one of the most played games in the history of the platform - its' success is by no means descriptive of *every* developer. Second: their estimated payout was made over the course of the six years the game has been in development. Third: the *BLOXburg* team is not just a single developer, and they are *very* good at what they do - *enviously* good, even.
 
@@ -97,7 +97,7 @@ That being said: those caveats *also* come with caveats. Although not *every* de
 
 ## How To Make Games and Influence Gen Z
 
-This post has gotten way, *way* longer (and included way more math) than I intended, so I'll wrap it up for now. The biggest takeaway is that, since 2007, ROBLOX has grown beyond description in both size and sophistication. The introduction of monetization professionalized the platform beyond what hobbyists from the early 2010s could ever pull off today. And I'm ready to take another stab at it.
+This post has gotten way, *way* longer (and included way more math) than I intended, so I'll wrap it up for now. Long story short: since 2007, ROBLOX has grown beyond description in both size and sophistication. The introduction of monetization professionalized the platform beyond what hobbyists from the early 2010s could ever pull off today. And, after (attempting) to redux *ROBLOXaville* back in 2016, I'm ready to take another stab at it.
 
 The way I see it, games are to the computer what film was to the camera and paint was to the canvas. It's a way to create an experience that people can look at, play with, and grow from. I could never imagine doing it as a career - there are too many people, including close friends of mine, that have described the professional game development space as a [constant, waking nightmare of burnout and broken dreams](https://www.axios.com/activision-blizzard-harassment-lawsuit-hr-da4f678a-510c-4975-9d64-f5d744aa5c02.html) - but I really enjoy doing it. It's a way for somebody who has no business in making art to get pretty damn close.
 
