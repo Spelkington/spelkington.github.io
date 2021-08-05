@@ -1,0 +1,10 @@
+---
+layout: post
+title: Finding Typos On Blogs - A Crash Course
+---
+
+Even I, despite my infallibility, make a typo from time to time. What can you, reader, do to help?
+
+## What to do when you find typos in my work.
+
+Keep it to yourself, narc.
