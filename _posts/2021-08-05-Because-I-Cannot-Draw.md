@@ -44,7 +44,7 @@ And then the server would, once again, gleefully remove the head of some unlucky
 These exploits, at a basic level, allowed users to wreak havoc on games: breaking game functions, harrassing players, *et cetera*. However, the exploits were not always just to be annoying. The same exploit that allowed users to mess with the state of the server could also be used to [download the source code for entire games](https://devforum.roblox.com/t/place-theft-why-roblox-places-are-already-as-secure-as-its-possible-to-get-them/26799), allowing users to rip and reupload entire years-long projects in minutes. At their worst, these exploits could get [downright horrifying.](https://techcrunch.com/2018/07/18/roblox-responds-to-the-hack-that-allowed-a-childs-avatar-to-be-raped-in-its-game/)
 
 
-### Back in the Saddle.
+### Back in the Saddle
 
 In 2014 - following what could only be described as a complete COPPA clusterfuck - ROBLOX began making moves to clean up and polish the platform. This came in two major changes to the way development worked.
 
