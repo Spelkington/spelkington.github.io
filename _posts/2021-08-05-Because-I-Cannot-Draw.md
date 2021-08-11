@@ -55,7 +55,7 @@ To fix the *slightly* problematic client exploit issue, the company introduced t
 
 (For reference, I didn't learn anything about server and client relationships until my third year into a computer science degree.)
 
-Even though this feature [could be disabled](https://developer.roblox.com/en-us/articles/Converting-From-Experimental-Mode) to allow legacy games to keep functioning (and yes, Robloxaville is legacy now - it even has [the Fandom Wiki page](https://roblox.fandom.com/wiki/Community:Playrobot/Robloxaville#:~:text=Robloxaville%20is%20a%20game%20created%20by%20Playrobot.&text=Robloxaville%20is%20a%20role%2Dplaying,prisoner%20or%20a%20police%20officer.) to prove it), ROBLOX's featured games algorithm wouldn't touch your project with a ten-foot pole for risk of traumatizing even more unsuspecting children. This was especially important for the next major change,
+Even though [this feature could be disabled](https://developer.roblox.com/en-us/articles/Converting-From-Experimental-Mode) to allow legacy games to keep functioning (and yes, Robloxaville is legacy now - [it even has the Fandom Wiki page](https://roblox.fandom.com/wiki/Community:Playrobot/Robloxaville#:~:text=Robloxaville%20is%20a%20game%20created%20by%20Playrobot.&text=Robloxaville%20is%20a%20role%2Dplaying,prisoner%20or%20a%20police%20officer.) to prove it), ROBLOX's featured games algorithm wouldn't touch your project with a ten-foot pole for risk of traumatizing even more unsuspecting children. This was especially important for the next major change,
 
 
 #### 2. Monetization
