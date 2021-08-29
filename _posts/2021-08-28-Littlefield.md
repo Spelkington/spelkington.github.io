@@ -11,7 +11,7 @@ I am *awful* at sticking to a routine - the only thing I can bear to check on ev
 
 This Monday, I started the last major semester of my undergraduate career. That's right, folks - after six years, four program changes, and [one brain surgery](https://youtu.be/lMFQp3wN-cg?t=521) (which, in my personal opinion, is one too many), I will *finally* be wrapping up my degree! 
 
-My last two semesters will be my first part-time courseloads of my academic career, which leaves me quite a bit of extra time. Coupled with the fact that I've been couped up with a case of meningitis for the last few days (of all things to catch during 2021), I took a bit of extra time to go over the top in a class I'm taking on operations and supply chain management.
+My last two semesters will be my first part-time courseloads of my academic career, which leaves me quite a bit of extra time. Coupled with the fact that I've been cooped up with a case of meningitis for the last few days (of all things to catch during 2021), I took a bit of extra time to go over the top in a class I'm taking on operations and supply chain management.
 
 ## Introducing: Littlefield
 
