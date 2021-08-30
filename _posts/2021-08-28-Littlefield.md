@@ -52,7 +52,7 @@ The first order of business for the bot is to take the structure of the game and
 Here's what the driver sees when it opens up the game:
 
 ```
-> lfdriver.draw_graph()
+>>> lfdriver.draw_graph()
 ```
 ![](../assets/littlefield/lf_graph.png)
 
@@ -100,7 +100,7 @@ Thankfully, the data is delivered in the same way for every single data page, fr
 After scraping every single page of data in the game, we can smash it all together and get a *beautiful* chart!
 
 ```
-lfdriver.data()
+>>> lfdriver.data()
 ```
 ![](../assets/littlefield/lf_chart.png)
 
