@@ -5,6 +5,8 @@ title: A Rant About Game Development - and an Homage to the Coolest Mom
 
 Guilty confession: I've had a ROBLOX account for 14 years. At 23 years old, that's *more than half my life.* Yeesh.
 
+**UPDATE 9/16:** Removed profanity. I cannot expose the children to such atrocities.
+
 ## Being a dork is a lifetime commitment.
 
 Flash back to 2007: Spencer Elkington, 4th grade extraordinaire. Oh, to be at my *peak* again. While I appreciate that secondary schools mandate that all kids have a well-rounded curriculum to introduce them to a wide span of different fields of study, I can safely say that one of my *least* favorite classes was art. While I didn't *not* enjoy spending an hour cutting, painting, gluing, and molding, there are only so many burnt ceramics and skewed portraits I could churn out before they - and my parents to whom that "art" was gifted - realized that *perhaps* a budding patronage in the fine arts wasn't going to be in the cards for me.
@@ -46,7 +48,7 @@ These exploits, at a basic level, allowed users to wreak havoc on games: breakin
 
 ### Back in the Saddle
 
-In 2014 - following what could only be described as a complete COPPA clusterfuck - ROBLOX began making moves to clean up and polish the platform. This came in two major changes to the way development worked.
+In 2014 - following what could only be described as a complete COPPA cluster - ROBLOX began making moves to clean up and polish the platform. This came in two major changes to the way development worked.
 
 
 #### 1. Filtering Enabled
