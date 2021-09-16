@@ -22,7 +22,7 @@ With a background in coding from her physics, geology, and chemistry studies at 
 ![](../assets/roblox/robloxaville-icon.PNG)
 *Original Robloxaville thumbnail, 2008*
 
-This success was in no small part due to a feature she developed in 2009 called **Morph Magic**, a wildly clever, wildly hack-y workaround she discovered to modify the underlying skeleton of the ROBLOX player model and transform players into fully-animated dogs, cats, giants, or any of a dozen other models. The *ad-hoc* rigging method originally used in **Morph Magic** was the only method for modifying the player skeleton until ROBLOX added official rigging support - *six years later.*
+This success was in no small part due to a feature she developed in 2009 called **Morph Magic**, a wildly clever, wildly hack-y workaround she discovered to modify the underlying skeleton of the ROBLOX player model and transform players into fully-animated dogs, cats, giants, or any of a dozen other models. The *ad-hoc* rigging method originally used in **Morph Magic** was the only method for modifying the player skeleton until ROBLOX added official rigging support - *six years later.* Watching millions of people enjoyed my mom's masterpiece is what made me get into coding - first as a playtester, then as a (*very* amateur) contributer, and finally culminating in me remastering the project in 2016.
 
 Like I said: the biggest, coolest dork I have ever met and will ever meet.
 
