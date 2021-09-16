@@ -103,6 +103,6 @@ That being said: those caveats *also* come with caveats. Although not *every* de
 
 This post has gotten way, *way* longer (and included way more math) than I intended, so I'll wrap it up for now. Long story short: since 2007, ROBLOX has grown beyond description in both size and sophistication. The introduction of monetization professionalized the platform beyond what hobbyists from the early 2010s could ever pull off today. And, after (attempting) to redux *Robloxaville* back in 2016, I'm ready to take another stab at it.
 
-The way I see it, games are to the computer what film was to the camera and paint was to the canvas. It's a way to create an experience that people can look at, play with, and grow from. I could never imagine doing it as a career - there are too many people, including close friends of mine, that have described the professional game development space as a [constant, waking nightmare of burnout and broken dreams](https://www.axios.com/activision-blizzard-harassment-lawsuit-hr-da4f678a-510c-4975-9d64-f5d744aa5c02.html) - but I really enjoy doing it. It's a way for somebody who has no business in making art to get pretty damn close.
+The way I see it, games are to the computer what film was to the camera and paint was to the canvas. It's a way to create an experience that people can look at, play with, and grow from. I really enjoy it. It's a way for somebody who has no business in making art to get pretty damn close.
 
-And it wouldn't hurt to get some of that sweet DevEx stimmie, either.
+(And it wouldn't hurt to get some of that sweet DevEx stimmie, either.)
