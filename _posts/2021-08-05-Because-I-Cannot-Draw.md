@@ -3,7 +3,7 @@ layout: post
 title: A Rant About Game Development - and an Homage to the Coolest Mom
 ---
 
-Guilty confession: I've had a ROBLOX account for 14 years. At 23 years old, that's *more than half my life.* Yeesh.
+Guilty confession: I've had a ROBLOX account for 14 years. At 23 years old, that's *more than half my life.* After picking up development again in 2021, I've had quite the walk through memory lane.
 
 **UPDATE 9/16:** Removed profanity. I cannot expose the children to such atrocities.
 
