@@ -93,7 +93,7 @@ jobs:
       - name: Upload PDF
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: $\{{ secrets.GITHUB_TOKEN }}
 ```
 
 Replace everything in the `< >` brackets, press the **"Start Commit"** button at the top right, and you're all set! From now on, whenever you make changes to your resume in Overleaf, you can navigate back to the GitHub integration menu, push your change, and it'll automatically send the code to GitHub and turn it into a .PDF!

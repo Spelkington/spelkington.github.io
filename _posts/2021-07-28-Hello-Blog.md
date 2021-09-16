@@ -9,6 +9,8 @@ I'm starting this page as a place to talk about my cool projects, dumb thoughts,
 
 To set the tone, here's a quick code function to find [the geomethic meandian](https://xkcd.com/2435/) of a set of numbers in Python - in case the need ever arises.
 
+![](https://imgs.xkcd.com/comics/geothmetic_meandian.png)
+
 ```
 import numpy as np
 
