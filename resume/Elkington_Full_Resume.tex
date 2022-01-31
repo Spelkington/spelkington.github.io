@@ -6,7 +6,9 @@
 \documentclass{resume/resume} 
 
 \usepackage[left=0.75in,    top=0.4in,  right=0.75in,   bottom=0.3in]{geometry} 
+
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \usepackage{enumitem}
 \usepackage{changepage}
@@ -14,6 +16,13 @@
 \usepackage{multicol}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[pdfnewwindow]{hyperref}
+\hypersetup{
+    colorlinks=true,    % Flag for whether links should be a different color
+    linkcolor=blue,     % Color of in-page links (not used)
+    filecolor=magenta,  % Color of local filesystem links (not used)
+    urlcolor=[rgb]{0,0,1},      % Color of web links (DEFINITELY USED!)
+}
 
 % =========================
 % ===== CONTACT INFO: =====
@@ -23,15 +32,9 @@
 \address{Salt Lake City, UT \\
          (775) 388-7033}
 \address{
-    %
-    % NOTE: I include some fancy stuff in the link to my email that will automatically fill certain fields. CHANGE THIS.
-    %
-    % ORDER FOR LINKS: \href{ACTUAL LINK}{TEXT FOR LINK}. I choose to make the text the same as the URL, minus HTTPS://
-    %
     \href{mailto:spelkington+resume@gmail.com?subject=Regarding\%20a\%20potential\%20work\%20opportunity&body=Hi,\%20Spencer!}
          {spelkington@gmail.com} \\ 
     \href{https://linkedin.com/in/spelkington}{linkedin.com/in/spelkington} \\
-%    \href{https://www.roblox.com/users/119813/profile}{Roblox Profile} \\
     \href{https://spelkington.github.io}{spelkington.github.io}
 }    
 
@@ -80,23 +83,23 @@
     \href{https://github.com/Spelkington/mlearning}{Machine Learning} |  %SPLEARN
     \href{https://spelkington.github.io/assets/utah_office_update.pdf}{Org. Design} |  % UTAH OFFICE UPDATE
     \href{https://github.com/Spelkington/econometrics}{Econometrics} |  %ECON REPO
-    Artificial Intelligence | 
-    Statistics |
-    Mentoring |
-    Linear Alg. | 
-    Object-Oriented Design
-    Audio/Video Codecs | 
-    Strategy |
-    Financial Modeling |
     A/B Testing | 
-    Game Theory | 
-    Data Mining | 
     AGILE | 
-    Quantitative Research |
+    Artificial Intelligence | 
+    Audio/Video Codecs | 
+    Data Mining | 
     Digital Economics | 
-    Technical Writing |
-    Model Design | 
     Distributed Computing
+    Financial Modeling |
+    Game Theory | 
+    Linear Alg. | 
+    Mentoring |
+    Model Design | 
+    Object-Oriented Design
+    Quantitative Research |
+    Statistics |
+    Strategy |
+    Technical Writing |
     
 \end{adjustwidth}
 
@@ -111,36 +114,36 @@
 \begin{adjustwidth}{6em}{0pt}
     \href{https://github.com/search?q=user\%3ASpelkington+user\%3AUtahTriangle+extension\%3Aipynb&type=Code}{Jupyter} | 
     \href{https://github.com/search?q=user\%3ASpelkington+databricks&type=Code}{Databricks} | 
-    Kubernetes | 
-    Docker | 
-    Tableau | 
-    Apache Spark | 
-    Apache Airflow | 
-    Snowflake | 
     Amazon Web Services (AWS) | 
-    Roblox Studio | 
-    Linux
-    PySpark | 
-    Pivotal | 
-    Jira
-    Ubuntu | 
-    CentOS | 
-    RHES | 
-    Windows | 
-    Bash | 
-    LucidChart
-    Git
-    Qt | 
-    React | 
-    Node.js | 
-    MySQL | 
-    FFMPEG | 
+    Apache Airflow | 
+    Apache Spark | 
     Arduino | 
-    Travis | 
-    STATA | 
     Audacity | 
+    Bash | 
+    CentOS | 
+    Docker | 
     Excel/VBA | 
+    FFMPEG | 
     FactSet
+    Git
+    Jira
+    Kubernetes | 
+    Linux
+    LucidChart
+    MySQL | 
+    Node.js | 
+    Pivotal | 
+    PySpark | 
+    Qt | 
+    RHES | 
+    React | 
+    Roblox Studio | 
+    STATA | 
+    Snowflake | 
+    Tableau | 
+    Travis | 
+    Ubuntu | 
+    Windows | 
 
 \end{adjustwidth}
 
@@ -158,18 +161,18 @@
     \href{https://github.com/search?q=user\%3ASpelkington+user\%3AUtahTriangle+extension\%3Apy+extension\%3Aipynb&type=Code&ref=advsearch&l=&l=}{Python} | 
     \href{https://github.com/search?p=1&q=user\%3ASpelkington+extension\%3Ats+extension\%3Atsx&type=Code}{TypeScript} | 
     \href{https://github.com/search?q=user\%3ASpelkington+extension\%3Alua&type=Code}{Lua} | 
-    SQL | 
-    Java | 
     Bash/Shell | 
-    Lua | 
-    JavaScript | 
-    C\#
-    C++
-    Visual Basic/VBA | 
-    STATA
     C | 
-    R |
+    C++ |
+    C\# |
     HTML/CSS |
+    Java | 
+    JavaScript | 
+    Lua | 
+    R |
+    SQL | 
+    STATA |
+    Visual Basic/VBA
 \end{adjustwidth}
 
 % ===================================
@@ -185,9 +188,6 @@
         \item Investigate \& implement {\bf AWS} and {\bf Spark} optimizations to reduce ETL job costs by as much as 90\%
         \item Design cluster profiling frameworks to assess compute inefficiency \& propose infrastructure solutions
         \item Build \& present {\bf Tableau} dashboards for pipeline performance analytics \& business cost insights
-        \item Fine-tune parameters for mission-critical economic data categorization pipelines
-        \item Build \& present {\bf Tableau} dashboards to convey health of pipeline KPI metrics
-        \item Create onboarding material to train new hires on pipeline processes \& team missions
     \end{itemize}
 
     \href{https://mscience.com/}{\bf Data Analyst}, {\em M Science $\diamond$ Jefferies Bank \hfill June 2021 - December 2021}
@@ -365,7 +365,7 @@
 \vspace{1.2em}
 \begin{center}
     {\em References available by request} \\
-    {\em \href{https://www.overleaf.com/read/dpkcngtfrygt}{Full Resumé Source}}
+    {\em \href{https://spelkington.github.io/Elkington_Resume.pdf}{Single-Page Resumé}}
 \end{center}
 
 \end{document}
