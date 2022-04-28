@@ -3,7 +3,9 @@ layout: post
 title: A Rant About Game Development - and an Homage to the Coolest Mom
 ---
 
-Guilty confession: I've had a ROBLOX account for 14 years. At 23 years old, that's *more than half my life.* Yeesh.
+Guilty confession: I've had a ROBLOX account for 14 years. At 23 years old, that's *more than half my life.* After picking up development again in 2021, I've had quite the walk through memory lane.
+
+**UPDATE 9/16:** Removed profanity. I cannot expose the children to such atrocities.
 
 ## Being a dork is a lifetime commitment.
 
@@ -17,7 +19,11 @@ Cooking up small games for me and my friends is probably the closest I'll ever g
 
 With a background in coding from her physics, geology, and chemistry studies at BYU during her undergraduate (because just studying *one* STEM field would be *too* easy, obviously), she was an artist of her own right when it came to making games her kids could play. Over time, one of those games developed into a project called [Robloxaville](https://www.roblox.com/games/272941/Robloxaville) that she actively developed on from 2008 to 2012. The game became [one of the most played games on ROBLOX during that period](https://blog.roblox.com/2010/10/the-next-generation-of-indie-game-developers/), later superceded by a follow-on project called Lakeside that became [one of the fastest-growing projects made on the platform](https://blog.roblox.com/2012/07/the-first-2012-game-to-1-million-and-how-it-got-there/) within two months of its' initial release.
 
-This success was in no small part due to a feature she developed in 2009 called **Morph Magic**, a wildly clever, wildly hack-y workaround she discovered to modify the underlying skeleton of the ROBLOX player model and transform players into fully-animated dogs, cats, giants, or any of a dozen other models. The *ad-hoc* rigging method originally used in **Morph Magic** was the only method for modifying the player skeleton until ROBLOX added official rigging support - *six years later.*
+![](../assets/roblox/robloxaville-icon.PNG)
+
+*Original Robloxaville thumbnail, 2008*
+
+This success was in no small part due to a feature she developed in 2009 called **Morph Magic**, a wildly clever, wildly hack-y workaround she discovered to modify the underlying skeleton of the ROBLOX player model and transform players into fully-animated dogs, cats, giants, or any of a dozen other models. The *ad-hoc* rigging method originally used in **Morph Magic** was the only method for modifying the player skeleton until ROBLOX added official rigging support - *six years later.* Watching millions of people enjoyed my mom's masterpiece is what made me get into coding - first as a playtester, then as a (*very* amateur) contributer, and finally culminating in me remastering the project in 2016.
 
 Like I said: the biggest, coolest dork I have ever met and will ever meet.
 
@@ -46,7 +52,7 @@ These exploits, at a basic level, allowed users to wreak havoc on games: breakin
 
 ### Back in the Saddle
 
-In 2014 - following what could only be described as a complete COPPA clusterfuck - ROBLOX began making moves to clean up and polish the platform. This came in two major changes to the way development worked.
+In 2014 - following what could only be described as a complete COPPA cluster - ROBLOX began making moves to clean up and polish the platform. This came in two major changes to the way development worked.
 
 
 #### 1. Filtering Enabled
@@ -101,6 +107,6 @@ That being said: those caveats *also* come with caveats. Although not *every* de
 
 This post has gotten way, *way* longer (and included way more math) than I intended, so I'll wrap it up for now. Long story short: since 2007, ROBLOX has grown beyond description in both size and sophistication. The introduction of monetization professionalized the platform beyond what hobbyists from the early 2010s could ever pull off today. And, after (attempting) to redux *Robloxaville* back in 2016, I'm ready to take another stab at it.
 
-The way I see it, games are to the computer what film was to the camera and paint was to the canvas. It's a way to create an experience that people can look at, play with, and grow from. I could never imagine doing it as a career - there are too many people, including close friends of mine, that have described the professional game development space as a [constant, waking nightmare of burnout and broken dreams](https://www.axios.com/activision-blizzard-harassment-lawsuit-hr-da4f678a-510c-4975-9d64-f5d744aa5c02.html) - but I really enjoy doing it. It's a way for somebody who has no business in making art to get pretty damn close.
+The way I see it, games are to the computer what film was to the camera and paint was to the canvas. It's a way to create an experience that people can look at, play with, and grow from. I really enjoy it. It's a way for somebody who has no business in making art to get pretty damn close.
 
-And it wouldn't hurt to get some of that sweet DevEx stimmie, either.
+(And it wouldn't hurt to get some of that sweet DevEx stimmie, either.)
