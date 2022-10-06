@@ -3,7 +3,6 @@ on:
   push:
     paths:
       - 'resume/Elkington_Resume.tex'
-      - 'resume/Elkington_Full_Resume.tex'
       - 'resume/resume.cls'
 jobs:
   build_latex:
@@ -16,11 +15,6 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: resume/Elkington_Resume.tex
-
-      - name: Compile Full LaTeX Resume
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: resume/Elkington_Full_Resume.tex
 
       - name: Commit Change
         uses: EndBug/add-and-commit@v7.0.0
