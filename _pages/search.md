@@ -5,7 +5,7 @@ permalink: /search/
 ---
 
 <div id="search-container">
-    <input type="text" id="search-input" placeholder="Search! (e.g. Lua, Typescript, Personal, etc.)">
+    <input type="text" id="search-input" placeholder="Search! (e.g. Python, Economics, etc.)">
     <ul id="results-container"></ul>
 </div>
 
