@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SurveySort for Business Intel
-categories: [Python]
+categories: [Python, Data]
 ---
 
 TODO

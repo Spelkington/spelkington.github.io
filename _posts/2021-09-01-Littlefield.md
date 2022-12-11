@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Littlefield API
-categories: [Games, Ops, Python]
+categories: [Software, Games, Ops, Python, Data]
 ---
 
 TODO

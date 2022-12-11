@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ADVENTURE!
-categories: [Games, TypeScript, Lua, Roblox, Personal]
+categories: [Software, Games, TypeScript, Lua, Roblox, Personal]
 ---
 
 TODO
