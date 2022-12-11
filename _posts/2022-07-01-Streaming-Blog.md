@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Spark Structured Streaming for Business People Doing Business Things"
-categories: [Software, Spark, Python, Data, Databricks]
+categories: [Software, Presentations, Spark, Python, Data, Databricks]
 ---
 
 Recently, the awesome folks over at Databricks Engineering let me vandalize their crisp
