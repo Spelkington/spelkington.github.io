@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SurveySort for Business Intel
-categories: [Python, Data]
+title: "SurveySort: Fan Mail for Kenny Arrow"
+categories: [Economics, Python, Data]
 ---
 
 TODO

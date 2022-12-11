@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supply Chain Analysis
-categories: [Finance, Python, Data]
+categories: [Economics, Python, Data]
 ---
 
 TODO

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Party Lights
-categories: [Software, C++, Python, Data, Viz, Personal, Music, Data]
+categories: [Software, C++, Python, Data, Viz, Music, Data]
 ---
 
 TODO

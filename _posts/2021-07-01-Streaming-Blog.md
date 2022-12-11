@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spark Structured Streaming Blog Post
-categories: [Software, Spark, Python, Data]
+categories: [Software, Spark, Python, Data, Databricks]
 ---
 
 TODO

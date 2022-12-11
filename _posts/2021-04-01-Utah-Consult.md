@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Utah Office Consult
-categories: [Consulting, Python, Data, Viz]
+categories: [Economics, Consulting, Python, Data, Viz]
 ---
 
 TODO
