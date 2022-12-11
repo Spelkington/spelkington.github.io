@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CI/CD Resume Template: Version Control *All The Things*"
-tags: [GitHub, CICD, LaTeX]
+categories: [GitHub, CICD, LaTeX]
 ---
 
 After trying - and failing - to *constantly* keep my resume up-to-date in a dozen different places, I took a page out of the wild world of software development and found the solution: **continuous integration.**
