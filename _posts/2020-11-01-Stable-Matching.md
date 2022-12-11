@@ -1,6 +1,6 @@
 ---
 layout: post
-title: College Admissions and the Stability of Marriage
+title: "Stability of Marriage: A Favorite Paper Among People Who Have A Favorite Paper"
 categories: [Economics, Python, Presentation, Data]
 ---
 

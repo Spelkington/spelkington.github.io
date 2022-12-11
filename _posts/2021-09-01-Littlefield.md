@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Littlefield API
+title: "Littlefield & The Art of Being Lazy"
 categories: [Economics, Software, Games, Python, Data]
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SurveySort: Fan Mail for Kenny Arrow"
+title: "SurveySort, a.k.a Fan Mail for Ol' Kenny Arrow"
 categories: [Economics, Python, Data]
 ---
 

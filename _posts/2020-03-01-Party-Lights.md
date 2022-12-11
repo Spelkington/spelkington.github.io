@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Party Lights
+title: "Music Visualizations: Can Math Make Me Cool?"
 categories: [Software, C++, Python, Data, Viz, Music, Data]
 ---
 

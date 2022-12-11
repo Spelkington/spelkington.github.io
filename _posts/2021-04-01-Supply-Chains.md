@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supply Chain Analysis
+title: Eulerian Supply Chains
 categories: [Economics, Python, Data]
 ---
 

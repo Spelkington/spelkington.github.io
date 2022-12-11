@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Beethoven
+title: "Beethoven: Reading the Room"
 categories: [Software, Hackathon, TypeScript]
 ---
 
