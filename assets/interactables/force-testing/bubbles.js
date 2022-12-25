@@ -1,12 +1,10 @@
-var width = 600, height = 400;
-
-var colorScale = ['orange', 'lightblue', '#B19CD9'];
+var colorScale = ['#FF0000', '#00FF00', '#0000FF'];
 var xCenter = [100, 300, 500];
 
 var numNodes = 300;
 var nodes = d3.range(numNodes).map(function(d, i) {
 	return {
-		radius: Math.random() * 25,
+		radius: Math.random() * 10,
 		category: i % 3
 	}
 });
@@ -22,7 +20,7 @@ var simulation = d3.forceSimulation(nodes)
 	.on('tick', ticked);
 
 function ticked() {
-	var u = d3.select('svg g')
+	var u = d3.select('#bubbles svg')
 		.selectAll('circle')
 		.data(nodes)
 		.join('circle')
