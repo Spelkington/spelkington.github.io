@@ -19,7 +19,7 @@ Cooking up small games for me and my friends is probably the closest I'll ever g
 
 With a background in coding from her physics, geology, and chemistry studies at BYU during her undergraduate (because just studying *one* STEM field would be *too* easy, obviously), she was an artist of her own right when it came to making games her kids could play. Over time, one of those games developed into a project called [Robloxaville](https://www.roblox.com/games/272941/Robloxaville) that she actively developed on from 2008 to 2012. The game became [one of the most played games on ROBLOX during that period](https://blog.roblox.com/2010/10/the-next-generation-of-indie-game-developers/), later superceded by a follow-on project called Lakeside that became [one of the fastest-growing projects made on the platform](https://blog.roblox.com/2012/07/the-first-2012-game-to-1-million-and-how-it-got-there/) within two months of its' initial release.
 
-![](../assets/roblox/robloxaville-icon.PNG)
+![](../assets/making-robloxaville/robloxaville-icon.PNG)
 
 *Original Robloxaville thumbnail, 2008*
 
