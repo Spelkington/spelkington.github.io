@@ -1,13 +1,13 @@
-class ColorUtils {
+export default class ColorUtils {
 
-    public static prependFormatHex(hexStr: string, length: number): string {
+    static prependFormatHex(hexStr, length) {
         while (hexStr.length < length) {
             hexStr = "0" + hexStr;
         }
-        return hexStr
+        return hexStr;
     }
 
-    public static getColorHexString(r: number, g: number, b: number): string {
+    static getColorHexString(r, g, b) {
         let rComponent = r;
         let gComponent = g * 256;
         let bComponent = b * 256 * 256;
@@ -19,5 +19,3 @@ class ColorUtils {
     }
 
 }
-
-export default ColorUtils;

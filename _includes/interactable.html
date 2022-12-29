@@ -1,10 +1,8 @@
 <div id="{{ include.asset }}">
-    <svg viewBox="1 1 600 300">
-    </svg>
 </div>
 
-<script src="https://d3js.org/d3.v6.min.js"></script>
+<script type="module" src="https://d3js.org/d3.v7.min.js"></script>
 <script
     type="module"
-    src="{{ site.baseurl }}/assets/interactables/{{ include.project }}/{{ include.asset }}.js"
+    src="{{ site.baseurl }}/interactables/{{ include.project }}/{{ include.asset }}.js"
 ></script>

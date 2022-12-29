@@ -1,0 +1,22 @@
+{
+  "name": "spelkington.github.io",
+  "version": "0.0.1",
+  "description": "[Link](https://spelkington.github.io)",
+  "main": "interactables/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spelkington/spelkington.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Spelkington/spelkington.github.io/issues"
+  },
+  "homepage": "https://github.com/Spelkington/spelkington.github.io#readme",
+  "devDependencies": {
+    "eslint": "^8.30.0"
+  }
+}
