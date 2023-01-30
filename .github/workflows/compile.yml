@@ -18,7 +18,7 @@ jobs:
         with:
           root_file: content/resume/Elkington_Resume.tex
 
-      - name: copy
+      - name: Move compiled resume into gh-pages branch
         env:
           SRC_FILE: 'Elkington_Resume.pdf'
           TARGET_BRANCH: 'gh-pages'
