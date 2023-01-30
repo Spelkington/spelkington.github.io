@@ -50,12 +50,18 @@ const Navbar = () => {
     <div className="nav">
       <div className="nav-head">
         {avatarLink ? (
-          <img className="nav-avatar" src={avatarLink} alt="Profile picture" />
+          <Link to="/">
+            <img
+              className="nav-avatar"
+              src={avatarLink}
+              alt="Profile picture"
+            />
+          </Link>
         ) : (
           <></>
         )}
         <div className="nav-label">
-          <h5>{authorName}&aposs</h5>
+          <h5>{authorName}&apos;s</h5>
           <Link to="/">
             <h1>{title}</h1>
           </Link>
@@ -77,9 +83,9 @@ const Navbar = () => {
 
             return (
               <li key={link?.label}>
-                <Link to={link?.link}>
+                <a href={link?.link}>
                   <h4>{link?.label}</h4>
-                </Link>
+                </a>
               </li>
             );
           })}
