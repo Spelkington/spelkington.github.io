@@ -32,6 +32,7 @@ module.exports = {
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "double"],
   },
+  ignorePatterns: ["public", "node_modules", ".cache"],
   overrides: [
     // Override some TypeScript rules just for .js files
     {
