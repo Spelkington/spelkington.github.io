@@ -1,5 +1,6 @@
 name: Build LaTeX document
 on:
+  workflow_dispatch: ~
   push:
     paths:
       - 'content/resume/Elkington_Resume.tex'
