@@ -1,0 +1,30 @@
+name: Deploy Gatsby to GH Pages
+on:
+  workflow_dispatch: ~
+  push:
+    paths:
+      - 'content/*'
+      - 'src/*'
+      - 'static/*'
+      - 'gatsby-*.js'
+      - 'package*.json'
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: gatsby deploy
+        run: |
+          npm ci
+          npm run deploy
+
+      - name: Repository Dispatch
+              uses: peter-evans/repository-dispatch@v2
+              with:
+                event-type: gatsby-build
