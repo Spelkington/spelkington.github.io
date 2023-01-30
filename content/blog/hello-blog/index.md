@@ -2,6 +2,14 @@
 title: Hello, Blog!
 date: "2021-07-28"
 description: "Starting a blog seems to be a tech industry rite-of-passage, so lets start it off light and fun with finding the geothetic meandian!"
+public_tags:
+    - Python
+private_tags:
+    - Numpy
+    - Geomethic
+    - Meandian
+    - Averages
+    - XKCD
 ---
 
 Look at that - a whole blog, just for me! At this rate, the last thing I need to do to be a *real* tech guru is start a podcast.

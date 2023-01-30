@@ -1,6 +1,19 @@
 ---
 title: Job Applications are a Waking Nightmare - Let Tech Do It For You
 date: "2021-07-29"
+public_tags:
+    - GitHub
+    - DevOps
+private_tags:
+    - Actions
+    - CI/CD
+    - Continuous
+    - Integration
+    - YAML
+    - GitHub Actions
+    - Resume
+    - Advice
+    - Professional Development
 ---
 
 After trying - and failing - to *constantly* keep my resume up-to-date in a dozen different places, I took a page out of the wild world of software development and found the solution: **continuous integration.**

@@ -2,6 +2,21 @@
 title: Zen, and the Art of Laziness
 date: "2021-08-28"
 description: "It's important to know where you hit shortfalls. For me, it's routine work - and with automation technology, fifteen minutes a day can be automated away with just 12 hours of Python and web scraping work. What a deal!"
+public_tags:
+    - Python
+    - Data
+private_tags:
+    - Automation
+    - Littlefield
+    - Supply
+    - Chains
+    - Operations
+    - Web
+    - Scraping
+    - Aneurysm
+    - Excel
+    - Graph
+    - Theory
 ---
 
 I am *awful* at sticking to a routine - the only thing I can bear to check on every day is Twitter. Even if it means spending twice as long over the course of a weekend, I will *always* try to find a way to automate away routine manual work.
