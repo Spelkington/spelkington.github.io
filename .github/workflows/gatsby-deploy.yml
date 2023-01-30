@@ -21,7 +21,7 @@ jobs:
 
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
-          access-token: ${{ secrets.GITHUB_TOKEN }}
+          access-token: ${{ secrets.BUILD_ACCESS_TOKEN }}
           deploy-branch: gh-pages
 
       - name: Repository Dispatch
