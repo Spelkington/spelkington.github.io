@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Formik, Form, Field } from "formik";
 import { graphql, useStaticQuery } from "gatsby";
+import * as queryString from "query-string";
 
 // Unfortunately, it doesn't seem like this library has typing. Until I can find it,
 // suppressing error.
@@ -9,9 +10,10 @@ import { useFlexSearch } from "react-use-flexsearch";
 
 interface SearchBarProps {
   submitCallback: (query: string, results: string[]) => void;
+  location: any;
 }
 
-const SearchBar = ({ submitCallback }: SearchBarProps) => {
+const SearchBar = ({ submitCallback, location }: SearchBarProps) => {
   const data = useStaticQuery(graphql`
     query IndexAndIDQuery {
       localSearchPosts {
@@ -28,8 +30,7 @@ const SearchBar = ({ submitCallback }: SearchBarProps) => {
   //  https://spelkington.github.io?search=Python
   //
   //  will automatically search for "Python" on load
-  const urlQueryParams = new URLSearchParams(window.location.search);
-  const searchParam = urlQueryParams.get("search");
+  const { search } = queryString.parse(location.search);
 
   // Load in the search index and detail store from the localSearchPost query
   const index = data.localSearchPosts.index;
@@ -38,7 +39,7 @@ const SearchBar = ({ submitCallback }: SearchBarProps) => {
   // Set up the query being used as a functional state and run a search
   //
   // This portion defaults to "", unless a searchParam was found in the URL
-  const [query, setQuery] = useState(searchParam ? searchParam : "");
+  const [query, setQuery] = useState(search ? search : "");
   const results = useFlexSearch(query, index, store);
 
   // On results update, bubble the post slug matches through the provided submission

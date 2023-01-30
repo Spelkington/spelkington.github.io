@@ -38,8 +38,7 @@ const BlogIndex = ({ data, location }: Props) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="Home Page" />
-      <SearchBar submitCallback={filterPosts} />
-
+      <SearchBar location={location} submitCallback={filterPosts} />
       <ol style={{ listStyle: "none" }}>
         {displayPosts.length === 0 ? (
           <p>
@@ -72,7 +71,7 @@ const BlogIndex = ({ data, location }: Props) => {
                   <section>
                     <p
                       dangerouslySetInnerHTML={{
-                        __html: post.frontmatter.description || post.excerpt,
+                        __html: post.frontmatter.description || `"${post.excerpt}"`,
                       }}
                       itemProp="description"
                     />
@@ -98,7 +97,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
-        excerpt
+        excerpt(pruneLength: 256)
         fields {
           slug
         }
