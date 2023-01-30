@@ -44,8 +44,6 @@ const Navbar = () => {
   let flavorTextChoice;
   if (flavorTexts && flavorTexts.length > 0) {
     flavorTextChoice = flavorTexts[getRandomInt(0, flavorTexts.length)];
-  } else {
-    flavorTextChoice = "Some flavortext should go here!";
   }
 
   return (
