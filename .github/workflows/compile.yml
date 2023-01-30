@@ -8,7 +8,6 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Git repository
         uses: actions/checkout@v2
 
       - name: Compile One-Page LaTeX Resume
@@ -17,7 +16,6 @@ jobs:
           root_file: content/resume/Elkington_Resume.tex
 
       - name: copy
-        uses: actions/checkout@v2
         env:
           SRC_FILE: 'Elkington_Resume.pdf'
           TARGET_BRANCH: 'gh-pages'
