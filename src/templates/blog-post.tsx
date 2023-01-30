@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
 
-import Bio from "../components/site/bio";
 import Layout from "../components/site/layout";
 import Seo from "../components/site/seo";
 
@@ -13,6 +12,8 @@ interface Props {
         title: string;
       };
     };
+    previous: any;
+    next: any;
   };
   pageContext?: any;
   location?: any;
@@ -22,9 +23,6 @@ const BlogPostTemplate = ({ data, location }: Props) => {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata?.title || "Title";
 
-  // TODO: Figure out how previous and next are being passed from the GraphQL query that
-  //       fetches the remark data.
-  // @ts-ignore
   const { previous, next } = data;
 
   return (
@@ -46,10 +44,6 @@ const BlogPostTemplate = ({ data, location }: Props) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
-        <footer>
-          <Bio />
-        </footer>
       </article>
       <nav className="blog-post-nav">
         <ul

@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import Navbar from "./navbar";
 
 interface Props {
@@ -8,14 +7,7 @@ interface Props {
   children?: any;
 }
 
-const Layout = ({ location, title, children }: Props) => {
-  // TODO: Figure out where this __PATH_PREFIX__ is coming from.
-  //       I think it has something to do with the gatsby Link feature:
-  //       https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix/
-  //
-  //       I'm the solution is to have the path prefix passed in with the props, but
-  //       this is a non-breaking issue that can be ignored for now, and I don't want
-  //       to make the problem worse.
+const Layout = ({ location, children }: Props) => {
   // @ts-ignore
   const rootPath = `${__PATH_PREFIX__}/`;
   const isRootPath = location.pathname === rootPath;

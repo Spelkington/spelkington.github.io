@@ -30,7 +30,7 @@ module.exports = {
       flavorTexts: [
         "I can code FizzBuzz in 18 different ways, and all of them are wrong",
         "Cause of Death: Gatsby & Typescript",
-        "\"Inheritance\" is just a fancy term for Jupyter Notebooks calling other Jupyter Notebooks",
+        "'Inheritance' is just a fancy term for Jupyter Notebooks calling other Jupyter Notebooks",
         "It's all fun and games until you ask me how a JavaScript Promise works",
         "This website could've just been an email",
         "All opinions expressed here are my own and do not reflect those of my employer (unless my employer is super cool)",
@@ -56,7 +56,7 @@ module.exports = {
         "Please direct all concerns to the comment section below",
         "Startup Idea: PIPs, but for your kids",
         "str'berry",
-        "Twitter search: \"<problematic word> until:2018-01-01 filter:follows\"",
+        "Twitter search: `<problematic word> until:2018-01-01 filter:follows`",
         "Lead developer of the 10x team at Microsoft responsible for making sure no Office application correctly supports code formatting",
         "I don't know when and I don't know how, but I do know the AI apocalypse will start in Minecraft Command Blocks",
       ],
