@@ -10,7 +10,7 @@ on:
       - 'package*.json'
 
 jobs:
-  build_latex:
+  gatsby_build_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
