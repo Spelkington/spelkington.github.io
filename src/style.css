@@ -246,10 +246,6 @@ a:focus {
   padding: var(--spacing-10) var(--spacing-5);
 }
 
-.global-wrapper[data-is-root-path="true"] .nav {
-  margin-bottom: var(--spacing-20);
-}
-
 .global-header {
   margin-bottom: var(--spacing-12);
 }
@@ -288,7 +284,7 @@ a:focus {
 
 .nav {
   display: block;
-  margin-bottom: var(--spacing-16);
+  margin-bottom: var(--spacing-4);
 }
 
 .nav p {
@@ -357,6 +353,43 @@ a:focus {
 .nav li h4 {
   margin-top: var(--spacing-0);
   margin-bottom: var(--spacing-0);
+}
+
+.search-bar {
+  display: flex;
+  width: 66%;
+  margin: auto;
+  padding: var(--spacing-2);
+  border: true;
+  border-bottom: #999 solid;
+}
+
+.search-icon {
+  height: var(--fontSize-5);
+  margin-right: var(--spacing-2);
+  filter: invert(30%) sepia(3%) saturate(17%) hue-rotate(9deg) brightness(102%) contrast(87%);
+}
+
+.search-bar form {
+  width: 66%;
+}
+
+.search-bar input {
+  background: transparent;
+  height: var(--fontSize-5);
+  border: none;
+  font-size: var(--fontSize-3);
+  color: #555;
+  font-weight: var(--fontWeight-bold);
+  font-family: var(--font-heading);
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.blog-post {
+  margin-top: var(--spacing-8)
 }
 
 .blog-post header h1 {
