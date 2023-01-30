@@ -1,27 +1,38 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "chaotic-good-software-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "A collection of rants and soft tutorials on programming, math, and economics",
+  "version": "1.0.0",
+  "author": "Spencer Elkington <spelkington@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Spelkington/spelkington.github.io/issues"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://spelkington.github.io",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "math",
+    "economics",
+    "programming",
+    "blog",
+    "tutorials",
+    "rants",
+    "chaotic",
+    "good",
+    "computing"
   ],
   "license": "0BSD",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/Spelkington/spelkington.github.io.git"
   },
   "dependencies": {
+    "formik": "^2.2.9",
     "gatsby": "^4.11.1",
     "gatsby-plugin-feed": "^4.11.1",
     "gatsby-plugin-gatsby-cloud": "^4.11.1",
     "gatsby-plugin-google-analytics": "^4.11.0",
     "gatsby-plugin-image": "^2.11.1",
+    "gatsby-plugin-local-search": "^2.0.1",
     "gatsby-plugin-manifest": "^4.11.1",
     "gatsby-plugin-offline": "^5.11.1",
     "gatsby-plugin-react-helmet": "^5.11.0",
@@ -37,7 +48,8 @@
     "gatsby-transformer-sharp": "^4.11.0",
     "prismjs": "^1.27.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-use-flexsearch": "^0.1.1"
   },
   "devDependencies": {
     "@types/react-helmet": "^6.1.5",

@@ -6,7 +6,8 @@ module.exports = {
       summary:
         "who writes software that is broken, until - one day - it isn't.",
     },
-    description: "A starter blog demonstrating what Gatsby can do.",
+    description:
+      "A collection of rants and soft tutorials on programming, math, and economics",
     siteUrl: "https://spelkington.github.io",
     social: {
       twitter: "spelkington",
@@ -165,21 +166,92 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Gatsby Starter Blog",
-        short_name: "GatsbyJS",
+        name: "Chaotic Good Software",
+        short_name: "CGA",
         start_url: "/",
         background_color: "#ffffff",
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: "minimal-ui",
-        icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
+        icon: "src/images/avi.png", // This path is relative to the root of the site.
       },
     },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-typescript",
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-local-search",
+      options: {
+        // A unique name for the search index. This should be descriptive of
+        // what the index contains. This is required.
+        name: "posts",
+
+        // Set the search engine to create the index. This is required.
+        // The following engines are supported: flexsearch, lunr
+        engine: "flexsearch",
+
+        // Provide options to the engine. This is optional and only recommended
+        // for advanced users.
+        //
+        // Note: Only the flexsearch engine supports options.
+        engineOptions: "speed",
+
+        // GraphQL query used to fetch all data for the search index. This is
+        // required.
+        query: `
+          query LocalPageSearch {
+            allMarkdownRemark {
+              nodes {
+                id
+                fields {
+                  slug
+                }
+                frontmatter {
+                  title
+                  date
+                  public_tags
+                  private_tags
+                  description
+                }
+                excerpt
+                rawMarkdownBody
+              }
+            }
+          }
+        `,
+
+        // Field used as the reference value for each document.
+        // Default: 'id'.
+        ref: "id",
+
+        // List of keys to index. The values of the keys are taken from the
+        // normalizer function below.
+        // Default: all fields
+        index: ["title", "body", "public_tags", "private_tags"],
+
+        // List of keys to store and make available in your UI. The values of
+        // the keys are taken from the normalizer function below.
+        // Default: all fields
+        store: ["id", "path", "title"],
+
+        // Function used to map the result from the GraphQL query. This should
+        // return an array of items to index in the form of flat objects
+        // containing properties to index. The objects must contain the `ref`
+        // field above (default: 'id'). This is required.
+        normalizer: ({ data }) =>
+          data.allMarkdownRemark.nodes.map(node => ({
+            id: node.id,
+            // Since we don't put the slug in the frontmatter, we have to be a bit
+            // tricky in how we snag the post file path
+            path: node.fields.slug,
+            title: node.frontmatter.title,
+            body: node.rawMarkdownBody,
+
+            // Combine public and private tags into space-joined strings to index
+            public_tags: node.frontmatter.public_tags.join(" "),
+            private_tags: node.frontmatter.private_tags.join(" "),
+          })),
+      },
+    },
   ],
 };
