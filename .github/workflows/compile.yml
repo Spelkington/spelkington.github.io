@@ -8,13 +8,12 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
-        uses: actions/checkout@v2
-
       - name: Compile One-Page LaTeX Resume
         uses: xu-cheng/latex-action@v2
         with:
           root_file: content/resume/Elkington_Resume.tex
 
+      - uses: actions/checkout@v2
       - name: copy
         env:
           SRC_FILE: 'Elkington_Resume.pdf'
