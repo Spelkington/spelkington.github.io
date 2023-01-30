@@ -246,7 +246,7 @@ a:focus {
   padding: var(--spacing-10) var(--spacing-5);
 }
 
-.global-wrapper[data-is-root-path="true"] .bio {
+.global-wrapper[data-is-root-path="true"] .nav {
   margin-bottom: var(--spacing-20);
 }
 
@@ -260,8 +260,8 @@ a:focus {
 }
 
 .post-list-item {
-  margin-bottom: var(--spacing-8);
-  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-4);
+  margin-top: var(--spacing-4);
 }
 
 .post-list-item p {
@@ -286,20 +286,77 @@ a:focus {
   font-size: var(--fontSize-2);
 }
 
-.bio {
-  display: flex;
+.nav {
+  display: block;
   margin-bottom: var(--spacing-16);
 }
 
-.bio p {
+.nav p {
+  margin-bottom: var(--spacing-0);
+  justify-content: center;
+}
+
+.nav-head {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-label {
+  display: block
+}
+
+.nav h1, h5 {
+  margin-bottom: var(--spacing-0);
+  margin-top: var(--spacing-0);
+}
+
+.nav h5 {
+  color: #999;
+  font-style: italic;
+}
+
+.nav-avatar {
+  margin-right: var(--spacing-5);
+  margin-bottom: var(--spacing-0);
+  max-height: 4em;
+  width: auto;
+  height: auto;
+  border-radius: 100%;
+}
+
+.nav-flavortext {
+  text-align: center;
+  margin-top: var(--spacing-4);
+}
+
+.nav-links {
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-top: var(--spacing-8);
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  overflow: hidden;
   margin-bottom: var(--spacing-0);
 }
 
-.bio-avatar {
-  margin-right: var(--spacing-4);
+.nav li {
+  float: left;
+  display: block;
+  text-align: center;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav li h4 {
+  margin-top: var(--spacing-0);
   margin-bottom: var(--spacing-0);
-  min-width: 50px;
-  border-radius: 100%;
 }
 
 .blog-post header h1 {
@@ -322,12 +379,18 @@ a:focus {
 /* Media queries */
 
 @media (max-width: 42rem) {
+
   blockquote {
     padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
     margin-left: var(--spacing-0);
   }
+
   ul,
   ol {
     list-style-position: inside;
+  }
+
+  .nav li h4 {
+    font-size: var(--font-size-5)
   }
 }

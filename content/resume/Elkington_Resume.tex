@@ -1,0 +1,510 @@
+%----------------------------------------------------------------------------------------
+%   
+%   SUPER COOL RESUME TEMPLATE
+%
+%   Resume Template by Spencer Elkington, for the
+%   purposes of the U Professional Education Program.
+%
+%   Welcome to your new resume! I'll be annotating how to apply the concepts
+%   from our resume workshop below.
+%   
+%   Feel free to delete this top bit if you ever post the source online - take
+%   credit for all of this amazing work, if you really want!
+%
+%   SOME BASICS:
+%   
+%   Anything with a '%' (percent sign) before it is COMMENTED CODE. This will keep
+%   it from appearing in the final LaTeX render. I use it for two reasons:
+%
+%     1. Making comments like these.
+%     2. Omitting things from my resume that I don't want NOW, but may want LATER.
+%
+%   Things will come and go from your resume - some experiences you have may not
+%   feel applicable to a job you're currently applying for - DO NOT DELETE THEM.
+%   You never know when experience may become relevant again!
+%
+%   COMMENT IT OUT USING '%', because then you can whip out your experience again
+%   when you need it!
+%
+%   Also, sometimes it's a cool confidence booster to un-comment everything and see
+%   all the neat stuff you've done so far in your professional life :)
+%
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%
+%  PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%
+%   These are some document-wide settings and extra LaTeX packages that you may
+%   want to use for your resume. Here, you can adjust:
+%     -   Margin Sizes
+%     -   Indentation
+%     -   Hyperlink Appearance
+%
+%   You will also use this section to put your NAME and CONTACT INFORMATION. This
+%   stuff is very very important and I would highly recommend keeping the format
+%   fairly similar. This is based on advice I've received from our alumni and other
+%   job recruiters.
+%
+%   A NOTE ON FORMATTING: Your resume should NEVER EVER EVER be more than ONE PAGE.
+%             
+%             Muliple pages is best left to a CV, and unless you are
+%             a highly-qualified individual (read: decades of experience
+%             in your field) you really should leave it to ONE PAGE.
+%
+%----------------------------------------------------------------------------------------
+
+% Use the custom resume.cls style
+\documentclass{resume/resume} 
+
+% Document margins
+\usepackage[left=0.75in,  top=0.4in,  right=0.75in,   bottom=0.3in]{geometry} 
+
+% Stuff for setting default indentation for new paragraphs
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+% Package for proper item listing
+\usepackage{enumitem}
+
+% Package for... changing pages? I'm not too certain, and I'm not going to look it up right now.
+\usepackage{changepage}
+
+% Package for another thing I don't know about and will not look up right now.
+\usepackage{parskip}
+
+% Package for multiple columns! I'm not even sure what this is being used for. :)
+\usepackage{multicol}
+
+% Package to use *fancy* accented letters!
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%-----------------------------------------
+%
+%   NOTE:
+%   
+%   I personally like having hyperlinks to the neat stuff that I do in my resume! Especially
+%   if you do not have a portfolio website, it's a fun way to directly connect digital viewers
+%   of your resume to the stuff that you've done.
+%
+%   NOT EVERYBODY FEELS THIS WAY. It is up to your discretion whether or not you use
+%   hyperlinks.
+%
+%   My advice, though:
+%     - Keep hyperlinks set to a dark, neutral color. This will make them non-abrasive
+%     compared to the black of the rest of your text, AND will make them appear normal
+%     should anybody print out your resume.
+%
+%-----------------------------------------
+\usepackage[pdfnewwindow]{hyperref}
+\hypersetup{
+  colorlinks=true,  % Flag for whether links should be a different color
+  linkcolor=blue,   % Color of in-page links (not used)
+  filecolor=magenta,  % Color of local filesystem links (not used)
+  urlcolor=[rgb]{0,0,1},    % Color of web links (DEFINITELY USED!)
+}
+
+%------------------------------------------
+%
+%   CONTACT INFO:
+%
+%   DEFINITELY INCLUDE:
+%     - Name
+%     - Email
+%     - Phone #
+%
+%   PROBABLY INCLUDE:
+%     - ZIP Code
+%     - City
+%     - LinkedIn
+%     - Personal Website (such as GitHub, or an actual portfolio website
+%               for all of you tryhards out there.)
+%
+%------------------------------------------
+\name{Spencer Elkington} 
+\address{
+  % NOTE: I include some fancy stuff in the link to my email that will automatically fill certain fields. CHANGE THIS.
+  %
+  % ORDER FOR LINKS: \href{ACTUAL LINK}{TEXT FOR LINK}. I choose to make the text the same as the URL, minus HTTPS://
+  %
+  \href{mailto:spelkington+resume@gmail.com?subject=Regarding\%20a\%20potential\%20work\%20opportunity&body=Hi,\%20Spencer!}
+     {Email} \\ 
+  \href{https://linkedin.com/in/spelkington}{LinkedIn} \\
+  \href{https://github.com/spelkington}{GitHub} \\
+  \href{https://spelkington.github.io}{Portfolio}
+}  
+\address{Salt Lake City, UT}
+
+\begin{document}
+
+%---------------------------------------------------------------------------------------
+%
+%  SUMMARY
+%
+%   If you are so inclined, you can put a summary for yourself. MAKE IT BRIEF, like
+%   the tagline of a movie. A longer summary is GREAT for your LinkedIn, but the space
+%   on a resume is usually better suited for things like education and experiences.
+%
+%   Depending on when I want it, I will comment/uncomment this section.
+%
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+ \vspace{-1em}
+ {\em
+%  Engineering solutions for market and organizational friction points with reliable design and automation.
+%  Uncovering stories about markets and organizations with advanced analysis and intuitive explanations.
+%  Finding exciting trends \& insights in data to solve
+ }
+ \vspace{-10pt}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%
+%  EDUCATION SECTION
+%
+%   For a student, this should be the FIRST SECTION on your resume! It's the
+%   signal that lets people know - you're going to be graduated candidate!
+%
+%   DEFINITELY HAVE:
+%     -   Your University
+%     -   Your Major(s), Minors, and Certificates (if applicable)
+%     -   Your graduation date. If you do not know, USE YOUR EXPECTED GRADUATION DATE
+%
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+% TODO: Edit resume.cls to handle formatting better.
+{\bf University of Utah} \hfill {\em August 2022}
+\vspace{2pt}
+  \\ Bachelor of Science | \href{https://eccles.utah.edu/programs/undergraduate/academics/majors/qamo/}{Quantitative Analysis of Markets \& Organizations}
+  \\ Minor | \href{https://github.com/search?o=desc&q=user\%3ASpelkington&s=updated&type=Repositories}{Computer Science}
+
+%----------------------------------------------------------------------------------------
+%
+%   RELEVANT TOPICS
+%
+%   The following is subject to debate!
+%
+%   I, the mighty and benevolent creator of this template, like to put my technical
+%   skills under the Education section. As a student, it feels applicable.
+%
+%   It is well within reason to split this into a separate skills section. People
+%   recommend it all the time. Just for them, here's two magic line of code to make it
+%   happen:
+%
+%     \end{rSection}            % End education
+%     \begin{rSection}{Technical Skills}  % Start Technical Skills
+%
+%   There! Magical!
+%   
+%   This section is, if we're being honest, mostly for the benefit of the bots. Recruiters will
+%   sometimes use an Applicant Tracking System (ATS) to organize resumes. These systems are
+%   built to compare your resume to sets of keywords and, if you don't match the keywords
+%   well enough, then into the digital abyss your resume goes.
+%
+%   The system below is for your benefit! It allows you to organize and hot-swap keywords
+%   that apply to you. Uncomment the keywords that apply best to the job you are applying
+%   for.
+%
+%   To verify you've covered the right keywords, I highly recommend using jobscan.co.
+%   It allows you to check your resume against the job description, to make sure you
+%   have as many of the keywords the ATS may be looking for as possible.
+%
+%   BE AWARE: WHEN YOU ARE COMMENTING/UNCOMMENTING ITEMS, DO NOT LEAVE TRAILING COMMAS.
+%
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------
+%
+%   SKILLS/RELEVANT COURSEWORK
+%     - Class topics (DO NOT PUT CLASS CODES HERE.)
+%     - Independent study subjects
+%     - Soft skills that you happen to be good at.
+%
+%------------------------------------------
+{\bf Key Skills:}
+\vspace{-1.83em}
+
+\begin{adjustwidth}{6em}{0pt}
+  \href{https://spelkington.github.io/categories/#Software}{Software Dev} |
+  \href{https://spelkington.github.io/categories/#Games}{Game Dev} |
+  \href{https://spelkington.github.io/categories/#Economics}{Economics} |
+  \href{https://spelkington.github.io/categories/#Data}{Data} | 
+  \href{https://spelkington.github.io/categories/#DevOps}{DevOps} |
+  \href{https://spelkington.github.io/categories/#Viz}{Visualizations} |
+  \href{https://spelkington.github.io/categories/#Presentations}{Presentations}
+  
+\end{adjustwidth}
+
+
+%----------------------------------------------------------------------------------------
+%
+%  TECHNOLOGIES
+%
+%   This is a place to list of software/hardware that you are proficient in. Stuff like
+%   a preferred OS, software suites like Adobe, Office, or AutoDesk, common programs
+%   like Git, development platforms like Unity, Unreal, Qt, etc.
+%
+%----------------------------------------------------------------------------------------
+\vspace{-3pt}
+{\bf Software:}
+\vspace{-1.83em}
+\begin{adjustwidth}{6em}{0pt}
+  \href{https://spelkington.github.io/categories/#Spark}{Apache Spark} | 
+  \href{https://spelkington.github.io/categories/#GitHub}{GitHub CI/CD} | 
+  \href{https://spelkington.github.io/categories/#Databricks}{Databricks} | 
+  EC2 | 
+  Snowflake | 
+  Tableau
+
+\end{adjustwidth}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%
+%  LANGUAGES
+%   
+%   Section for programming languages.
+%
+%   Do NOT put a language here unless you would be comfortable white-boarding
+%   or performing basic coding challenges in that language!
+%
+%   Additionally, I like to denote languages I am most comfortable with
+%   by adding a (preferred) tag next to it.
+%
+%----------------------------------------------------------------------------------------
+\vspace{-0.4em}
+{\bf Languages:}
+\vspace{-1.83em}
+\begin{adjustwidth}{6em}{0pt}
+  \href{https://spelkington.github.io/categories/#Python}{Python} |
+  \href{https://spelkington.github.io/categories/#TypeScript}{TypeScript} | 
+  \href{https://spelkington.github.io/categories/#Lua}{Lua} | 
+  \href{https://spelkington.github.io/categories/#C++}{C++} |
+  \href{https://spelkington.github.io/categories/#LaTeX}{LaTeX} |
+%  Scala |
+  SQL |
+%  Java |
+  C\# |
+  Bash/Shell
+\end{adjustwidth}
+
+\begin{rSection}{Experience}
+
+  \href{https://www.linkedin.com/posts/m-science-llc_how-m-science-uses-databricks-structured-activity-6953752015013363713-EOTN/}{\bf Software Engineer, DataOps} | {\em \href{https://mscience.com}{M Science} \hfill June 2022 - Present}
+  \vspace{-6pt}
+  \begin{itemize}[nosep]
+    \item Construct optimized and durable ETL processes for \href{https://www.linkedin.com/search/results/content/?fromOrganization=\%5B\%2210801123\%22\%5D&keywords=game&origin=GLOBAL_SEARCH_HEADER&sid=5eJ&sortBy=\%22date_posted\%22}{high-demand video game industry analysis}
+    \item Lead implementation of {\bf Spark/AWS EC2} optimizations to bring company compute to profitability
+    \item Plan \& construct unified DataOps infrastructure libraries to streamline financial research operations
+    \item Construct DataOps {\bf CI/CD} pipelines for end-to-end {\bf Python/SQL} ETL dev lifecycles
+%    \item Build \& present {\bf Tableau} dashboards for pipeline performance analytics \& business cost insights
+%    \item Investigate \& implement {\bf AWS} and {\bf Spark} optimizations to reduce ETL job costs by as much as 90\%
+%    \item Create infrastructure profiling frameworks to assess {\bf AWS} compute cost inefficiency \& design solutions
+%    \item Recruit \& train new Analysts, Engineers \& Project Managers to grow site engineering team by \~85\%
+%    \item Write \& document training material to refine analyst skills in pipeline development \& technical stack
+%    \item Develop fast \& scalable {\bf Python/Spark} ETL pipelines for large-scale economic data sources
+%    \item Fine-tune parameters for mission-critical economic data categorization pipelines
+%    \item Build \& present {\bf Tableau} dashboards to convey health of pipeline KPI metrics
+  \end{itemize}
+  
+  \href{https://mscience.com/}{\bf Senior Data Analyst} | {\em \href{https://mscience.com}{M Science} \hfill June 2021 - May 2022}
+  \vspace{-6pt}
+  \begin{itemize}[nosep]
+%    \item Plan \& construct unified DataOps infrastructure to streamline financial research operations
+%    \item Construct {\bf AWS CI/CD} DevOps pipelines for end-to-end {\bf Python/Spark} ETL process lifecycles
+%    \item Investigate \& implement {\bf AWS} and {\bf Spark} optimizations to reduce ETL job costs by as much as 90\%
+%    \item Create infrastructure profiling frameworks to assess {\bf AWS} compute cost inefficiency \& design solutions
+%    \item Write \& document training material to refine analyst skills in pipeline development \& technical stack
+    \item Developed fast \& scalable {\bf Python/Spark} ETL pipelines for petabyte-scale economic data sources
+    \item Architected internal software library for accurate \& efficient analysis modules used across all research
+    \item Built \& presented {\bf Tableau} dashboards for pipeline performance analytics \& business cost insights
+    \item Fine-tuned parameters for mission-critical economic data categorization pipelines
+%    \item Build \& present {\bf Tableau} dashboards to convey health of pipeline KPI metrics
+  \end{itemize}
+
+  \href{https://wasatchglobal.com/}{\bf Quant Research Intern} | {\em Wasatch Global Investors}, {\em \$31B AUM \hfill Jan 2020 - May 2021}
+  \vspace{-6pt}
+  \begin{itemize}[nosep]
+    \item Researched portfolio allocation models to fine-tune allocation strategy across varied investment styles
+    \item Developed {\bf Python/SQL} pipeline infrastructure to automate and backtest financial data analyses
+    \item Designed {\bf Tableau} dashboards to monitor portfolio health \& risk throughout pandemic markets
+%    \item Created experiments in {\bf Python} to adapt network and spectrum analyses to detect asset alpha signals
+%    \item Conducted research into market hypotheses through bespoke model simulations
+  \end{itemize}
+
+  \href{https://slateci.io/}{\bf Networking Research Intern} | {\em Center for High-Performance Computing \hfill Mar 2019 - Jan 2020}
+  \vspace{-6pt}
+  \begin{itemize}[nosep]
+    \item Built a {\bf Kubernetes/Docker} platform to simplify large-scale distributed scientific app deployments
+    \item Constructed \& wrote project documentation site in {\bf React.js} to polish appearance for NSF grants
+    \item Researched the use of {\bf Foreman} build/deploy systems to remotely structure new server cluster pools
+  \end{itemize}
+  
+%  \href{https://www.mathnasium.com/bountiful}{\bf Center Director} | {\em Mathnasium \hfill Apr 2018 - Nov 2018}
+%  \vspace{-6pt}
+%  \begin{itemize}[nosep]
+%    \item Directed the strategy and operations of an all-ages math tutoring center with 80+ enrolled students
+%    \item Led a team of a 12+ math instructors \& worked to develop instructors' presentation \& teaching skills
+%    \item Analyzed student assessment and progression data to curate \& teach individualized learning plans
+%    \item Taught K-12 core and supplemental curriculum to students across varying skill levels and backgrounds
+%    \item Developed creative and intuitive teaching methods to cover a range of students learning methods
+%  \end{itemize}
+  
+%  \href{https://www.cs.utah.edu/~dejohnso/GREAT/}{\bf Programming Instructor}, {\em University of Utah \hfill May 2018 - July 2018}
+%  \vspace{-6pt}
+%  \begin{itemize}[nosep]
+%    \item Collaborated with a small team to design and teach a two-month computer programming curriculum
+%    \item Implemented data structures/algorithms, such as recursive sorts and Voronoi partitioning, in {\bf Scratch}
+%  \end{itemize}
+
+%  {\bf Housing Ambassador}, {\em University of Utah HRE \hfill June 2016 - March 2017}
+%  \vspace{-6pt}
+%  \begin{itemize}[nosep]
+%    \item Provided tours of campus housing options to prospective students and their families
+%    \item Created an {\bf Excel} process for mass e-mail processing to reduce time required to execute mailing contact lists
+%  \end{itemize}
+  
+%  {\bf Medical Device Assembler}, {\em Bard Access Systems \hfill June 2016 - August 2016}
+%  \vspace{-6pt}
+%  \begin{itemize}[nosep]
+%    \item Operated silicon injection machinery to produce medical device components
+%    \item Followed strict medical assembly standard operating procedures
+%  \end{itemize}
+  
+\end{rSection}
+
+\begin{rSection}{Projects}
+  
+%  \href{https://spelkington.github.io/Job-Search-Hell/}{\bf Live Resume Continuous Integration Pipeline} \hfill {\em 2021}
+%  \vspace{-6pt}
+%  \begin{itemize}[nosep]
+%    \item Designed a continuous integration pipeline to host dynamic copies of resumes via {\bf GitHub Actions}
+%    \item Collaborated with university educational groups to teach pipeline implementation to undergraduates
+%  \end{itemize}
+  
+  \href{https://databricks.com/blog/2022/07/14/using-spark-structured-streaming-to-scale-your-analytics.html}{{\bf Using Spark Structured Streaming to Scale Your Analytics} | {\em Databricks Engineering}} \hfill {\em June 2022}
+  \vspace{-6pt}
+  \begin{itemize}[nosep]
+    \item Guest-authored engineering blog post about streaming-based ETL process cost optimizations
+    \item Created \href{https://www.databricks.com/blog/2022/07/14/using-spark-structured-streaming-to-scale-your-analytics.html#:~:text=With\%20your\%20new\%20aggregated\%20data\%2C\%20you\%20can\%20throw\%20together\%20a\%20nice\%20visualization\%20to\%20do...\%20business\%20things.}{informative doodles} for maximum information delivery in a minimally professional form factor
+  \end{itemize}
+
+  \href{https://spelkington.github.io/categories/#Roblox}{{\bf Independent Game Development} | {\em ROBLOX}} \hfill {\em May 2018 - June 2022}
+  \vspace{-6pt}
+  \begin{itemize}[nosep]
+    \item Balanced freelance, contract \& hobby \href{https://github.com/search?p=1&q=user\%3ASpelkington+extension\%3Ats+extension\%3Atsx+extension\%3Alua&type=Code}{\bf Lua/TypeScript} game development \& game data analytics
+    \item Remastered \& fully refactored a popular legacy lifestyle/sim game with 8 million unique plays
+    \item Created a {\bf Google Cloud} integration for the Studio Game Engine to aggregate \& analyze play metrics
+%    \item Engineered project to patch security vulnerabilities and emphasize project maintenance and scalability
+%    \item Managed series of contract work jobs to create similar design features for varied development projects
+  \end{itemize}
+
+  \href{https://github.com/UtahTriangle/pointypal#pointypal-zoom-school-done-better}{\bf PointyPal: A Better Online Campus} \hfill {\em Aug 2020 - Dec 2021}
+  \vspace{-6pt}
+  \begin{itemize}[nosep]
+    \item Built a class management app to provide students a better online experience through COVID-19
+    \item Created and moderated a virtual campus for 600$+$ students and opened source for use at 4 universities
+%    \item Conducted A/B testing to polish user experiences, resulting in peak growth rates of 100 users/mo
+  \end{itemize}
+
+%  \href{https://spelkington.github.io}{\bf CoinPal: Trust Your Friends With Your Savings!} \hfill {\em 2020}
+%  \vspace{-6pt}
+%  \begin{itemize}[nosep]
+%    \item Created a {\bf Python} application to allow group chats to jointly manage a cryptocurrency portfolio
+%    \item Implemented a custom API to allow secure \& limited interaction between voting clients and app server 
+%  \end{itemize}
+
+%  \href{https://github.com/University-of-Utah-CS3505/a8-an-educational-app-f18-ChaoticEvan}{\bf Lemonomics} \hfill {\em 2019}
+%  \vspace{-6pt}
+%  \begin{itemize}[nosep]
+%    \item Developed a {\bf C++/Qt} educational video game for teaching business strategy and economics concepts
+%    \item Ran {\bf SCRUM} development cycle with a team of seven to delegate and monitor task completion
+%    \item Engineered custom upgrade, game state, and economic model systems to make development intuitive
+%  \end{itemize}
+  
+  \href{https://devpost.com/software/beethoven-t9ud86}{\bf Beethoven} | {\em HackTheU 2019, 2nd Place out of 30 teams
+  \hfill Aug 2019}
+  \vspace{-6pt}
+  \begin{itemize}[nosep]
+    \item Designed a closed captioning and audio transcription service for deaf and hard-of-hearing students
+    \item Built a peer-to-peer text \& audio streaming {\bf TypeScript} application stack using {\bf Node.js \& React}
+  \end{itemize}
+
+  
+%  \href{https://www.linkedin.com/feed/update/urn:li:activity:6603722406240628736/}{\bf LED Music Visualizer} \hfill {\em 2018 - 2020}
+%  \vspace{-6pt}
+%  \begin{itemize}[nosep]
+%    \item Created a {\bf C++} and {\bf Python} system for real-time music data analysis and visualizations
+%    \item Designed a {\bf Python} music visualization tool for prototyping analysis \& visualization algorithms
+%  \end{itemize}
+  
+%  {\bf Google Assistant Transit Tracker}
+%  \hfill {\em October 2018}
+%  \vspace{-6pt}
+%  \begin{itemize}[nosep]
+%    \item Created a Google DialogFlow application to retrieve local bus schedules via Google Assistant
+%    \item Parsed and converted Google DialogFlow voice commands to {\bf SQL} queries of UTA schedule databases
+%    \item Deployed application back-end to {\bf Firebase} in order to run all back-end code on the cloud
+%  \end{itemize}
+
+\end{rSection}
+
+% \begin{rSection}{Leadership}
+%  
+%   \href{https://github.com/UtahTriangle/Laws}{\bf VP of Education $\rightarrow$ \bf President} | {\em Utah Chapter of Triangle Engineering \hfill Aug 2019 - May 2021}
+%   \vspace{-6pt}
+%   \begin{itemize}[nosep]
+%     \item Created online infrastructure to balance member needs and community safety during COVID-19
+%     \item Designed a peer-teaching curriculum to lead members to develop members' 
+% %    \item Reconstituted chapter and passed down a 3-year plan to ensure future organizational stability
+% %    \item Overhauled chapter functions to accommodate a fully-online environment during the 2020-2021 terms
+% %    \item Redesigned governing organization to provide a better environment for org growth \& self-governance
+%     
+%   \end{itemize}
+% 
+% %  {\bf Founding Advisor}, {\em Utah Phi Sigma Rho Interest Group \hfill June 2020 - May 2021}
+% %  \vspace{-6pt}
+% %   \begin{itemize}[nosep]
+% %    \item Founded and advised a university interest group for a national women's STEM organization
+% %    \item Co-wrote and proofed petitions for recognition from the University and National Headquarters
+% %    \item Assisted development in a parallel online campus for women in fields of engineering and sciences
+% %  \end{itemize}
+%   
+% %  \href{https://stem.utah.gov/students/utah-stem-ambassador-program/}{\bf STEM Ambassador,} {\em Utah STEM Action Center \hfill April 2019 - Current}
+% %  \vspace{-6pt}
+% %  \begin{itemize}[nosep]
+% %    \item Inform educators of STEM opportunities and engage students with science and technology demonstrations
+% %  \end{itemize}
+% 
+%   \href{http://content.csbs.utah.edu/~rogers/ant5221/lab/manual.pdf}{\bf Genomic Data Science Tutoring} | {\em University of Utah \hfill Aug 2018 - Dec 2018}
+%   \vspace{-6pt}
+%   \begin{itemize}[nosep]
+%     \item Organized \& lead a free {\bf Python} tutoring group for a graduate genetic anthropology course
+%     \item Utilized stochastic learning frameworks to refine students' knowledge of genetic systems \& data analysis
+%   \end{itemize}
+% 
+% \end{rSection}
+
+%\vspace{1.2em}
+%\begin{center}
+%%  {\em References available by request} \\
+%%  {\em \href{https://spelkington.github.io/Elkington_Full_Resume.pdf}{Full Resumé}}
+%\end{center}
+
+\end{document}
+
+\hypersetup{
+  pdftitle={Spencer Elkington Resume},
+  pdfsubject={Resume for Software Engineering, Quantitative Analytics, and General Tomfoolery},
+  pdfauthor={Spencer Elkington},
+  pdfkeywords={
+  
+  }
+
+}

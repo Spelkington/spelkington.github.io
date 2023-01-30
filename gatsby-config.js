@@ -1,16 +1,67 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Chaotic Good Software`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Spencer Elkington`,
+      summary: `who writes software that is broken, until - one day - it isn't.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://spelkington.github.io`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `spelkington`,
     },
+    avatarLink: "https://avatars.githubusercontent.com/u/32478118?v=4",
+    navigation: {
+      navLinks: [
+        {
+          label: "Resumé",
+          link: "https://spelkington.github.io/Elkington_Resume.pdf"
+        },
+        {
+          label: "GitHub",
+          link: "https://github.com/spelkington"
+        },
+        {
+          label: "LinkedIn",
+          link: "https://linkedin.com/in/spelkington"
+        },
+      ],
+      flavorTexts: [
+        "I can code FizzBuzz in 18 different ways, and all of them are wrong",
+        "Cause of Death: Gatsby & Typescript",
+        "\"Inheritance\" is just a fancy term for Jupyter Notebooks calling other Jupyter Notebooks",
+        "It's all fun and games until you ask me how a JavaScript Promise works",
+        "This website could've just been an email",
+        "All opinions expressed here are my own and do not reflect those of my employer (unless my employer is super cool)",
+        "Flavortext 87",
+        "If you see a typo: no it's not",
+        "ChatGPT is just Clippy Incarnate",
+        "If my Spark driver is going to die unexpectedly, it could at least do me a favor and take me with it",
+        "I can usually read a triangular graph on the 8th or 9th try",
+        "Cats do not adhere to the transitive property",
+        "Make me CEO of Twitter so I can remove the entire UI and replace it with a Bash application",
+        "#TeamHubAndSpokeModel",
+        "BREAKING: The National Missile Defense has shot down a flying sleigh and nine reindeer off the coast of Miami",
+        "The only thing stopping us from achieving world peace is the 12 pentagons on every tiled sphere",
+        "Being at the front of the adoption curve means paying for Dominos in four interest-free payments",
+        "My dream is to one day be a part of the shady cabal that runs Wordle",
+        "Incredibly stoppable.",
+        "AWS Graviton is just compute clusters made of unsold Fire phones",
+        "Your email finds me incredibly unwell",
+        "Most of my nightmares involve load-bearing Jupyter notebooks",
+        "I will not sleep until the Keytar has the emoji it rightfully deserves",
+        "Comments were removed to prevent being ratio'd on my own website",
+        "what if we kissed 🥺👉👈 outside of Salt Lake City's Northrup Grumman IMAX Theater",
+        "Please direct all concerns to the comment section below",
+        "Startup Idea: PIPs, but for your kids",
+        "str'berry",
+        "Twitter search: \"<problematic word> until:2018-01-01 filter:follows\"",
+        "Lead developer of the 10x team at Microsoft responsible for making sure no Office application correctly supports code formatting",
+        "I don't know when and I don't know how, but I do know the AI apocalypse will start in Minecraft Command Blocks",
+      ]
+    }
   },
+  graphqlTypegen: true,
   plugins: [
     `gatsby-plugin-image`,
     {

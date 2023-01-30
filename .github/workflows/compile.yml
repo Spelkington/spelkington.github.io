@@ -1,0 +1,29 @@
+name: Build LaTeX document
+on:
+  push:
+    paths:
+      - 'content/resume/Elkington_Resume.tex'
+      - 'content/resume/resume.cls'
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+
+      - name: Compile One-Page LaTeX Resume
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: content/resume/Elkington_Resume.tex
+
+      - name: Commit Change
+        uses: EndBug/add-and-commit@v7.0.0
+        with:
+          author_name: Spencer Elkington (auto)
+          author_email: spelkington@gmail.com
+          message: 'TeX compile'
+
+      - name: Upload PDF
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}

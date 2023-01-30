@@ -1,13 +1,13 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Bio from "../components/site/bio"
+import Layout from "../components/site/layout"
+import Seo from "../components/site/seo"
 
 
 interface Props {
-  data: {
+  data:  {
     markdownRemark: any
     site: {
       siteMetadata: {
@@ -19,9 +19,13 @@ interface Props {
   location?: any
 }
 
-const BlogPostTemplate = ({ data, location }) => {
+const BlogPostTemplate = ({ data, location }: Props) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
+
+  // TODO: Figure out how previous and next are being passed from the GraphQL query that
+  //       fetches the remark data.
+  // @ts-ignore
   const { previous, next } = data
 
   return (
