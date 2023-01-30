@@ -19,7 +19,13 @@ interface Props {
 
 const BlogIndex = ({ data, location }: Props) => {
   const siteTitle = data.site.siteMetadata?.title || "Title";
-  const posts = data.allMarkdownRemark.nodes;
+
+  // Collect posts from data, and filter down to only posts marked as visible or that do
+  // not have a "visible" field
+  console.log(data.allMarkdownRemark.nodes[5]);
+  const posts = data.allMarkdownRemark.nodes.filter(
+    post => post.frontmatter.visible === null || post.frontmatter.visible
+  );
 
   const [displayPosts, setDisplayPosts] = React.useState(posts);
   const [currentQuery, setCurrentQuery] = React.useState("");
@@ -104,6 +110,8 @@ export const pageQuery = graphql`
         }
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
+          visible
+          public_tags
           title
           description
         }

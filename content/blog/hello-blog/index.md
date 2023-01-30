@@ -2,7 +2,6 @@
 title: Hello, Blog!
 date: "2021-07-28"
 description: "Starting a blog seems to be a tech industry rite-of-passage, so lets start it off light and fun with finding the geothetic meandian!"
-visible: true
 public_tags:
     - Python
 private_tags:
