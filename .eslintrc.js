@@ -1,4 +1,3 @@
-
 module.exports = {
     parser: '@typescript-eslint/parser', // Specifies the ESLint parser
     extends: [
@@ -28,7 +27,23 @@ module.exports = {
     },
     rules: {
       'react/prop-types': 'off', // Disable prop-types as we use TypeScript for type checking
-      '@typescript-eslint/explicit-function-return-type': 'off'
+      '@typescript-eslint/explicit-function-return-type': 'off',
+      "indent": [
+        "error",
+        4
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ]
     },
     overrides: [
       // Override some TypeScript rules just for .js files
