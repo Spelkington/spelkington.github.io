@@ -17,14 +17,12 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 19
 
-      - name: gatsby deploy
-        run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
-          npm ci
-          npm run deploy
+      - uses: enriikke/gatsby-gh-pages-action@v2
+        with:
+          access-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-branch: gh-pages
 
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v2
