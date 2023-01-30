@@ -1,6 +1,7 @@
 ---
 title: The Unbearable Weight of ROBLOX Celebrity
 date: "2021-08-05"
+visible: true
 public_tags:
     - Lua
     - Game Dev

@@ -1,6 +1,7 @@
 ---
 title: Job Applications are a Waking Nightmare - Let Tech Do It For You
 date: "2021-07-29"
+visible: true
 public_tags:
     - GitHub
     - DevOps
