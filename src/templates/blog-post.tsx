@@ -1,32 +1,31 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
+import * as React from "react";
+import { Link, graphql } from "gatsby";
 
-import Bio from "../components/site/bio"
-import Layout from "../components/site/layout"
-import Seo from "../components/site/seo"
-
+import Bio from "../components/site/bio";
+import Layout from "../components/site/layout";
+import Seo from "../components/site/seo";
 
 interface Props {
-  data:  {
-    markdownRemark: any
+  data: {
+    markdownRemark: any;
     site: {
       siteMetadata: {
-        title: string
-      }
-    }
-  }
-  pageContext?: any,
-  location?: any
+        title: string;
+      };
+    };
+  };
+  pageContext?: any;
+  location?: any;
 }
 
 const BlogPostTemplate = ({ data, location }: Props) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const post = data.markdownRemark;
+  const siteTitle = data.site.siteMetadata?.title || "Title";
 
   // TODO: Figure out how previous and next are being passed from the GraphQL query that
   //       fetches the remark data.
   // @ts-ignore
-  const { previous, next } = data
+  const { previous, next } = data;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -55,10 +54,10 @@ const BlogPostTemplate = ({ data, location }: Props) => {
       <nav className="blog-post-nav">
         <ul
           style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            listStyle: "none",
             padding: 0,
           }}
         >
@@ -79,10 +78,10 @@ const BlogPostTemplate = ({ data, location }: Props) => {
         </ul>
       </nav>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug(
@@ -122,4 +121,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

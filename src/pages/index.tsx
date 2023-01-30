@@ -1,43 +1,40 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
+import * as React from "react";
+import { Link, graphql } from "gatsby";
 
-import Layout from "../components/site/layout"
-import Seo from "../components/site/seo"
-
+import Layout from "../components/site/layout";
+import Seo from "../components/site/seo";
 
 interface Props {
   data: {
-    allMarkdownRemark: any
+    allMarkdownRemark: any;
     site: {
       siteMetadata: {
-        title: string
-      }
-    }
-  },
-  location?: any
+        title: string;
+      };
+    };
+  };
+  location?: any;
 }
 
-const BlogIndex = ({ data, location }:Props) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+const BlogIndex = ({ data, location }: Props) => {
+  const siteTitle = data.site.siteMetadata?.title || "Title";
+  const posts = data.allMarkdownRemark.nodes;
 
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
         <Seo title="All posts" />
-        <p>
-          {"No blog posts found. :("}
-        </p>
+        <p>{"No blog posts found. :("}</p>
       </Layout>
-    )
+    );
   }
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="Home Page"/>
-      <ol style={{ listStyle: `none` }}>
-        {posts.map((post:any) => {
-          const title = post.frontmatter.title || post.fields.slug
+      <Seo title="Home Page" />
+      <ol style={{ listStyle: "none" }}>
+        {posts.map((post: any) => {
+          const title = post.frontmatter.title || post.fields.slug;
 
           return (
             <li key={post.fields.slug}>
@@ -64,14 +61,14 @@ const BlogIndex = ({ data, location }:Props) => {
                 </section>
               </article>
             </li>
-          )
+          );
         })}
       </ol>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
@@ -94,4 +91,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -5,35 +5,36 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from "react";
+import { useStaticQuery, graphql, Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 function getRandomInt(min: number, max: number) {
-  const randNum = (Math.random() * (max - min)) + min;
+  const randNum = Math.random() * (max - min) + min;
   return Math.floor(randNum);
 }
 
 const Navbar = () => {
-
   const data: Queries.FetchNavContentQuery = useStaticQuery(graphql`
     query FetchNavContent {
       site {
         siteMetadata {
-          title,
-          author { name },
-          avatarLink,
+          title
+          author {
+            name
+          }
+          avatarLink
           navigation {
             navLinks {
-              label,
-              link,
-            },
-            flavorTexts,
+              label
+              link
+            }
+            flavorTexts
           }
         }
       }
     }
-  `)
+  `);
 
   // TODO: The sheer amount of annotation on this is real rough.
   //       I believe the solution is to explicitly define Gatsby node types,
@@ -47,17 +48,12 @@ const Navbar = () => {
   const navLinks = data.site?.siteMetadata?.navigation?.navLinks!;
   const flavorTexts = data.site?.siteMetadata?.navigation?.flavorTexts!;
 
-  const flavorTextChoice = flavorTexts[getRandomInt(0, flavorTexts.length)]
+  const flavorTextChoice = flavorTexts[getRandomInt(0, flavorTexts.length)];
 
   return (
     <div className="nav">
-
       <div className="nav-head">
-        <img
-          className="nav-avatar"
-          src={avatarLink}
-          alt="Profile picture"
-        />
+        <img className="nav-avatar" src={avatarLink} alt="Profile picture" />
         <div className="nav-label">
           <h5>{authorName}'s</h5>
           <Link to="/">
@@ -83,9 +79,8 @@ const Navbar = () => {
       </div>
 
       <hr></hr>
-
     </div>
-  )
-}
+  );
+};
 
 export default Navbar;
