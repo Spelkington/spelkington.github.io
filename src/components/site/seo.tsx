@@ -15,7 +15,6 @@ interface Props {
   lang?: string;
   meta?: [];
   title: string;
-  post: any | undefined;
 }
 
 interface Meta {
@@ -24,7 +23,7 @@ interface Meta {
   content: string;
 }
 
-const Seo = ({ description, lang, meta, title, post }: Props) => {
+const Seo = ({ description, lang, meta, title }: Props) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -41,19 +40,8 @@ const Seo = ({ description, lang, meta, title, post }: Props) => {
     `
   );
 
-  let metaDescription = description || site.siteMetadata.description;
+  const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
-
-  // Append tags onto the end of the description if a post was available.
-  // TODO: This should probably be moved up to templates/blog-post.tsx
-  if (post) {
-    const allTags: string[] = post.frontmatter.public_tags;
-    let allTagString = allTags.slice(0, allTags.length - 1).join(", ");
-    allTagString = `${allTagString}, and ${allTags[allTags.length - 1]}!`;
-    allTagString = allTagString.toLocaleLowerCase();
-
-    metaDescription += `\n\nHop in for a maybe-useful, maybe-unhinged read about ${allTagString}`;
-  }
 
   let typeSafeMeta: Array<Meta>;
 

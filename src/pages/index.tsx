@@ -22,7 +22,6 @@ const BlogIndex = ({ data, location }: Props) => {
 
   // Collect posts from data, and filter down to only posts marked as visible or that do
   // not have a "visible" field
-  console.log(data.allMarkdownRemark.nodes[5]);
   const posts = data.allMarkdownRemark.nodes.filter(
     post => post.frontmatter.visible === null || post.frontmatter.visible
   );

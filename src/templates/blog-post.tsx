@@ -25,13 +25,21 @@ const BlogPostTemplate = ({ data, location }: Props) => {
 
   const { previous, next } = data;
 
+  let seoDescription = post.frontmatter.description || post.excerpt;
+
+  // Append tags onto the end of the description if a post was available.
+  if (post && post.frontmatter.public_tags) {
+    const allTags: string[] = post.frontmatter.public_tags;
+    let allTagString = allTags.slice(0, allTags.length - 1).join(", ");
+    allTagString = `${allTagString}, and ${allTags[allTags.length - 1]}!`;
+    allTagString = allTagString.toLocaleLowerCase();
+
+    seoDescription += `\n\nHop in for a maybe-useful, maybe-unhinged read about ${allTagString}`;
+  }
+
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-        post={post}
-      />
+      <Seo title={post.frontmatter.title} description={seoDescription} />
       <article
         className="blog-post"
         itemScope
