@@ -7,7 +7,7 @@ import SearchBar from "../components/site/searchbar";
 
 interface Props {
   data: {
-    allMarkdownRemark: any;
+    allMdx: any;
     site: {
       siteMetadata: {
         title: string;
@@ -22,7 +22,7 @@ const BlogIndex = ({ data, location }: Props) => {
 
   // Collect posts from data, and filter down to only posts marked as visible or that do
   // not have a "visible" field
-  const posts = data.allMarkdownRemark.nodes.filter(
+  const posts = data.allMdx.nodes.filter(
     post => post.frontmatter.visible === null || post.frontmatter.visible
   );
 
@@ -95,13 +95,13 @@ const BlogIndex = ({ data, location }: Props) => {
 export default BlogIndex;
 
 export const pageQuery = graphql`
-  query {
+  query BlogIndexFetchData {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { frontmatter: { date: DESC } }) {
       nodes {
         excerpt(pruneLength: 256)
         fields {

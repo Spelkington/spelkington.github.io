@@ -29,6 +29,7 @@ module.exports = {
         },
       ],
       flavorTexts: [
+        "My favorite Age of Empires II loadout is: Sicilians; Flank; Losing Team",
         "I can code FizzBuzz in 18 different ways, and all of them are wrong",
         "Cause of Death: Gatsby & Typescript",
         "'Inheritance' is just a fancy term for Jupyter Notebooks calling other Jupyter Notebooks",
@@ -47,7 +48,7 @@ module.exports = {
         "The only thing stopping us from achieving world peace is the 12 pentagons on every tiled sphere",
         "Being at the front of the adoption curve means paying for Dominos in four interest-free payments",
         "My dream is to one day be a part of the shady cabal that runs Wordle",
-        "Incredibly stoppable.",
+        "Incredibly stoppable",
         "AWS Graviton is just compute clusters made of unsold Fire phones",
         "Your email finds me incredibly unwell",
         "Most of my nightmares involve load-bearing Jupyter notebooks",
@@ -60,12 +61,29 @@ module.exports = {
         "Twitter search: `<problematic word> until:2018-01-01 filter:follows`",
         "Lead developer of the 10x team at Microsoft responsible for making sure no Office application correctly supports code formatting",
         "I don't know when and I don't know how, but I do know the AI apocalypse will start in Minecraft Command Blocks",
+        "Forrest Gump is the only movie that deserves to be more than two hours long",
       ],
     },
   },
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-image",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        extensions: [".mdx", ".md"],
+        mdxOptions: {
+          remarkPlugins: [
+            {
+              resolve: "gatsby-remark-images",
+              options: {
+                maxWidth: 630,
+              },
+            },
+          ],
+        },
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -78,28 +96,6 @@ module.exports = {
       options: {
         name: "images",
         path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              maxWidth: 630,
-            },
-          },
-          {
-            resolve: "gatsby-remark-responsive-iframe",
-            options: {
-              wrapperStyle: "margin-bottom: 1.0725rem",
-            },
-          },
-          "gatsby-remark-prismjs",
-          "gatsby-remark-copy-linked-files",
-          "gatsby-remark-smartypants",
-        ],
       },
     },
     "gatsby-transformer-sharp",
@@ -127,8 +123,8 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.nodes.map(node => {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.nodes.map(node => {
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
@@ -140,12 +136,11 @@ module.exports = {
             },
             query: `
               {
-                allMarkdownRemark(
+                allMdx(
                   sort: { order: DESC, fields: [frontmatter___date] },
                 ) {
                   nodes {
                     excerpt
-                    html
                     fields {
                       slug
                     }
@@ -200,7 +195,7 @@ module.exports = {
         // required.
         query: `
           query LocalPageSearch {
-            allMarkdownRemark {
+            allMdx {
               nodes {
                 id
                 fields {
@@ -214,7 +209,7 @@ module.exports = {
                   description
                 }
                 excerpt
-                rawMarkdownBody
+                body
               }
             }
           }
@@ -239,13 +234,13 @@ module.exports = {
         // containing properties to index. The objects must contain the `ref`
         // field above (default: 'id'). This is required.
         normalizer: ({ data }) =>
-          data.allMarkdownRemark.nodes.map(node => ({
+          data.allMdx.nodes.map(node => ({
             id: node.id,
             // Since we don't put the slug in the frontmatter, we have to be a bit
             // tricky in how we snag the post file path
             path: node.fields.slug,
             title: node.frontmatter.title,
-            body: node.rawMarkdownBody,
+            body: node.body,
 
             // Combine public and private tags into space-joined strings to index
             public_tags: node.frontmatter.public_tags.join(" "),

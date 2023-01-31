@@ -1,26 +1,18 @@
 import * as React from "react";
-import { Link, graphql } from "gatsby";
+import { useStaticQuery, Link, graphql } from "gatsby";
 
 import Layout from "../components/site/layout";
 import Seo from "../components/site/seo";
 
 interface Props {
-  data: {
-    markdownRemark: any;
-    site: {
-      siteMetadata: {
-        title: string;
-      };
-    };
-    previous: any;
-    next: any;
-  };
+  data: any;
   pageContext?: any;
   location?: any;
+  children: any;
 }
 
-const BlogPostTemplate = ({ data, location }: Props) => {
-  const post = data.markdownRemark;
+const BlogPostTemplate = ({ data, location, children }: Props) => {
+  const post = data.mdx;
   const siteTitle = data.site.siteMetadata?.title || "Title";
 
   const { previous, next } = data;
@@ -49,10 +41,7 @@ const BlogPostTemplate = ({ data, location }: Props) => {
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
+        <section itemProp="articleBody">{children}</section>
       </article>
       <nav className="blog-post-nav">
         <ul
@@ -86,7 +75,7 @@ const BlogPostTemplate = ({ data, location }: Props) => {
 
 export default BlogPostTemplate;
 
-export const pageQuery = graphql`
+export const query = graphql`
   query BlogPostBySlug(
     $id: String!
     $previousPostId: String
@@ -97,17 +86,16 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(id: { eq: $id }) {
+    mdx(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
-      html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
       }
     }
-    previous: markdownRemark(id: { eq: $previousPostId }) {
+    previous: mdx(id: { eq: $previousPostId }) {
       fields {
         slug
       }
@@ -115,7 +103,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    next: markdownRemark(id: { eq: $nextPostId }) {
+    next: mdx(id: { eq: $nextPostId }) {
       fields {
         slug
       }
