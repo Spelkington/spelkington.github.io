@@ -1,5 +1,9 @@
 import * as React from "react";
-import { useStaticQuery, Link, graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
+import { MDXProvider } from "@mdx-js/react";
+import Highlight, { defaultProps } from "prism-react-renderer";
+import "katex/dist/katex.min.css";
+import { InlineMath, BlockMath } from "react-katex";
 
 import Layout from "../components/site/layout";
 import Seo from "../components/site/seo";
@@ -10,6 +14,16 @@ interface Props {
   location?: any;
   children: any;
 }
+
+const Codeblock = props => <Highlight {...defaultProps} {...props} />;
+
+const shortcodes = {
+  InlineMath,
+  BlockMath,
+  Codeblock,
+};
+
+const swapComponents = {};
 
 const BlogPostTemplate = ({ data, location, children }: Props) => {
   const post = data.mdx;
@@ -41,7 +55,11 @@ const BlogPostTemplate = ({ data, location, children }: Props) => {
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
-        <section itemProp="articleBody">{children}</section>
+        <section itemProp="articleBody">
+          <MDXProvider components={shortcodes}>
+            <MDXProvider components={swapComponents}>{children}</MDXProvider>
+          </MDXProvider>
+        </section>
       </article>
       <nav className="blog-post-nav">
         <ul
