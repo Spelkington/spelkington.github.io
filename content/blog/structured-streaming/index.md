@@ -6,6 +6,7 @@ public_tags:
     - Spark
     - Python
     - Data
+    - Doodles
 private_tags:
     - Databricks
     - Apache
