@@ -30,6 +30,7 @@ const BlogPostTemplate = ({ data, location }: Props) => {
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        post={post}
       />
       <article
         className="blog-post"
