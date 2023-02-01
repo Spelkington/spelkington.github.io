@@ -1,5 +1,10 @@
 /* CSS Custom Properties Definitions */
 
+@font-face {
+  font-family: "Doodle Speen";
+  src: url("./assets/fonts/DoodleSpeen.ttf")
+}
+
 :root {
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
@@ -298,17 +303,23 @@ a:focus {
 }
 
 .nav-label {
-  display: block
+  display: block;
 }
 
 .nav h1, h5 {
+  font-family: "Doodle Speen";
+  letter-spacing: 0.1em;
   margin-bottom: var(--spacing-0);
   margin-top: var(--spacing-0);
 }
 
+.nav h1 {
+  font-size: 3em
+}
+
 .nav h5 {
   color: #999;
-  font-style: italic;
+  font-size: 1.5em
 }
 
 .nav-avatar {
