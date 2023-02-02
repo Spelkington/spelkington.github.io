@@ -61,7 +61,7 @@ const Navbar = () => {
           <></>
         )}
         <div className="nav-label">
-          <h5>{authorName}&apos;s</h5>
+          <p>{authorName}&apos;s</p>
           <Link to="/">
             <h1>{title}</h1>
           </Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
       </div>
 
       <div className="nav-flavortext">
-        <h5>{flavorTextChoice}</h5>
+        <p>{flavorTextChoice}</p>
       </div>
 
       <div className="nav-links">
@@ -83,9 +83,7 @@ const Navbar = () => {
 
             return (
               <li key={link?.label}>
-                <a href={link?.link}>
-                  <h4>{link?.label}</h4>
-                </a>
+                <a href={link?.link}>{link?.label}</a>
               </li>
             );
           })}

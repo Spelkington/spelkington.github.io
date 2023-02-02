@@ -16,7 +16,7 @@ module.exports = {
     navigation: {
       navLinks: [
         {
-          label: "Resumé",
+          label: "Resume",
           link: "https://spelkington.github.io/Elkington_Resume.pdf",
         },
         {
