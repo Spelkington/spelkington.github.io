@@ -136,22 +136,20 @@ module.exports = {
               });
             },
             query: `
-              {
-                allMdx(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  nodes {
-                    excerpt
-                    fields {
-                      slug
-                    }
-                    frontmatter {
-                      title
-                      date
-                    }
+            {
+              allMdx(sort: {frontmatter: {date: DESC}}) {
+                nodes {
+                  excerpt
+                  fields {
+                    slug
+                  }
+                  frontmatter {
+                    title
+                    date
                   }
                 }
               }
+            }
             `,
             output: "/rss.xml",
             title: "Gatsby Starter Blog RSS Feed",
