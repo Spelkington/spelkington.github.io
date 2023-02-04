@@ -74,6 +74,7 @@
     "deploy": "gatsby build --prefix-paths && npx gh-pages deploy -d public",
     "build": "gatsby build",
     "develop": "clear && gatsby develop",
+    "cast-dev": "clear && gatsby develop -H 0.0.0.0 -p 8000",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
