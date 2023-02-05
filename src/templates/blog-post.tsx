@@ -21,7 +21,7 @@ const shortcodes = {
 };
 
 const swapComponents = {
-  code: Code,
+  pre: Code,
 };
 
 const BlogPostTemplate = ({ data, location, children }: Props) => {

@@ -86,22 +86,31 @@ const FileRibbon = (props: { title: string }) => (
 );
 
 interface CodeProps {
-  className: string;
-  children: string;
+  children: {
+    props: {
+      className: string;
+      children: string;
+    };
+  };
 }
 
-export const Code = (props: CodeProps) => {
+export const Code = (topProps: CodeProps) => {
   const [isCopied, setIsCopied] = React.useState(false);
 
-  console.log(props);
+  // For whatever reason, the props are passed as an child of the block's
+  // children - for convenience, we set props to the props of the provided
+  // child.
+  const props = topProps.children.props;
 
-  const codeString = props.children;
+  console.log(props);
 
   // If a language was provided, remove the "language-" from the start of the
   // className - otherwise, set the language to an empty string
   const language = (
     props.className ? props.className.slice(9) : null
   ) as Prism.Language;
+
+  const codeString = props.children;
 
   return (
     <Highlight
@@ -110,6 +119,7 @@ export const Code = (props: CodeProps) => {
       language={language}
       theme={theme}
     >
+      {/* Callback function that Prism uses to determine formatting */}
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre
           className={className}
@@ -140,9 +150,7 @@ export const Code = (props: CodeProps) => {
             </Button>
           </div>
           {tokens.map((line, i) => (
-            <div
-              {...getLineProps({ line, key: i })}
-            >
+            <div {...getLineProps({ line, key: i })}>
               {line.map((token, key) => (
                 <span {...getTokenProps({ token, key })} />
               ))}
