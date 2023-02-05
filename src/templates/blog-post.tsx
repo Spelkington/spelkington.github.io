@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
 import { MDXProvider } from "@mdx-js/react";
-import Highlight, { defaultProps } from "prism-react-renderer";
+import { Code } from "../components/blog/code";
 import "katex/dist/katex.min.css";
 import { InlineMath, BlockMath } from "react-katex";
 
@@ -15,15 +15,14 @@ interface Props {
   children: any;
 }
 
-const Codeblock = props => <Highlight {...defaultProps} {...props} />;
-
 const shortcodes = {
   InlineMath,
   BlockMath,
-  Codeblock,
 };
 
-const swapComponents = {};
+const swapComponents = {
+  code: Code,
+};
 
 const BlogPostTemplate = ({ data, location, children }: Props) => {
   const post = data.mdx;
