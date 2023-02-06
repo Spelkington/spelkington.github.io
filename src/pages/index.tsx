@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/site/layout";
 import Seo from "../components/site/seo";
+import Box from "@mui/material/Box";
 import SearchBar from "../components/site/searchbar";
 import CssBaseline from "@mui/material/CssBaseline";
 
@@ -24,7 +25,7 @@ const BlogIndex = ({ data, location }: Props) => {
   // Collect posts from data, and filter down to only posts marked as visible or that do
   // not have a "visible" field
   const posts = data.allMdx.nodes.filter(
-    post => post.frontmatter.visible === null || post.frontmatter.visible
+    (post: any) => post.frontmatter.visible === null || post.frontmatter.visible
   );
 
   const [displayPosts, setDisplayPosts] = React.useState(posts);
@@ -44,50 +45,48 @@ const BlogIndex = ({ data, location }: Props) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SearchBar location={location} submitCallback={filterPosts} />
-      <ol style={{ listStyle: "none" }}>
-        {displayPosts.length === 0 ? (
-          <p>
-            {
-              // TODO: Figure out how to stop making ESLint angry at literally any combination
-              // of nested quotes
-              // eslint-disable-next-line
+      {displayPosts.length === 0 ? (
+        <p>
+          {
+            // TODO: Figure out how to stop making ESLint angry at literally any combination
+            // of nested quotes
+            // eslint-disable-next-line
               `No blog posts found for "${currentQuery}". Try searching for another term, like "Python" or "Games!"`
-            }
-          </p>
-        ) : (
-          displayPosts.map((post: any) => {
-            const title = post.frontmatter.title || post.fields.slug;
+          }
+        </p>
+      ) : (
+        displayPosts.map((post: any) => {
+          const title = post.frontmatter.title || post.fields.slug;
 
-            return (
-              <li key={post.fields.slug}>
-                <article
-                  className="post-list-item"
-                  itemScope
-                  itemType="http://schema.org/Article"
-                >
-                  <header>
-                    <h2>
-                      <Link to={post.fields.slug} itemProp="url">
-                        <span itemProp="headline">{title}</span>
-                      </Link>
-                    </h2>
-                    <small>{post.frontmatter.date}</small>
-                  </header>
-                  <section>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html:
-                          post.frontmatter.description || `“${post.excerpt}”`,
-                      }}
-                      itemProp="description"
-                    />
-                  </section>
-                </article>
-              </li>
-            );
-          })
-        )}
-      </ol>
+          return (
+            <Box key={post.fields.slug}>
+              <article
+                className="post-list-item"
+                itemScope
+                itemType="http://schema.org/Article"
+              >
+                <header>
+                  <h2>
+                    <Link to={post.fields.slug} itemProp="url">
+                      <span itemProp="headline">{title}</span>
+                    </Link>
+                  </h2>
+                  <small>{post.frontmatter.date}</small>
+                </header>
+                <section>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        post.frontmatter.description || `“${post.excerpt}”`,
+                    }}
+                    itemProp="description"
+                  />
+                </section>
+              </article>
+            </Box>
+          );
+        })
+      )}
     </Layout>
   );
 };

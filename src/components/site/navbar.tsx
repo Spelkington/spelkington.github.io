@@ -111,7 +111,6 @@ const Navbar = () => {
         justifyContent="center"
         alignItems="center"
         // rowSpacing={2}
-        sx={{ padding: { xs: "20px 20px 20px 20px", sm: "100px 0 0 0" } }}
       >
         <Grid
           item

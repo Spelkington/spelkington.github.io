@@ -1,5 +1,7 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 import CssBaseline from "@mui/material/CssBaseline";
 import { MDXProvider } from "@mdx-js/react";
 import { Code } from "../components/blog/code";
@@ -45,47 +47,25 @@ const BlogPostTemplate = ({ data, location, children }: Props) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <article
-        className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-        </header>
-        <section itemProp="articleBody">
-          <MDXProvider components={shortcodes}>
-            <MDXProvider components={swapComponents}>{children}</MDXProvider>
-          </MDXProvider>
-        </section>
-      </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            listStyle: "none",
-            padding: 0,
-          }}
+      <Grid item xs={12}>
+        <article
+          className="blog-post"
+          itemScope
+          itemType="http://schema.org/Article"
         >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+          <header>
+            <Typography variant="h4" itemProp="headline">
+              {post.frontmatter.title}
+            </Typography>
+            <Typography variant="subtitle1">{post.frontmatter.date}</Typography>
+          </header>
+          <section itemProp="articleBody">
+            <MDXProvider components={shortcodes}>
+              <MDXProvider components={swapComponents}>{children}</MDXProvider>
+            </MDXProvider>
+          </section>
+        </article>
+      </Grid>
     </Layout>
   );
 };
@@ -112,7 +92,7 @@ export const Head = ({ data }) => {
       <meta name="viewport" content="initial-scale=1, width=device-width" />
       <Seo title={data.mdx.frontmatter.title} description={""} />;
     </>
-  )
+  );
 };
 
 export const query = graphql`
