@@ -54,10 +54,10 @@ const SearchBar = ({ submitCallback, location }: SearchBarProps) => {
 
   return (
     <div className="search-bar">
-      <img
+      {/* <img
         className="search-icon"
         src="https://www.svgrepo.com/show/498926/search.svg"
-      ></img>
+      ></img> */}
       <Formik
         initialValues={{ query: query }}
         onSubmit={(values, { setSubmitting }) => {

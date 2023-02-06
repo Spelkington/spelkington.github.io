@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
+import CssBaseline from "@mui/material/CssBaseline";
 import { MDXProvider } from "@mdx-js/react";
 import { Code } from "../components/blog/code";
 import "katex/dist/katex.min.css";
@@ -44,7 +45,6 @@ const BlogPostTemplate = ({ data, location, children }: Props) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title={post.frontmatter.title} description={seoDescription} />
       <article
         className="blog-post"
         itemScope
@@ -91,6 +91,29 @@ const BlogPostTemplate = ({ data, location, children }: Props) => {
 };
 
 export default BlogPostTemplate;
+
+export const Head = ({ data }) => {
+  const post = data.mdx;
+
+  let seoDescription = post.frontmatter.description || post.excerpt;
+
+  // Append tags onto the end of the description if a post was available.
+  if (post && post.frontmatter.public_tags) {
+    const allTags: string[] = post.frontmatter.public_tags;
+    let allTagString = allTags.slice(0, allTags.length - 1).join(", ");
+    allTagString = `${allTagString}, and ${allTags[allTags.length - 1]}!`;
+    allTagString = allTagString.toLocaleLowerCase();
+
+    seoDescription += `\n\nHop in for a maybe-useful, maybe-unhinged read about ${allTagString}`;
+  }
+
+  return (
+    <>
+      <meta name="viewport" content="initial-scale=1, width=device-width" />
+      <Seo title={data.mdx.frontmatter.title} description={""} />;
+    </>
+  )
+};
 
 export const query = graphql`
   query BlogPostBySlug(

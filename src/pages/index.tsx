@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/site/layout";
 import Seo from "../components/site/seo";
 import SearchBar from "../components/site/searchbar";
+import CssBaseline from "@mui/material/CssBaseline";
 
 interface Props {
   data: {
@@ -42,7 +43,6 @@ const BlogIndex = ({ data, location }: Props) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="Home Page" />
       <SearchBar location={location} submitCallback={filterPosts} />
       <ol style={{ listStyle: "none" }}>
         {displayPosts.length === 0 ? (
@@ -93,6 +93,15 @@ const BlogIndex = ({ data, location }: Props) => {
 };
 
 export default BlogIndex;
+
+export const Head = () => {
+  return (
+    <>
+      <meta name="viewport" content="initial-scale=1, width=device-width" />
+      <Seo title="Home Page" />;
+    </>
+  );
+};
 
 export const pageQuery = graphql`
   query BlogIndexFetchData {

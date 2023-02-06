@@ -29,7 +29,7 @@ module.exports = {
         },
       ],
       flavorTexts: [
-        "Do you think God lives in Heaven because He, too, lives in fear of what He's created here on Earth?",
+        "Do you think God lives in Heaven because He, too, lives in fear of what He's created?",
         "My favorite Age of Empires II loadout is: Sicilians; Flank; Losing Team",
         "I can code FizzBuzz in 18 different ways, and all of them are wrong",
         "Cause of Death: Gatsby & Typescript",
@@ -253,5 +253,6 @@ module.exports = {
           })),
       },
     },
+    "@iostindex/gatsby-plugin-material-ui",
   ],
 };

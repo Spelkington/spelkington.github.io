@@ -7,7 +7,6 @@
 
 import * as React from "react";
 import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
 interface Props {
@@ -43,57 +42,33 @@ const Seo = ({ description, lang, meta, title }: Props) => {
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
 
-  let typeSafeMeta: Array<Meta>;
-
-  if (meta instanceof Array) {
-    typeSafeMeta = meta;
-  } else {
-    typeSafeMeta = [];
-  }
+  // TODO: Figure out what this does in the context of the original SEO.
+  // let typeSafeMeta: Array<Meta>;
+  // if (meta instanceof Array) {
+  //   typeSafeMeta = meta;
+  // } else {
+  //   typeSafeMeta = [];
+  // }
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : ""}
-      meta={[
-        {
-          name: "description",
-          content: metaDescription,
-        },
-        {
-          property: "og:title",
-          content: title,
-        },
-        {
-          property: "og:description",
-          content: metaDescription,
-        },
-        {
-          property: "og:type",
-          content: "website",
-        },
-        {
-          name: "twitter:card",
-          content: "summary",
-        },
-        {
-          name: "twitter:creator",
-          content: site.siteMetadata?.social?.twitter || "",
-        },
-        {
-          name: "twitter:title",
-          content: title,
-        },
-        {
-          name: "twitter:description",
-          content: metaDescription,
-        },
-        ...typeSafeMeta,
-      ]}
-    />
+    <>
+      <html lang={lang} />
+      <title>{title}</title>
+      {/* titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : ""} */}
+      <meta name="description" content={metaDescription} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary" />
+      <meta
+        name="twitter:creator"
+        content={site.siteMetadata?.social?.twitter || ""}
+      />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={metaDescription} />
+      {/* TODO: Figure out what this means in the context of the original SEO. */}
+      {/* {...typeSafeMeta} */}
+    </>
   );
 };
 
