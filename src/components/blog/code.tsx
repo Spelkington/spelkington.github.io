@@ -102,8 +102,6 @@ export const Code = (topProps: CodeProps) => {
   // child.
   const props = topProps.children.props;
 
-  console.log(props);
-
   // If a language was provided, remove the "language-" from the start of the
   // className - otherwise, set the language to an empty string
   const language = (

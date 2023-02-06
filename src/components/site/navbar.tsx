@@ -35,8 +35,6 @@ const NavAvatar = (props: { src: any }) => {
 };
 
 const NavTitle = (props: { title: any; authorName: any }) => {
-  console.log(props.title);
-  console.log(props.authorName);
   return (
     <>
       <Typography variant="h5" fontFamily="Doodle Speen" color="#777">
