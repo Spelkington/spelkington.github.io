@@ -7,6 +7,7 @@ import { MDXProvider } from "@mdx-js/react";
 import { Code } from "../components/blog/code";
 import "katex/dist/katex.min.css";
 import { InlineMath, BlockMath } from "react-katex";
+import MuiMarkdown from "mui-markdown";
 
 import Layout from "../components/site/layout";
 import Seo from "../components/site/seo";
@@ -15,19 +16,9 @@ interface Props {
   data: any;
   pageContext?: any;
   location?: any;
-  children: any;
 }
 
-const shortcodes = {
-  InlineMath,
-  BlockMath,
-};
-
-const swapComponents = {
-  pre: Code,
-};
-
-const BlogPostTemplate = ({ data, location, children }: Props) => {
+const BlogPostTemplate = ({ data, location }: Props) => {
   const post = data.mdx;
   const siteTitle = data.site.siteMetadata?.title || "Title";
 
@@ -60,9 +51,7 @@ const BlogPostTemplate = ({ data, location, children }: Props) => {
             <Typography variant="subtitle1">{post.frontmatter.date}</Typography>
           </header>
           <section itemProp="articleBody">
-            <MDXProvider components={shortcodes}>
-              <MDXProvider components={swapComponents}>{children}</MDXProvider>
-            </MDXProvider>
+            <MuiMarkdown>{post.body}</MuiMarkdown>
           </section>
         </article>
       </Grid>
@@ -114,6 +103,7 @@ export const query = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
       }
+      body
     }
     previous: mdx(id: { eq: $previousPostId }) {
       fields {

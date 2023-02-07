@@ -23,12 +23,11 @@ visible: true
 
 Let's say that _you_, a ✨ _humble data plumber_ ✨ of the Big Data era, have been tasked to create an analytics solution for [an online retail dataset](https://github.com/databricks/Spark-The-Definitive-Guide/blob/master/data/retail-data/all/online-retail-dataset.csv):
 
-| InvoiceNo | StockCode | Description          | Quantity | InvoiceDate | UnitPrice | CustomerID | Country        |
-| --------- | --------- | -------------------- | -------- | ----------- | --------- | ---------- | -------------- |
-| 536365    | 85123A    | WHITE HANGING HEA... | 6        | 2012-01-10  | 2.55      | 17850      | United Kingdom |
-| 536365    | 71053     | WHITE METAL LANTERN  | 6        | 2012-01-10  | 3.39      | 17850      | United Kingdom |
-| 536365    | 84406B    | CREAM CUPID HEART... | 8        | 2012-01-10  | 2.75      | 17850      | United Kingdom |
-| ...       | ...       | ...                  | ...      | ...         | ...       | ...        | ...            |
+| Number | Title                                    | Year |
+| :----- | :--------------------------------------- | ---: |
+| 1      | Harry Potter and the Philosopher’s Stone | 2001 |
+| 2      | Harry Potter and the Chamber of Secrets  | 2002 |
+| 3      | Harry Potter and the Prisoner of Azkaban | 2004 |
 
 The analysis you've been asked for is simple - an aggregation of the number of dollars, units sold, and unique users for each day, and across each stock code. With just a few lines of PySpark, we can transform our raw data into a usable aggregate:
 
