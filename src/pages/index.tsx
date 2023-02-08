@@ -5,7 +5,7 @@ import Layout from "../components/site/layout";
 import Seo from "../components/site/seo";
 import Box from "@mui/material/Box";
 import SearchBar from "../components/site/searchbar";
-import CssBaseline from "@mui/material/CssBaseline";
+import Typography from "@mui/material/Typography";
 
 interface Props {
   data: {
@@ -66,21 +66,25 @@ const BlogIndex = ({ data, location }: Props) => {
                 itemType="http://schema.org/Article"
               >
                 <header>
-                  <h2>
+                  <Typography variant="h3" component="h2" marginTop="1em">
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
+                  </Typography>
+                  <Typography variant="subtitle1">
+                    {post.frontmatter.date}
+                  </Typography>
                 </header>
                 <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html:
-                        post.frontmatter.description || `“${post.excerpt}”`,
-                    }}
-                    itemProp="description"
-                  />
+                  <Typography variant="body1" marginTop={0}>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html:
+                          post.frontmatter.description || `“${post.excerpt}”`,
+                      }}
+                      itemProp="description"
+                    />
+                  </Typography>
                 </section>
               </article>
             </Box>

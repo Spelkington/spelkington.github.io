@@ -37,11 +37,14 @@ const NavAvatar = (props: { src: any }) => {
 const NavTitle = (props: { title: any; authorName: any }) => {
   return (
     <>
-      <Typography variant="h5" fontFamily="Doodle Speen" color="#777">
-        {props.authorName}&apos;s
-      </Typography>
+      <Typography variant="h6">{props.authorName}&apos;s</Typography>
       <Link to="/">
-        <Typography variant="h2" fontFamily="Doodle Speen" color="common.black">
+        <Typography
+          variant="h1"
+          fontFamily="Doodle Speen"
+          fontWeight={500}
+          marginTop={-2}
+        >
           {props.title}
         </Typography>
       </Link>
@@ -61,7 +64,7 @@ const NavLinks = (props: { links: any }) => {
 
         return (
           <Grid item key={link?.link}>
-            <Typography variant="h4" fontFamily="Doodle Speen">
+            <Typography variant="h2" component="span" fontFamily="Doodle Speen">
               <a href={link?.link}>{link?.label}</a>
             </Typography>
           </Grid>
@@ -71,7 +74,11 @@ const NavLinks = (props: { links: any }) => {
   );
 };
 
-const Navbar = () => {
+interface NavbarProps {
+  addFlavorText: boolean;
+}
+
+const Navbar = ({ addFlavorText }: NavbarProps) => {
   const data: Queries.FetchNavContentQuery = useStaticQuery(graphql`
     query FetchNavContent {
       site {
@@ -131,17 +138,13 @@ const Navbar = () => {
           <NavTitle title={title} authorName={authorName} />
         </Grid>
 
-        {/* Flavortext */}
-        <Grid item xs={12} textAlign="center" margin={4}>
-          <Typography
-            variant="h5"
-            fontFamily="Doodle Speen"
-            // TODO: Add to palette
-            color="#777"
-          >
-            {flavorTextChoice}
-          </Typography>
-        </Grid>
+        {addFlavorText ? (
+          <Grid item xs={12} textAlign="center" margin={4}>
+            <Typography variant="h6">{flavorTextChoice}</Typography>
+          </Grid>
+        ) : (
+          <></>
+        )}
 
         {/* Navigation links */}
         <Grid

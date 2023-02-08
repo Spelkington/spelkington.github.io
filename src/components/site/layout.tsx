@@ -1,6 +1,7 @@
 import * as React from "react";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Navbar from "./navbar";
@@ -24,11 +25,11 @@ const Layout = ({ location, children }: Props) => {
         <Container
           className="global-wrapper"
           data-is-root-path={isRootPath}
-          sx={{ padding: { xs: "20px 20px 20px 20px", sm: "100px 0 0 0" } }}
+          sx={{ padding: { xs: "20px 20px 20px 20px", sm: "50px 0 0 0" } }}
           maxWidth="sm"
         >
           <header className="global-header">
-            <Navbar />
+            <Navbar addFlavorText={true} />
           </header>
           <main>
             <Grid container>{children}</Grid>

@@ -21,13 +21,16 @@ visible: true
 
 > This post was written during my time as a software engineer at M Science as a joint project with Databricks. You can view the original post [here](https://www.databricks.com/blog/2022/07/14/using-spark-structured-streaming-to-scale-your-analytics.html)
 
+# Life as a Data Plumber
+
 Let's say that _you_, a ✨ _humble data plumber_ ✨ of the Big Data era, have been tasked to create an analytics solution for [an online retail dataset](https://github.com/databricks/Spark-The-Definitive-Guide/blob/master/data/retail-data/all/online-retail-dataset.csv):
 
-| Number | Title                                    | Year |
-| :----- | :--------------------------------------- | ---: |
-| 1      | Harry Potter and the Philosopher’s Stone | 2001 |
-| 2      | Harry Potter and the Chamber of Secrets  | 2002 |
-| 3      | Harry Potter and the Prisoner of Azkaban | 2004 |
+| InvoiceNo | StockCode | Description          | Quantity | InvoiceDate | UnitPrice  | CustomerID | Country        |
+| :-------- | :-------- | :------------------- | -------: | :---------- | ---------: | :--------- | :------------- |
+| 536365    | 85123A    | WHITE HANGING HEA... | 6        | 2012-01-10  | $2.55      | 17850      | United Kingdom |
+| 536365    | 71053     | WHITE METAL LANTERN  | 6        | 2012-01-10  | $3.39      | 17850      | United Kingdom |
+| 536365    | 84406B    | CREAM CUPID HEART... | 8        | 2012-01-10  | $2.75      | 17850      | United Kingdom |
+| ...       | ...       | ...                  | ...      | ...         | ...        | ...        | ...            |
 
 The analysis you've been asked for is simple - an aggregation of the number of dollars, units sold, and unique users for each day, and across each stock code. With just a few lines of PySpark, we can transform our raw data into a usable aggregate:
 
@@ -64,7 +67,7 @@ agg_df = (
 
 With your new aggregated data, you can throw together a nice visualization to do... _business things_.
 
-![](assets/duu_metrics.jpg)
+![](./assets/duu_metrics.jpg)
 
 This works - right?
 
@@ -123,30 +126,30 @@ import pyspark.sql.functions as F
 df = spark.table("default.online_retail_data")
 
 agg_df = (
-    df
+  df
 
-    # Group data by date & item code
-    .groupBy(
-        "InvoiceDate",
-        "StockCode",
-    )
+  # Group data by date & item code
+  .groupBy(
+    "InvoiceDate",
+    "StockCode",
+  )
 
-    # Return aggregate totals of dollars, units sold, and unique users
-    .agg(
-        F.sum("UnitPrice")
-            .alias("Dollars"),
-        F.sum("Quantity")
-            .alias("Units"),
-        F.countDistinct("CustomerID")
-            .alias("Users"),
-    )
+  # Return aggregate totals of dollars, units sold, and unique users
+  .agg(
+    F.sum("UnitPrice")
+      .alias("Dollars"),
+    F.sum("Quantity")
+      .alias("Units"),
+    F.countDistinct("CustomerID")
+      .alias("Users"),
+  )
 )
 
 (
-    agg_df.write
-    .format('delta')
-    .mode('overwrite')
-    .saveAsTable("analytics.online_retail_aggregations")
+  agg_df.write
+  .format('delta')
+  .mode('overwrite')
+  .saveAsTable("analytics.online_retail_aggregations")
 )
 ```
 
@@ -174,33 +177,33 @@ Here is the ✨ _stream-ified_ ✨ version of your old code:
 
 agg_df = (
   df
-+   # Watermark data with an InvoiceDate of -7 days
-+   .withWatermark("InvoiceDate", f"7 days")
++ # Watermark data with an InvoiceDate of -7 days
++ .withWatermark("InvoiceDate", f"7 days")
 
-    # Group data by date & item code
-    .groupBy(
-      "InvoiceDate",
-      "StockCode",
-    )
+  # Group data by date & item code
+  .groupBy(
+    "InvoiceDate",
+    "StockCode",
+  )
 
-    # Return aggregate totals of dollars, units sold, and unique users
-    .agg(
-      F.sum("UnitPrice")
-        .alias("Dollars"),
-      F.sum("Quantity")
-        .alias("Units"),
-+     F.approx_count_distinct("CustomerID", 0.05)
-        .alias("Users"),
-    )
+  # Return aggregate totals of dollars, units sold, and unique users
+  .agg(
+    F.sum("UnitPrice")
+    .alias("Dollars"),
+    F.sum("Quantity")
+    .alias("Units"),
++   F.approx_count_distinct("CustomerID", 0.05)
+    .alias("Users"),
+  )
 )
 
 (
 + agg_df.writeStream
-    .format("delta")
-+   .outputMode("update")
-+   .trigger(once = True)
-+   .option("checkpointLocation", CHECKPOINT_DIR)
-+   .toTable("analytics.online_retail_aggregations")
+  .format("delta")
++ .outputMode("update")
++ .trigger(once = True)
++ .option("checkpointLocation", CHECKPOINT_DIR)
++ .toTable("analytics.online_retail_aggregations")
 )
 ```
 

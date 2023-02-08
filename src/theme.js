@@ -1,10 +1,35 @@
-import { createTheme, responsiveFontSizes } from "@mui/material/styles";
+import { createTheme } from "@mui/material/styles";
 import DoodleSpeen from "./assets/fonts/DoodleSpeen.ttf";
+
+const HEADER_SIZE_STEP = 1.3;
+const MAX_HEADER_BASE_SIZE = 3;
+const SCALING_FACTOR = 0.8;
 
 // A custom theme for this app
 let theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 700,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
   typography: {
     fontFamily: "Roboto, Doodle Speen",
+    htmlFontSize: 16,
+
+    // Used for navbar flavortext & author plate
+    h6: {
+      fontFamily: "Doodle Speen",
+      fontSize: 24,
+      color: "#777",
+    },
+
+    body1: {
+      margin: "1.5rem 1.5rem 2rem 1.5rem",
+    },
   },
   components: {
     MuiCssBaseline: {
@@ -16,8 +41,8 @@ let theme = createTheme({
 
         body {
           background-image: 
-            radial-gradient(circle at 1px 1px, #DDD 1px, transparent 0),
-            radial-gradient(circle at 1px 1px, #DDD 1px, transparent 0);
+            radial-gradient(circle at 2px 2px, #EEE 2px, transparent 0),
+            radial-gradient(circle at 2px 2px, #EEE 2px, transparent 0);
           background-position: 1cm 1cm, 1.4cm 1.75cm;
           background-size: 0.8cm 1.5cm;
         }
@@ -28,9 +53,39 @@ let theme = createTheme({
         }
       `,
     },
+    MuiTypography: {
+      defaultProps: {
+        gutterBottom: false,
+        variantMapping: {
+          h6: "span",
+          subtitle1: "p",
+          subtitle2: "p",
+          body1: "p",
+          body2: "p",
+        },
+      },
+    },
+    MuiPaper: {
+      defaultProps: {
+        marginTop: "1rem",
+      },
+    },
   },
 });
 
-// theme = responsiveFontSizes(theme);
+for (let i = 1; i < 6; i++) {
+  const heading = "h" + i;
+  const baseSize = MAX_HEADER_BASE_SIZE / Math.pow(HEADER_SIZE_STEP, i - 1);
+  theme.typography[heading] = {
+    marginTop: "2.5rem",
+    fontSize: baseSize + "rem",
+    [theme.breakpoints.down("md")]: {
+      fontSize: SCALING_FACTOR * baseSize + "rem",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: SCALING_FACTOR * SCALING_FACTOR * baseSize + "rem",
+    },
+  };
+}
 
 export default theme;
