@@ -1,5 +1,9 @@
 import { createTheme } from "@mui/material/styles";
 import DoodleSpeen from "./assets/fonts/DoodleSpeen.ttf";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 
 const HEADER_SIZE_STEP = 1.3;
 const MAX_HEADER_BASE_SIZE = 3;
