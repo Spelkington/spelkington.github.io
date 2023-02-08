@@ -1,7 +1,12 @@
 import React, { useState } from "react";
-import { Formik, Form, Field } from "formik";
 import { graphql, useStaticQuery } from "gatsby";
 import * as queryString from "query-string";
+import Search from "@mui/icons-material/Search";
+import Input from "@mui/material/Input";
+import InputLabel from "@mui/material/InputLabel";
+import InputAdornment from "@mui/material/InputAdornment";
+import FormControl from "@mui/material/FormControl";
+import TextField from "@mui/material/TextField";
 
 // Unfortunately, it doesn't seem like this library has typing. Until I can find it,
 // suppressing error.
@@ -53,23 +58,42 @@ const SearchBar = ({ submitCallback, location }: SearchBarProps) => {
   }, [results]);
 
   return (
-    <div className="search-bar">
-      {/* <img
-        className="search-icon"
-        src="https://www.svgrepo.com/show/498926/search.svg"
-      ></img> */}
-      <Formik
-        initialValues={{ query: query }}
-        onSubmit={(values, { setSubmitting }) => {
-          setQuery(values.query);
-          setSubmitting(false);
+    // <>
+    //   <img
+    //     className="search-icon"
+    //     src="https://www.svgrepo.com/show/498926/search.svg"
+    //   ></img>
+    //   <Formik
+    //     initialValues={{ query: query }}
+    //     onSubmit={(values, { setSubmitting }) => {
+    //       setQuery(values.query);
+    //       setSubmitting(false);
+    //     }}
+    //   >
+    //     <Form>
+    //       <Field className="search-field" name="query" />
+    //     </Form>
+    //   </Formik>
+    // </>
+    <FormControl variant="standard">
+      <form
+        onSubmit={event => {
+          event.preventDefault();
+          setQuery(event.target[0].value);
         }}
       >
-        <Form>
-          <Field className="search-field" name="query" />
-        </Form>
-      </Formik>
-    </div>
+        <Input
+          name="search"
+          id="input-with-icon-adornment"
+          defaultValue={query}
+          startAdornment={
+            <InputAdornment position="start">
+              <Search />
+            </InputAdornment>
+          }
+        />
+      </form>
+    </FormControl>
   );
 };
 

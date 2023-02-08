@@ -28,6 +28,7 @@
   "dependencies": {
     "@emotion/styled": "^11.10.5",
     "@mdx-js/react": "^2.2.1",
+    "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.7",
     "deepmerge": "^4.3.0",
     "formik": "^2.2.9",

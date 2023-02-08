@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
 
+import Grid from "@mui/material/Grid";
 import Layout from "../components/site/layout";
 import Seo from "../components/site/seo";
 import Box from "@mui/material/Box";
@@ -44,7 +45,9 @@ const BlogIndex = ({ data, location }: Props) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SearchBar location={location} submitCallback={filterPosts} />
+      <Grid item xs={12} textAlign="center">
+        <SearchBar location={location} submitCallback={filterPosts} />
+      </Grid>
       {displayPosts.length === 0 ? (
         <p>
           {
@@ -59,7 +62,7 @@ const BlogIndex = ({ data, location }: Props) => {
           const title = post.frontmatter.title || post.fields.slug;
 
           return (
-            <Box key={post.fields.slug}>
+            <Grid item xs={12} key={post.fields.slug}>
               <article
                 className="post-list-item"
                 itemScope
@@ -87,7 +90,7 @@ const BlogIndex = ({ data, location }: Props) => {
                   </Typography>
                 </section>
               </article>
-            </Box>
+            </Grid>
           );
         })
       )}
