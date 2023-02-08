@@ -58,23 +58,6 @@ const SearchBar = ({ submitCallback, location }: SearchBarProps) => {
   }, [results]);
 
   return (
-    // <>
-    //   <img
-    //     className="search-icon"
-    //     src="https://www.svgrepo.com/show/498926/search.svg"
-    //   ></img>
-    //   <Formik
-    //     initialValues={{ query: query }}
-    //     onSubmit={(values, { setSubmitting }) => {
-    //       setQuery(values.query);
-    //       setSubmitting(false);
-    //     }}
-    //   >
-    //     <Form>
-    //       <Field className="search-field" name="query" />
-    //     </Form>
-    //   </Formik>
-    // </>
     <FormControl variant="standard">
       <form
         onSubmit={event => {
