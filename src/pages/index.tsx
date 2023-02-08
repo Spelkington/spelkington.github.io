@@ -100,11 +100,15 @@ const BlogIndex = ({ data, location }: Props) => {
 
 export default BlogIndex;
 
-export const Head = () => {
+export const Head = ({ data }) => {
   return (
     <>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      />
       <meta name="viewport" content="initial-scale=1, width=device-width" />
-      <Seo title="Home Page" />;
+      <Seo title={data.site.siteMetadata.title} />;
     </>
   );
 };
