@@ -34,7 +34,11 @@ const NavAvatar = (props: { src: any }) => {
   );
 };
 
-const NavTitle = (props: { title: any; authorName: any }) => {
+const NavTitle = (props: {
+  title: any;
+  authorName: any;
+  flavorText: string;
+}) => {
   return (
     <>
       <Typography variant="h6">{props.authorName}&apos;s</Typography>
@@ -43,11 +47,24 @@ const NavTitle = (props: { title: any; authorName: any }) => {
           variant="h1"
           fontFamily="Doodle Speen"
           fontWeight={500}
-          marginTop={-2}
+          margin="-0.8rem 0 -0.5rem 0"
         >
           {props.title}
         </Typography>
       </Link>
+      {props.flavorText ? (
+        <Typography
+          variant="h6"
+          color="#777"
+          fontFamily="Doodle Speen"
+          lineHeight="1em"
+          display="flex"
+        >
+          {props.flavorText}
+        </Typography>
+      ) : (
+        <></>
+      )}
     </>
   );
 };
@@ -106,7 +123,7 @@ const Navbar = ({ addFlavorText }: NavbarProps) => {
   const navLinks = data.site?.siteMetadata?.navigation?.navLinks;
   const flavorTexts = data.site?.siteMetadata?.navigation?.flavorTexts;
 
-  let flavorTextChoice;
+  let flavorTextChoice = "";
   if (flavorTexts && flavorTexts.length > 0) {
     flavorTextChoice = flavorTexts[getRandomInt(0, flavorTexts.length)];
   }
@@ -115,12 +132,14 @@ const Navbar = ({ addFlavorText }: NavbarProps) => {
     <>
       <Grid
         container
+        className="navbar"
         justifyContent="center"
         alignItems="center"
-        // rowSpacing={2}
+        rowSpacing={10}
       >
         <Grid
           item
+          className="navAvatar"
           xs={12}
           sm={"auto"}
           textAlign={{ xs: "center", sm: "right" }}
@@ -130,26 +149,23 @@ const Navbar = ({ addFlavorText }: NavbarProps) => {
         </Grid>
 
         <Grid
+          className="navTitle"
           item
           xs={12}
-          sm={"auto"}
+          sm={7}
           sx={{ textAlign: { xs: "center", sm: "left" } }}
         >
-          <NavTitle title={title} authorName={authorName} />
+          <NavTitle
+            title={title}
+            authorName={authorName}
+            flavorText={flavorTextChoice}
+          />
         </Grid>
-
-        {addFlavorText ? (
-          <Grid item xs={12} textAlign="center" margin={4}>
-            <Typography variant="h6">{flavorTextChoice}</Typography>
-          </Grid>
-        ) : (
-          <></>
-        )}
 
         {/* Navigation links */}
         <Grid
+          className="navLinks"
           container
-          className="nav-links"
           textAlign="center"
           spacing={{ xs: 4, sm: 10 }}
           justifyContent="center"
