@@ -29,7 +29,7 @@ const Layout = ({ location, children }: Props) => {
           maxWidth="sm"
         >
           <header className="global-header">
-            <Navbar addFlavorText={true} />
+            <Navbar addFlavorText={true} location={location} />
           </header>
           <main>
             <Grid container>{children}</Grid>

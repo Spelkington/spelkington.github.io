@@ -17,6 +17,7 @@ interface NavLinkProps {
 }
 
 interface NavbarProps {
+  location: any;
   addFlavorText: boolean;
 }
 
@@ -83,7 +84,7 @@ const NavLinks = (props: { links: NavLinkProps[] }) => {
   );
 };
 
-const Navbar = ({ addFlavorText }: NavbarProps) => {
+const Navbar = (props: NavbarProps) => {
   const data: Queries.FetchNavContentQuery = useStaticQuery(graphql`
     query FetchNavContent {
       site {
@@ -105,6 +106,7 @@ const Navbar = ({ addFlavorText }: NavbarProps) => {
     }
   `);
 
+  // Suss out & type important data from the GraphQL query.
   const title = data.site?.siteMetadata?.title as string;
   const authorName = data.site?.siteMetadata?.author?.name as string;
   const avatarLink = data.site?.siteMetadata?.avatarLink as string;
@@ -125,7 +127,7 @@ const Navbar = ({ addFlavorText }: NavbarProps) => {
     if (flavorTexts && flavorTexts.length > 0) {
       setFlavorTextChoice(flavorTexts[flavorTextIndex % flavorTexts.length]);
     }
-  }, [location]);
+  }, [props.location]);
 
   return (
     <>
@@ -154,7 +156,7 @@ const Navbar = ({ addFlavorText }: NavbarProps) => {
           <NavTitle title={title} authorName={authorName} />
         </Grid>
 
-        {addFlavorText ? (
+        {props.addFlavorText ? (
           <Grid item xs={12} textAlign="center" margin={4}>
             <Typography variant="h6">{flavorTextChoice}</Typography>
           </Grid>
