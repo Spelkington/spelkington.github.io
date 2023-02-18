@@ -11,12 +11,21 @@ import Grid from "@mui/material/Grid";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 
+interface NavLinkProps {
+  label: string;
+  link: string;
+}
+
+interface NavbarProps {
+  addFlavorText: boolean;
+}
+
 function getRandomInt(min: number, max: number) {
   const randNum = Math.random() * (max - min) + min;
   return Math.floor(randNum);
 }
 
-const NavAvatar = (props: { src: any }) => {
+const NavAvatar = (props: { src: string }) => {
   // If an avatar link is present, show the image - otherwise,
   // return an empty div
   return props.src ? (
@@ -52,10 +61,10 @@ const NavTitle = (props: { title: any; authorName: any }) => {
   );
 };
 
-const NavLinks = (props: { links: any }) => {
+const NavLinks = (props: { links: NavLinkProps[] }) => {
   return (
     <>
-      {props.links?.map((link: any) => {
+      {props.links?.map(link => {
         // Check for null links and return an empty container if the link, label, or
         // linktext are missing
         if (!link || !link.label || !link.link) {
@@ -73,10 +82,6 @@ const NavLinks = (props: { links: any }) => {
     </>
   );
 };
-
-interface NavbarProps {
-  addFlavorText: boolean;
-}
 
 const Navbar = ({ addFlavorText }: NavbarProps) => {
   const data: Queries.FetchNavContentQuery = useStaticQuery(graphql`
@@ -100,11 +105,13 @@ const Navbar = ({ addFlavorText }: NavbarProps) => {
     }
   `);
 
-  const title = data.site?.siteMetadata?.title;
-  const authorName = data.site?.siteMetadata?.author?.name;
-  const avatarLink = data.site?.siteMetadata?.avatarLink;
-  const navLinks = data.site?.siteMetadata?.navigation?.navLinks;
-  const flavorTexts = data.site?.siteMetadata?.navigation?.flavorTexts;
+  const title = data.site?.siteMetadata?.title as string;
+  const authorName = data.site?.siteMetadata?.author?.name as string;
+  const avatarLink = data.site?.siteMetadata?.avatarLink as string;
+  const navLinks = data.site?.siteMetadata?.navigation
+    ?.navLinks as NavLinkProps[];
+  const flavorTexts: string[] = data.site?.siteMetadata?.navigation
+    ?.flavorTexts as string[];
 
   const [flavorTextChoice, setFlavorTextChoice] = React.useState("");
 
@@ -112,11 +119,13 @@ const Navbar = ({ addFlavorText }: NavbarProps) => {
     // Generate random flavortext number outside of the Navbar render,
     // -- important so that it doesn't change on every minor page load
     const flavorTextIndex = getRandomInt(0, 1000);
+
+    // Set flavortext choice within limit of the flavortext array length,
+    // but only if the flavortexts exist and contain more than 0 elements.
     if (flavorTexts && flavorTexts.length > 0) {
       setFlavorTextChoice(flavorTexts[flavorTextIndex % flavorTexts.length]);
     }
-  }, [location])
-
+  }, [location]);
 
   return (
     <>
