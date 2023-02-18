@@ -69,11 +69,11 @@ const BlogIndex = ({ data, location }: Props) => {
                 itemType="http://schema.org/Article"
               >
                 <header>
-                  <Typography variant="h3" component="h2" marginTop="1em">
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </Typography>
+                  <Link to={post.fields.slug} itemProp="url">
+                    <Typography variant="h3" component="h2" marginTop="1em">
+                      {title}
+                    </Typography>
+                  </Link>
                   <Typography variant="subtitle1">
                     {post.frontmatter.date}
                   </Typography>

@@ -5,9 +5,14 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
-const HEADER_SIZE_STEP = 1.3;
+// Max size at lg for H1
 const MAX_HEADER_BASE_SIZE = 3;
-const SCALING_FACTOR = 0.8;
+
+// Rate at which decreasing header sizes scale down from lg-H1
+const HEADER_SIZE_STEP = 0.8;
+
+// Rate at which scaling occurs between md, sm, and xs viewports
+const SCALING_FACTOR = 0.7;
 
 // A custom theme for this app
 let theme = createTheme({
@@ -23,13 +28,6 @@ let theme = createTheme({
   typography: {
     fontFamily: "Roboto, Doodle Speen",
     htmlFontSize: 16,
-
-    // Used for navbar flavortext & author plate
-    h6: {
-      fontFamily: "Doodle Speen",
-      fontSize: 24,
-      color: "#777",
-    },
 
     body1: {
       margin: "1.5rem 1.5rem 2rem 1.5rem",
@@ -61,7 +59,6 @@ let theme = createTheme({
       defaultProps: {
         gutterBottom: false,
         variantMapping: {
-          h6: "span",
           subtitle1: "p",
           subtitle2: "p",
           body1: "p",
@@ -79,7 +76,7 @@ let theme = createTheme({
 
 for (let i = 1; i < 6; i++) {
   const heading = "h" + i;
-  const baseSize = MAX_HEADER_BASE_SIZE / Math.pow(HEADER_SIZE_STEP, i - 1);
+  const baseSize = MAX_HEADER_BASE_SIZE * Math.pow(HEADER_SIZE_STEP, i - 1);
   theme.typography[heading] = {
     marginTop: "2.5rem",
     fontSize: baseSize + "rem",

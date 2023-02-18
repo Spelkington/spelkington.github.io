@@ -25,7 +25,7 @@ const Layout = ({ location, children }: Props) => {
         <Container
           className="global-wrapper"
           data-is-root-path={isRootPath}
-          sx={{ padding: { xs: "20px 20px 20px 20px", sm: "50px 0 0 0" } }}
+          sx={{ padding: { xs: "20px 0 0 0", sm: "50px 0 0 0" } }}
           maxWidth="sm"
         >
           <header className="global-header">
