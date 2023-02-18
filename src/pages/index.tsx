@@ -70,11 +70,16 @@ const BlogIndex = ({ data, location }: Props) => {
               >
                 <header>
                   <Link to={post.fields.slug} itemProp="url">
-                    <Typography variant="h3" component="h2" marginTop="1em">
+                    <Typography
+                      variant="h3"
+                      component="h2"
+                      marginTop="1em"
+                      textAlign="center"
+                    >
                       {title}
                     </Typography>
                   </Link>
-                  <Typography variant="subtitle1">
+                  <Typography variant="subtitle1" textAlign="center">
                     {post.frontmatter.date}
                   </Typography>
                 </header>
