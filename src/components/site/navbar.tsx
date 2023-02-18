@@ -55,7 +55,7 @@ const NavTitle = (props: { title: any; authorName: any }) => {
 const NavLinks = (props: { links: any }) => {
   return (
     <>
-      {props.links?.map(link => {
+      {props.links?.map((link: any) => {
         // Check for null links and return an empty container if the link, label, or
         // linktext are missing
         if (!link || !link.label || !link.link) {
@@ -106,10 +106,17 @@ const Navbar = ({ addFlavorText }: NavbarProps) => {
   const navLinks = data.site?.siteMetadata?.navigation?.navLinks;
   const flavorTexts = data.site?.siteMetadata?.navigation?.flavorTexts;
 
-  let flavorTextChoice;
-  if (flavorTexts && flavorTexts.length > 0) {
-    flavorTextChoice = flavorTexts[getRandomInt(0, flavorTexts.length)];
-  }
+  const [flavorTextChoice, setFlavorTextChoice] = React.useState("");
+
+  React.useEffect(() => {
+    // Generate random flavortext number outside of the Navbar render,
+    // -- important so that it doesn't change on every minor page load
+    const flavorTextIndex = getRandomInt(0, 1000);
+    if (flavorTexts && flavorTexts.length > 0) {
+      setFlavorTextChoice(flavorTexts[flavorTextIndex % flavorTexts.length]);
+    }
+  }, [location])
+
 
   return (
     <>
