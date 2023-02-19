@@ -2,6 +2,9 @@
     "editor.rulers": [
         70
     ],
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },

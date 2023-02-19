@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import MuiMarkdown from "mui-markdown";
+import TagChips from "../components/site/tagchips";
 
 import Layout from "../components/site/layout";
 import Seo from "../components/site/seo";
@@ -19,22 +20,25 @@ const BlogPostTemplate = ({ data, location }: Props) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Grid item xs={12}>
-        <article
-          className="blog-post"
-          itemScope
-          itemType="http://schema.org/Article"
-        >
-          <header>
+      <article
+        className="blog-post"
+        itemScope
+        itemType="http://schema.org/Article"
+      >
+        <header>
+          <Grid item xs={12} textAlign="center">
             <Typography variant="h2" itemProp="headline">
               {post.frontmatter.title}
             </Typography>
             <Typography variant="subtitle2" marginBottom="2rem">
               {post.frontmatter.date}
             </Typography>
-          </header>
+            <TagChips tags={post.frontmatter.public_tags} />
+          </Grid>
+        </header>
 
-          <section itemProp="articleBody">
+        <section itemProp="articleBody">
+          <Grid item xs={12} marginTop={3}>
             <MuiMarkdown
               overrides={{
                 h1: {
@@ -66,9 +70,9 @@ const BlogPostTemplate = ({ data, location }: Props) => {
             >
               {post.body}
             </MuiMarkdown>
-          </section>
-        </article>
-      </Grid>
+          </Grid>
+        </section>
+      </article>
     </Layout>
   );
 };
@@ -116,6 +120,7 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        public_tags
       }
       body
     }

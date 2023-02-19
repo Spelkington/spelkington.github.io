@@ -7,6 +7,7 @@ import Seo from "../components/site/seo";
 import Box from "@mui/material/Box";
 import SearchBar from "../components/site/searchbar";
 import Typography from "@mui/material/Typography";
+import TagChips from "../components/site/tagchips";
 
 interface Props {
   data: {
@@ -48,57 +49,62 @@ const BlogIndex = ({ data, location }: Props) => {
       <Grid item xs={12} textAlign="center">
         <SearchBar location={location} submitCallback={filterPosts} />
       </Grid>
-      {displayPosts.length === 0 ? (
-        <p>
-          {
-            // TODO: Figure out how to stop making ESLint angry at literally any combination
-            // of nested quotes
-            // eslint-disable-next-line
+      <Grid container spacing={5}>
+        {displayPosts.length === 0 ? (
+          <p>
+            {
+              // TODO: Figure out how to stop making ESLint angry at literally any combination
+              // of nested quotes.
+              // TODO: For this portion, I think I'd like to have some kind of compiled list of all
+              // available primary tags, to display it like "Hey, here are tags with actual content!"
+              // eslint-disable-next-line
               `No blog posts found for "${currentQuery}". Try searching for another term, like "Python" or "Games!"`
-          }
-        </p>
-      ) : (
-        displayPosts.map((post: any) => {
-          const title = post.frontmatter.title || post.fields.slug;
+            }
+          </p>
+        ) : (
+          displayPosts.map((post: any) => {
+            const title = post.frontmatter.title || post.fields.slug;
 
-          return (
-            <Grid item xs={12} key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <Link to={post.fields.slug} itemProp="url">
-                    <Typography
-                      variant="h3"
-                      component="h2"
-                      marginTop="1em"
-                      textAlign="center"
-                    >
-                      {title}
+            return (
+              <Grid item xs={12} key={post.fields.slug}>
+                <article
+                  className="post-list-item"
+                  itemScope
+                  itemType="http://schema.org/Article"
+                >
+                  <header>
+                    <Link to={post.fields.slug} itemProp="url">
+                      <Typography
+                        variant="h3"
+                        component="h2"
+                        marginTop="1em"
+                        textAlign="center"
+                      >
+                        {title}
+                      </Typography>
+                    </Link>
+                    <Typography variant="subtitle1" textAlign="center">
+                      {post.frontmatter.date}
                     </Typography>
-                  </Link>
-                  <Typography variant="subtitle1" textAlign="center">
-                    {post.frontmatter.date}
-                  </Typography>
-                </header>
-                <section>
-                  <Typography variant="body1" marginTop={0}>
-                    <p
+                  </header>
+                  <section>
+                    <Typography
+                      variant="body1"
+                      marginTop="1rem"
                       dangerouslySetInnerHTML={{
                         __html:
                           post.frontmatter.description || `“${post.excerpt}”`,
                       }}
                       itemProp="description"
                     />
-                  </Typography>
-                </section>
-              </article>
-            </Grid>
-          );
-        })
-      )}
+                    <TagChips tags={post.frontmatter.public_tags} />
+                  </section>
+                </article>
+              </Grid>
+            );
+          })
+        )}
+      </Grid>
     </Layout>
   );
 };

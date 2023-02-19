@@ -67,6 +67,34 @@ module.exports = {
         "If you ask me how much money I've spent on Bloons Tower Defense 6, I'll cry",
       ],
     },
+    searchTags: [
+      // TODO: I should replace any non-source or non-Wiki icons with custom
+      // SVG.
+      {
+        label: "Python",
+        icon: "https://img.icons8.com/material/24/null/python.png",
+      },
+      {
+        label: "Lua",
+        icon: "https://www.andreas-rozek.de/Lua/Lua-Logo_128x128.png",
+      },
+      {
+        label: "LaTeX",
+        icon: "https://images.ctfassets.net/nrgyaltdicpt/2nBkkfg5vkAEOmdJOb1BkZ/61b5fb98c52d1be763426ee58f36bc6e/ologo_square_bw.svg",
+      },
+      {
+        label: "Data",
+        icon: "https://img.icons8.com/material/24/null/radar-plot.png",
+      },
+      {
+        label: "Spark",
+        icon: "https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_spark_logo_icon_170560.png",
+      },
+      {
+        label: "GitHub",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png?20180806170715",
+      },
+    ],
   },
   graphqlTypegen: true,
   plugins: [

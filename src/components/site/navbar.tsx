@@ -94,7 +94,7 @@ const Navbar = (props: NavbarProps) => {
   }, [props.location]);
 
   return (
-    <Typography fontFamily="Doodle Speen">
+    <Typography fontFamily="Doodle Speen" component="div">
       <Grid
         container
         justifyContent="center"

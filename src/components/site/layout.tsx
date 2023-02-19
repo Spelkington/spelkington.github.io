@@ -31,9 +31,7 @@ const Layout = ({ location, children }: Props) => {
           <header className="global-header">
             <Navbar addFlavorText={true} location={location} />
           </header>
-          <main>
-            <Grid container>{children}</Grid>
-          </main>
+          <main>{children}</main>
           <footer></footer>
         </Container>
       </ThemeProvider>

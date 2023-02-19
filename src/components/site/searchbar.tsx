@@ -55,7 +55,7 @@ const SearchBar = ({ submitCallback, location }: SearchBarProps) => {
       slugs.push(result.path);
     });
     submitCallback(query, slugs);
-  }, [results]);
+  }, [results, location]);
 
   return (
     <FormControl variant="standard">
