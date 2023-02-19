@@ -94,6 +94,10 @@ module.exports = {
         label: "GitHub",
         icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png?20180806170715",
       },
+      {
+        label: "Economics",
+        icon: "https://www.svgrepo.com/show/74893/planet-earth.svg",
+      },
     ],
   },
   graphqlTypegen: true,
