@@ -66,7 +66,7 @@ module.exports = {
         "The finest 0.1x engineer west of the Mississippi",
         "If you ask me how much money I've spent on Bloons Tower Defense 6, I'll cry",
         "The government can't steal my thoughts because I haven't got any",
-        "Money Tip: If you don't pay into either your retirement or your health insurance, you won't need either",
+        "Personal Finance Tip: If you don't pay into your retirement fund or health insurance, you won't need either of them",
         "Raised by a man whose most-endorsed skill on LinkedIn is “Interrogation”",
         // "Incorrectly voted “Next Prophet” by my early-morning seminary cohort",
         "Described by my third-grade teacher as “lazy, but efficient”",
