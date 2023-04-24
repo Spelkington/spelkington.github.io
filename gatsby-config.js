@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Chaotic Good Software",
+    title: "Chaotic Good Computing",
     author: {
       name: "Spencer Elkington",
       summary:
@@ -215,7 +215,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Chaotic Good Software",
+        name: "Chaotic Good Computing",
         short_name: "CGA",
         start_url: "/",
         background_color: "#ffffff",
