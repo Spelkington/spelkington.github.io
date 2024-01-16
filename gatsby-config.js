@@ -67,7 +67,7 @@ module.exports = {
         "My third-grade teacher as “lazy, but efficient”",
         "The long hair and beard is more “laziness” than “purposeful stylistic choice”",
         "Proud owner of a ROBLOX account that is old enough to drive",
-        "Learning stenography hasn't make my code better, but it has made me bad, faster",
+        "Learning stenography hasn't made my code better, but it has made me bad, faster",
         "SQL is pronounced “Squeal”",
         "My goal is to be funny enough for my therapist to work pro bono",
         "TCP throttling is just Prisoner's Dilemma for network engineers",
