@@ -27,10 +27,11 @@ module.exports = {
           label: "LinkedIn",
           link: "https://linkedin.com/in/spelkington",
         },
-        {
-          label: "Contact",
-          link: "mailto:business+fromwebsite@chaoticgood.computer?subject=Regarding%20[TOPIC]&body=Hi,%20Spencer!",
-        },
+        // TODO: Adjust either margins or nav size (automate) to account for third entry
+        // {
+        //   label: "Contact",
+        //   link: "mailto:business+fromwebsite@chaoticgood.computer?subject=Regarding%20[TOPIC]&body=Hi,%20Spencer!",
+        // },
       ],
       flavorTexts: [
         "Do you think God lives in Heaven because He, too, lives in fear of what He's created?",
