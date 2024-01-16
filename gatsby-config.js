@@ -8,7 +8,7 @@ module.exports = {
     },
     description:
       "A collection of rants and soft tutorials on programming, math, and economics",
-    siteUrl: "https://spelkington.github.io",
+    siteUrl: "https://blog.chaoticgood.computer",
     social: {
       twitter: "spelkington",
     },
