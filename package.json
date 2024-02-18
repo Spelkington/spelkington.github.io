@@ -1,17 +1,18 @@
 {
-  "name": "@jackyzha0/quartz",
-  "description": "🌱 publish your digital garden and notes as a website",
+  "name": "@spelkington/chaoticgood.computer",
+  "description": "TODO",
   "private": true,
   "version": "4.2.2",
   "type": "module",
-  "author": "jackyzha0 <j.zhao2k19@gmail.com>",
+  "author": "spelkington <dev@chaoticgood.computer>",
   "license": "MIT",
-  "homepage": "https://quartz.jzhao.xyz",
+  "homepage": "https://chaoticgood.computer",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jackyzha0/quartz.git"
+    "url": "https://github.com/spelkington/spelington.github.io.git"
   },
   "scripts": {
+    "serve": "npx quartz build --serve",
     "docs": "npx quartz build --serve -d docs",
     "check": "tsc --noEmit && npx prettier . --check",
     "format": "npx prettier . --write",
@@ -23,12 +24,7 @@
     "node": ">=18.14"
   },
   "keywords": [
-    "site generator",
-    "ssg",
-    "digital-garden",
-    "markdown",
-    "blog",
-    "quartz"
+    "blog"
   ],
   "bin": {
     "quartz": "./quartz/bootstrap-cli.mjs"
