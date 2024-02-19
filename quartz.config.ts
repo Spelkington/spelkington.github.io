@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "Chaotic Good Computing",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -16,6 +16,8 @@ const config: QuartzConfig = {
     theme: {
       cdnCaching: true,
       typography: {
+        title: "Doodle Speens",
+        flavor: "Doodle Speens",
         header: "Schibsted Grotesk",
         body: "Source Sans Pro",
         code: "IBM Plex Mono",

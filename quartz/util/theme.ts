@@ -11,6 +11,8 @@ export interface ColorScheme {
 
 export interface Theme {
   typography: {
+    title: string
+    flavor: string
     header: string
     body: string
     code: string
