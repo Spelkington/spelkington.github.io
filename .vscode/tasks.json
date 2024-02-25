@@ -1,0 +1,12 @@
+{
+   "version": "2.0.0",
+   "tasks": [
+      {
+         "label": "Run Yarn Serve",
+         "type": "shell",
+         "command": "yarn",
+         "args": ["serve"],
+         "problemMatcher": []
+      }
+   ]
+}
