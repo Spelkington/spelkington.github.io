@@ -2,11 +2,21 @@
    "version": "2.0.0",
    "tasks": [
       {
-         "label": "Run Yarn Serve",
-         "type": "shell",
+         "label": "Start Yarn: Serve",
+         "type": "process",
          "command": "yarn",
-         "args": ["serve"],
-         "problemMatcher": []
-      }
+         "args": ["serve", "-d", "${input:subContext}"],
+         "problemMatcher": [],
+         "isBackground": true
+      },
+   ],
+   "inputs": [
+      {
+         "id": "subContext",
+         "type": "pickString",
+         "description": "Select the sub-context you'd like to serve:",
+         "options": ["content", "docs"],
+         "default": "content"
+      },
    ]
 }

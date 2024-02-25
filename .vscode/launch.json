@@ -1,0 +1,59 @@
+{
+  "configurations": [
+
+    {
+      "type": "msedge",
+      "name": "Launch Microsoft Edge",
+      "request": "launch",
+      "runtimeArgs": [
+        "--remote-debugging-port=9222"
+      ],
+      "url": "http://localhost:8080", // Provide your project's url to finish configuring
+      "presentation": {
+        "hidden": true
+      }
+    },
+    {
+      "type": "msedge",
+      "name": "Launch Microsoft Edge in headless mode",
+      "request": "launch",
+      "runtimeArgs": [
+        "--headless",
+        "--remote-debugging-port=9222"
+      ],
+      "url": "http://localhost:8080", // Provide your project's url to finish configuring
+      "presentation": {
+        "hidden": true
+      }
+    },
+    {
+      "type": "vscode-edge-devtools.debug",
+      "name": "Open Edge DevTools",
+      "request": "attach",
+      "url": "http://localhost:8080", // Provide your project's url to finish configuring
+      "presentation": {
+        "hidden": true
+      }
+    },
+  ],
+  "compounds": [
+    {
+      "name": "Launch Edge Headless and attach DevTools",
+      "configurations": [
+        "Launch Microsoft Edge in headless mode",
+        "Open Edge DevTools"
+      ],
+      "preLaunchTask": "Start Yarn: Serve",
+      "postDebugTask": "Stop Yarn: Serve",
+    },
+    {
+      "name": "Launch Edge and attach DevTools",
+      "configurations": [
+        "Launch Microsoft Edge",
+        "Open Edge DevTools"
+      ],
+      "preLaunchTask": "Yarn: Serve",
+      "postDebugTask": "Kill Process on Port 8080"
+    }
+  ]
+}

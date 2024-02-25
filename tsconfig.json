@@ -14,6 +14,7 @@
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
+    "sourceMap": true
   },
   "include": ["**/*.ts", "**/*.tsx", "./package.json"],
   "exclude": ["build/**/*.d.ts"],
