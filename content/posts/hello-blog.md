@@ -3,6 +3,7 @@ title: Hello, Blog! Tales from the pre-CGC blog
 date: 2021-07-28
 tags:
 ---
+
 Look at that - a whole blog, just for me! At this rate, the last thing I need to do to be a *real* tech guru is start a podcast.
 
 I'm starting this page as a place to talk about my cool projects, dumb thoughts, and other odds-and-ends aspects about my life and work.
