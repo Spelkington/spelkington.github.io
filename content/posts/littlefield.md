@@ -67,7 +67,7 @@ Our target for the first round of web scraping is going to be the Littlefield da
 
 ![[lf_dataview.png]]
 
-(as an aside, every time you open a data view, it annoyingly opens as an *entirely new window*, which means playing Littlefield often looks like [this](./clutter.png))
+(as an aside, every time you open a data view, it annoyingly opens as an *entirely new window*, which means playing Littlefield often looks like [this](clutter.png))
 
 I can *always* appreciate a clean-looking graph.
 
