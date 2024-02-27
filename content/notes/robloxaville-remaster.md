@@ -4,6 +4,9 @@ date: 2024-02-25
 updated: 2024-02-25
 tags:
   - roblox
+  - lua
+  - games
+  - engineering
 draft: false
 ---
 When I was in high school, [[robloxaville|I dabbled a bit in programming on Roblox]]. Due to some [pretty glaring security concerns](https://www.investopedia.com/over-under-bet-5217714), a project started over the summer of 2017 to remaster Robloxaville. I'll be the first to admit that [the remaster](https://www.roblox.com/games/272941/Robloxaville) is *substantially* less fun to play than the original. While part of this constraint was time - the original was made over the course of ~4 years, while the remaster was made in ~3 months - it's undeniable that the velocity of the original project was simply far higher because it was [[over-under-engineering|under-engineered]].

@@ -4,13 +4,13 @@ date: 2024-02-25
 updated: 2024-02-25
 tags:
   - engineering
+  - gremlin-slaying
 draft: false
 ---
-## Core thoughts on over-engineering
 
 > > > > ~~Premature optimization~~ **Over-engineering** is the root of all evil
-> > > -- [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)
-> > -- [Sir Tony Hoare](https://ubiquity.acm.org/article.cfm?id=1513451)
+> > > -- [~~Donald Knuth~~](https://en.wikipedia.org/wiki/Donald_Knuth)
+> > -- [~~Sir Tony Hoare~~](https://ubiquity.acm.org/article.cfm?id=1513451)
 > -- Me, just now
 
 I think that over-engineering is the single greatest contributor to starting projects and never finishing them.
@@ -29,7 +29,7 @@ I can name 4 periods of my life where the amount I learned about engineering gre
 
 1. **2016**: I began studying computer science in my undergraduate
 2. **2018**: In trying to build up my resume, I started taking writing open-source and release-able projects more seriously
-3. **2020**: I got my first full-time job as a data analyst writing data pipelines in [[Python]]
+3. **2020**: I got my first full-time job as a data analyst/software engineer writing data pipelines in [[python|Python]] and [[structured-streaming|Spark]]
 4. **2023**: I got my second full-time job writing general software in [[csharp|C#]], with incredibly smart capital-E Engineers™ that were also incredibly good mentors
 
 While it feels great to know more, learning has caused me a fundamental issue: **it's easier to be bad at something on accident than on purpose.**

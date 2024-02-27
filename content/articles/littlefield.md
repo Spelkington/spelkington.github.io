@@ -1,15 +1,21 @@
 ---
 title: Zen, and the Art of Laziness
-date: "2021-08-28"
-tags: ~
+date: 2021-08-28
+tags:
+  - economics
+  - python
+  - visualizations
+  - data
+  - engineering
+  - games
 ---
-I am *awful* at sticking to a routine - the only thing I can bear to check on every day is Twitter. Even if it means spending twice as long over the course of a weekend, I will *always* try to find a way to automate away routine manual work.
+[[season-of-rhythm|I am awful at sticking to routines]] - the only thing I can bear to check on every day is Twitter. Even if it means spending twice as long over the course of a weekend, I will *always* try to find a way to automate away routine manual work.
 
 (All of the code used in this post can be found [here.](https://github.com/Spelkington/LittlefieldDriver/blob/main/ipynb/driver.ipynb))
 
 ## Too much time to kill
 
-This Monday, I started the last major semester of my undergraduate career. That's right, folks - after six years, four program changes, and [one brain surgery](https://youtu.be/lMFQp3wN-cg?t=521) (which, in my personal opinion, is one too many), I will *finally* be wrapping up my degree!
+This Monday, I started the last major semester of [[qamo|my undergraduate career]]. That's right, folks - after six years, four program changes, and [[stability-of-marriage|one brain surgery]] (which, in my personal opinion, is one too many), I will *finally* be wrapping up my degree!
 
 My last two semesters will be my first part-time courseloads of my academic career, which leaves me quite a bit of extra time. Given that there's not much to do during the quaran*time*, I took a bit of extra time to go over the top in a class I'm taking on operations and supply chain management.
 
@@ -92,14 +98,14 @@ Day 4: ...
 
 Thankfully, the data is delivered in the same way for every single data page, from the orders received to the utilization of each station. All we have to do is write the code once, give the program all the data pages, and let it run. Instead of one string of data, we can tell it to put the data in nice, neat *human-readable* columns like this:
 
-| Day         | JOBIN       |
-| ----------- | ----------- |
-| 1           | 1           |
-| 2           | 1           |
-| 3           | 2           |
-| 4           | 2           |
-| 5           | 3           |
-| 6           | 3           |
+| Day | JOBIN |
+| --- | ----- |
+| 1   | 1     |
+| 2   | 1     |
+| 3   | 2     |
+| 4   | 2     |
+| 5   | 3     |
+| 6   | 3     |
 
 After scraping every single page of data in the game, we can smash it all together and get a *beautiful* chart!
 

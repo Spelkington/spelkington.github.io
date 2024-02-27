@@ -1,12 +1,13 @@
 ---
 title: The Unbearable Weight of ROBLOX Celebrity
-date: "2021-08-05"
-tags: ~
+date: 2021-08-05
+tags:
+  - roblox
+  - lua
+  - engineering
+  - games
 ---
 Guilty confession: I've had a ROBLOX account for 14 years. At 23 years old, that's *more than half my life.* After picking up development again in 2021, I've had quite the walk through memory lane.
-
-**UPDATE 9/16:** Removed profanity. I cannot expose the children to such atrocities.
-
 ## Being a dork is a lifetime commitment
 
 Flash back to 2007: Spencer Elkington, 4th grade extraordinaire. Oh, to be at my *peak* again. While I appreciate that secondary schools mandate that all kids have a well-rounded curriculum to introduce them to a wide span of different fields of study, I can safely say that one of my *least* favorite classes was art. While I didn't *not* enjoy spending an hour cutting, painting, gluing, and molding, there are only so many burnt ceramics and skewed portraits I could churn out before they - and my parents to whom that "art" was gifted - realized that *perhaps* a budding patronage in the fine arts wasn't going to be in the cards for me.
@@ -23,7 +24,7 @@ With a background in coding from her physics, geology, and chemistry studies at 
 
 *Original Robloxaville thumbnail, 2008*
 
-This success was in no small part due to a feature she developed in 2009 called **Morph Magic**, a wildly clever, wildly hack-y workaround she discovered to modify the underlying skeleton of the ROBLOX player model and transform players into fully-animated dogs, cats, giants, or any of a dozen other models. The *ad-hoc* rigging method originally used in **Morph Magic** was the only method for modifying the player skeleton until ROBLOX added official rigging support - *six years later.* Watching millions of people enjoyed my mom's masterpiece is what made me get into coding - first as a playtester, then as a (*very* amateur) contributer, and finally culminating in me remastering the project in 2016.
+This success was in no small part due to a feature she developed in 2009 called **Morph Magic**, a wildly clever, wildly hack-y workaround she discovered to modify the underlying skeleton of the ROBLOX player model and transform players into fully-animated dogs, cats, giants, or any of a dozen other models. The *ad-hoc* rigging method originally used in **Morph Magic** was the only method for modifying the player skeleton until ROBLOX added official rigging support - *six years later.* Watching millions of people enjoyed my mom's masterpiece is what made me get into coding - first as a play tester, then as a (*very* amateur) contributor, and finally [[robloxaville-remaster|remastering the project in 2017]].
 
 Like I said: the biggest, coolest dork I have ever met and will ever meet.
 

@@ -1,7 +1,7 @@
 ---
 title: TODO
-date: {{ date:YYYY-MM-DD }}
-updated: {{ date:YYYY-MM-DD }}
+date: {{date}}
+updated: {{date}}
 tags:
   - TODO
 draft: false

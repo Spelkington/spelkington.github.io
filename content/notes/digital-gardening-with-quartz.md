@@ -2,7 +2,9 @@
 title: TODO
 date: 2024-02-25
 tags:
-  - TODO
+  - engineering
+  - typescript
+  - gremlin-slaying
 draft: false
 ---
 I've decided that I'm pretty bad at capital-B Blogging™. The last "post" I made (as of writing) was [[structured-streaming|the Databricks guest on Spark Structured Streaming]] that I did back when I worked at M Science in 2022. That particular post went through a few different stages of revisions:
@@ -14,6 +16,8 @@ I've decided that I'm pretty bad at capital-B Blogging™. The last "post" I mad
 5. Revising the "legally final" draft with Databricks' blog team to make sure the formatting was right (which I didn't do a good job of - the [final published draft](https://www.databricks.com/blog/2022/07/14/using-spark-structured-streaming-to-scale-your-analytics.html#:~:text=With%5C%20your%5C%20new%5C%20aggregated%5C%20data%5C%2C%5C%20you%5C%20can%5C%20throw%5C%20together%5C%20a%5C%20nice%5C%20visualization%5C%20to%5C%20do...%5C%20business%5C%20things) ended up having some weird formatting errors. Not totally sure what happened there `¯\_(ツ)_/¯` )
 
 That was quite a bit more than I'd expected when initially pitching "What if we published our internal guide for everybody?". That, along with starting a new job that introduced me to a far higher standard for engineering, raised my own internal bar for "what should I put on the internet?" Since then, I've written quite a few posts that I'd describe as ~60% "done," but didn't end up hurdling internal (and arbitrary) bar for publishing.
+
+Considering [[hello-blog|the editorial standards I started this blog with]], the idea that I've had any bar at all is a bit funny.
 
 ## The cost of learning is teaching
 
