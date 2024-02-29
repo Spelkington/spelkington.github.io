@@ -1,13 +1,13 @@
 ---
-title: TODO
+title: Kicking off a Digital Garden with Quartz
 date: 2024-02-25
 tags:
   - engineering
   - typescript
-  - gremlin-slaying
+  - gremlin-kicking
 draft: false
 ---
-I've decided that I'm pretty bad at capital-B Blogging™. The last "post" I made (as of writing) was [[structured-streaming|the Databricks guest on Spark Structured Streaming]] that I did back when I worked at M Science in 2022. That particular post went through a few different stages of revisions:
+I've decided that I'm pretty bad at capital-B Blogging™. The last "post" I made (as of writing) was [[structured-streaming|the Databricks guest post on Spark Structured Streaming]] that I did back when I worked at M Science in 2022. That particular post went through a few different stages of revisions:
 
 1. Revising initial drafts as I learned more about Structured Streaming as a concept
 2. Revising "personally final" drafts with the Structured Streaming engineering team at Databricks
@@ -27,8 +27,8 @@ I was fortunate enough to stumble on [Maggie Appleton's Ethos on Digital Gardeni
 
 ![Maggie Appleton's diagram of digital media on a spectrum of polish, ranging from chaos to cultivated, with digital gardening between "private notes" and "classic blog posts](https://res.cloudinary.com/dg3gyk0gu/image/upload/c_scale,f_auto,q_auto:good,w_1100/v1593765637/maggieappleton.com/notes/garden-history/digital-garden.png)
 
-> **brief aside**: Maggie brings a level of polish and class to doodling that is [[structured-streaming#What do we do when our data grows?|frankly enviable]].
+> **brief aside**: Maggie brings a level of polish and class to doodling that is [[structured-streaming#Using Spark Structured Streaming|frankly enviable]].
 
-## The cost of perfection is infinite.
+## The cost of perfection is infinite
 
 Putting things on a spectrum of "chaos" to "cultivated", in conjunction with the idea that ["the cost of perfection is infinite"](https://youtube.com/clip/Ugkx9fkAb69oHPNZ3EDJPCJxPfWbBdyrI8OO?si=rh3P1LQ8pOkT4Nja) (if not asymptotic), puts into hardly-uncertain terms that simply because a thing is not perfect, or close to it, necessarily means that it is unhelpful and should die a slow death in a draft bin.

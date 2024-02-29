@@ -1,5 +1,5 @@
 ---
 title: TODO
 tags:
-  - TODO
+  - template
 ---

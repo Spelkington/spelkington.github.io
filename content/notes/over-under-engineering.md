@@ -4,7 +4,7 @@ date: 2024-02-25
 updated: 2024-02-25
 tags:
   - engineering
-  - gremlin-slaying
+  - gremlin-kicking
 draft: false
 ---
 
@@ -44,4 +44,3 @@ $$(1.00 - 0.30)^5 = 0.16$$
 
 <!-- TODO: A doodle graph here would be nice. -->
 <!-- TODO: Heatmap of % time spent at the start of the project to % time saved? -->
-

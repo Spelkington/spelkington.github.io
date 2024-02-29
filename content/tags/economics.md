@@ -1,6 +1,4 @@
 ---
 title: Economics
-tags:
-  - data
-  - "#visualizations"
+tags: []
 ---

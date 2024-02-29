@@ -3,7 +3,7 @@ title: "Caveat Lector: Reader Beware"
 date: 2024-02-27
 updated: 2024-02-27
 tags:
-  - "#quartz"
+  - gardening
 draft: false
 ---
 The past few days have been a weird experience as I actively try to lower the internal bar for what I feel comfortable putting out into the world. As a proud member of the most terminally online generation to ever live, **I have a deep and relentless fear of being wrong on the Internet.**
@@ -20,7 +20,7 @@ One of my intentions with Chaotic Good Computing is to contribute to the free bo
 - To my knowledge, the things that I'm posting are accurate at the time that I write them down; and
 - If I learn something in the future that corrects something I've written in the past, I'll do my best to make corrections as I find mistakes.
 
-That said, I'm also just *some person on the internet*. I know some things pretty well and other things not-so-much, with a pretty vast in-between. By the very nature of [[digital-gardening-with-quartz|learning in public]], some things here will be straight-up wrong, if not at least not-as-correct-as-they-could-be.
+That said, I'm also just *some person on the internet*. I know some things pretty well and other things not-so-much, with a pretty vast in-between. By the very nature of [[gardening|learning in public]], some things here will be straight-up wrong, if not at least not-as-correct-as-they-could-be.
 
 So, to you, I say:
 

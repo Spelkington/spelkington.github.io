@@ -1,8 +1,10 @@
 ---
 title: TODO
-date: {{date}}
-updated: {{date}}
+date:
+  "{ date }": 
+updated:
+  "{ date }": 
 tags:
-  - TODO
+  - template
 draft: false
 ---

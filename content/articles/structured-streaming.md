@@ -7,6 +7,7 @@ tags:
   - python
   - aws
   - tutorials
+  - visualizations
 ---
 > This post was written during my time as a software engineer at M Science as a joint project with Databricks. You can view the original post [here](https://www.databricks.com/blog/2022/07/14/using-spark-structured-streaming-to-scale-your-analytics.html)
 
