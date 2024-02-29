@@ -9,14 +9,13 @@ import {
   simplifySlug,
 } from "../../util/path"
 
-type NodeData = {
+export type NodeData = {
   id: SimpleSlug
   text: string
-  category: "shell" | "inner" | "outer"
   tags: string[]
 } & d3.SimulationNodeDatum
 
-type LinkData = {
+export type LinkData = {
   source: SimpleSlug
   target: SimpleSlug
 }
@@ -86,7 +85,6 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
   }
 
   const neighbourhood = new Set<SimpleSlug>()
-
   const wl: (SimpleSlug | "__SENTINEL")[] = [slug, "__SENTINEL"]
   if (depth >= 0) {
     while (depth >= 0 && wl.length > 0) {
@@ -109,36 +107,19 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
 
   const graphData: { nodes: NodeData[]; links: LinkData[] } = {
     nodes: [...neighbourhood].map((url) => {
-      // If tag page, cleanup - else title, else url
       const text = url.startsWith("tags/")
         ? "#" + url.substring(5)
         : data.get(url)?.title ?? url
-
-      // Categorize nodes based on shell for tags, outer for external links, inner for internal links
-      let category: "shell" | "inner" | "outer"
-      if (url.startsWith("tags/")) {
-        category = "shell"
-      } else {
-        category = "inner"
-      }
-
       return {
         id: url,
         text: text,
         tags: data.get(url)?.tags ?? [],
-        category: category,
-        x: 0,
-        y: 0,
       }
     }),
     links: links.filter(
       (l) => neighbourhood.has(l.source) && neighbourhood.has(l.target),
     ),
   }
-
-  const height = Math.max(graph.offsetHeight, 250)
-  const width = graph.offsetWidth
-  const radius = Math.min(height, width) / 2
 
   const simulation: d3.Simulation<NodeData, LinkData> = d3
     .forceSimulation(graphData.nodes)
@@ -150,24 +131,10 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
         .id((d: any) => d.id)
         .distance(linkDistance),
     )
-    .force("center", d3.forceCenter(0, 0).strength(centerForce))
-    .force("anchorToShell", (alpha) => {
-      // Filter only the shell nodes
-      var shellNodes = graphData.nodes.filter((d) => d.category === "shell")
-      var numShellNodes = shellNodes.length
+    .force("center", d3.forceCenter().strength(centerForce))
 
-      // Calculate the angle between each node
-      var angleStep = (2 * Math.PI) / numShellNodes
-
-      // Iterate over shell nodes and update their positions
-      shellNodes.forEach((d, i) => {
-        var angle = i * angleStep
-        var targetX = radius * Math.cos(angle)
-        var targetY = radius * Math.sin(angle)
-        d.x = targetX
-        d.y = targetY
-      })
-    })
+  const height = Math.max(graph.offsetHeight, 250)
+  const width = graph.offsetWidth
 
   const svg = d3
     .select<HTMLElement, NodeData>("#" + container)
@@ -180,13 +147,6 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
       width / scale,
       height / scale,
     ])
-
-  const borderCircle = svg
-    .append("circle")
-    .attr("r", radius)
-    .attr("fill", "none")
-    .attr("stroke", "var(--lightgray)")
-    .attr("stroke-width", 2)
 
   // draw links between nodes
   const link = svg
