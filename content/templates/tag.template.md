@@ -1,5 +1,4 @@
 ---
 title: TODO
-tags:
-  - template
+tags: []
 ---
