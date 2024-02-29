@@ -1,3 +1,7 @@
 {
-  "vscode-edge-devtools.webRoot": "${workspaceFolder}/public"
+  "vscode-edge-devtools.webRoot": "${workspaceFolder}/public",
+  "codeswing.launchBehavior": "none",
+  "codeswing.layout": "splitBottom",
+  "codeswing.rootDirectory": "swings",
+  "codeswing.showConsole": true
 }
