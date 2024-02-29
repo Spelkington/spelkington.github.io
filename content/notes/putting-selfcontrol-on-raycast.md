@@ -1,5 +1,5 @@
 ---
-title: Turning SelfControl into SelfRestraint
+title: Watering Down SelfControl into Self Restraint
 date: 2024-02-28
 updated: 2024-02-28
 tags:
