@@ -6,4 +6,4 @@ tags:
   - horticulture
 draft: false
 ---
-when he wrote "brevity is the soul of wit", shakespeare clearly did not consider that someday [[binglish|AI generated briefs would someday consume the english language]]
+when he wrote "brevity is the soul of wit", shakespeare clearly did not consider that someday [[binglish|AI generated briefs would consume the english language]]
