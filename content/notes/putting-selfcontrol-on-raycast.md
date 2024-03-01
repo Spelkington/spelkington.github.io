@@ -37,6 +37,8 @@ Ironically, though, SelfControl requires self control to use, which is [[the-que
 
 I've added a couple of useful bash scripts to a [SelfControl Raycast Plugin](https://github.com/chaoticgoodcomputing/selfcontrol-raycast) for others to use. At some point, I'll look into the process for getting them added to the actual Raycast extension store. You can add these by cloning the repository and adding it in the Raycast settings as a "Script Directory."
 
+![[Pasted image 20240229001915.png]]
+
 **THAT BEING SAID:** I've used the term [[caveat-lector|caveat lector]] quite a bit to warn people that I'm just some guy. This goes doubly here! This is software that has literally only been tested, by me, a handful of times, that I made while (ironically) procrastinating [[2024-02-28#E-Block|other things I should be working on]]. *To say it isn't well-tested would be a dramatic understatement.* The creators of SelfControl [warn that it's a tool that, if misused, can have side effects](https://github.com/SelfControlApp/selfcontrol/wiki/FAQ#q-selfcontrols-timer-is-at-finishing-and-i-cant-access-my-websites-and-im-freaking-out). So to that end... what would the phrase even be?
 
 ![[Pasted image 20240228194431.png]]

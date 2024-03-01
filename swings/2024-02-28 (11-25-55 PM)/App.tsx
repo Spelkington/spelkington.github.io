@@ -9,6 +9,7 @@ import {
 import { NodeData, LinkData } from "../../quartz/components/scripts/graph.inline"
 import { ContentDetails } from "../../quartz/plugins/emitters/contentIndex"
 
+
 export default function App() {
    return <div>Hello world</div>;
 }

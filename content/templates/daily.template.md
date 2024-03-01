@@ -14,15 +14,15 @@ N/A
 
 ### B-Block
 
--  
+- N/A
 
 ### M-Block
 
--
+- N/A
 
 ### E-Block
 
--
+- N/A
 
 ## Today's Report
 

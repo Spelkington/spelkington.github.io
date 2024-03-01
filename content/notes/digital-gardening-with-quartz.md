@@ -5,15 +5,16 @@ tags:
   - engineering
   - typescript
   - gremlin-kicking
+  - horticulture
 draft: false
 ---
 I've decided that I'm pretty bad at capital-B Blogging™. The last "post" I made (as of writing) was [[structured-streaming|the Databricks guest post on Spark Structured Streaming]] that I did back when I worked at M Science in 2022. That particular post went through a few different stages of revisions:
 
 1. Revising initial drafts as I learned more about Structured Streaming as a concept
 2. Revising "personally final" drafts with the Structured Streaming engineering team at Databricks
-3. Revising "technically final" drafts with somebody from the M Science internal marketing team to make sure I didn't sound like a doofus/didn't make it seem like M Science hired doofuses
+3. Revising "technically final" drafts with somebody from our company's internal marketing team to make sure I didn't sound like a doofus/didn't make it seem like the company hired doofuses (it hired me, so it *totally* did, but that's obviously not something to broadcast openly)
 4. Revising the "marketing final" draft with a lawyer to make sure I wasn't blabbing trade secrets to the general public
-5. Revising the "legally final" draft with Databricks' blog team to make sure the formatting was right (which I didn't do a good job of - the [final published draft](https://www.databricks.com/blog/2022/07/14/using-spark-structured-streaming-to-scale-your-analytics.html#:~:text=With%5C%20your%5C%20new%5C%20aggregated%5C%20data%5C%2C%5C%20you%5C%20can%5C%20throw%5C%20together%5C%20a%5C%20nice%5C%20visualization%5C%20to%5C%20do...%5C%20business%5C%20things) ended up having some weird formatting errors. Not totally sure what happened there `¯\_(ツ)_/¯` )
+5. Revising the "legally final" draft with Databricks' blog team to make sure the formatting was right (which I didn't do a good job of, apparently - the [final published draft](https://www.databricks.com/blog/2022/07/14/using-spark-structured-streaming-to-scale-your-analytics.html) ended up having some weird formatting errors. Not totally sure what happened there ¯\\_(ツ)_/¯ )
 
 That was quite a bit more than I'd expected when initially pitching "What if we published our internal guide for everybody?". That, along with starting a new job that introduced me to a far higher standard for engineering, raised my own internal bar for "what should I put on the internet?" Since then, I've written quite a few posts that I'd describe as ~60% "done," but didn't end up hurdling internal (and arbitrary) bar for publishing.
 
@@ -32,3 +33,5 @@ I was fortunate enough to stumble on [Maggie Appleton's Ethos on Digital Gardeni
 ## The cost of perfection is infinite
 
 Putting things on a spectrum of "chaos" to "cultivated", in conjunction with the idea that ["the cost of perfection is infinite"](https://youtube.com/clip/Ugkx9fkAb69oHPNZ3EDJPCJxPfWbBdyrI8OO?si=rh3P1LQ8pOkT4Nja) (if not asymptotic), puts into hardly-uncertain terms that simply because a thing is not perfect, or close to it, necessarily means that it is unhelpful and should die a slow death in a draft bin.
+
+<!-- TODO: There was some more stuff I want to write here but I'm going to sleep instead. -->
