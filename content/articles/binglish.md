@@ -8,8 +8,8 @@ tags:
 draft: false
 ---
 > **binglish**
-> *bing·lish*
-> *noun*
+> 
+> *bing·lish*, *noun*
 > 
 >  - The default writing style of generative AI text models.
 >  - Shorthand for a median style of writing, devoid of personality.
