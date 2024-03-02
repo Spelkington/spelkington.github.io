@@ -12,7 +12,7 @@ This cycle is called **"The Gremlin"**
 
 I hate The Gremlin. The Gremlin makes me sad. The Gremlin stops me from doing the things that make me happy. Every day, I have to actively re-remember how much I hate The Gremlin, and how much happier I am when it's gone, so I try my best to kick The Gremlin.
 
-I *also* hate the word "productivity." There's a sort of LinkedIn-centric slice of society that has built up the neutrality as an honest days' work as a divinely-capitalized entity: Productivity™. It elicits (in me, personally) the visceral feeling I get when I see hustle-culture, rise-and-grind, success-is-a-choice-and-failure-is-your-fault types - the ones that farm for engagement by repeating gross approximations of quotes from self-help books that have been Human Centipede'd from one hustler to another.
+I *also* hate the word "productivity." There's a sort of LinkedIn-centric slice of society that has built up the neutrality as an honest days' work as a divinely-capitalized entity: Productivity™. It elicits (in me, personally) the visceral feeling I get when I see hustle-culture, rise-and-grind, success-is-a-choice-and-failure-is-your-fault types - the ones that farm for engagement by repeating gross approximations of quotes from self-help books that have been Human Centipede'd from one hustler to another. ^9d3b38
 
 *That being said* - productivity tools are some of my most reliable Gremlin-kicking weapons. This leaves me feeling very conflicted. Absent the weird Soylent-chugging culture that has formed around capital-P Productivity™, I would be in (and have been to) a *really* rough place without the productivity tools and habits I've tried my best to use and form in my quest to kick The Gremlin.
 
