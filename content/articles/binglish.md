@@ -1,5 +1,5 @@
 ---
-title: The Death of the Binglish Language
+title: Binglish as a Dead Language (BaaDL)
 date: 2024-03-01
 updated: 2024-03-01
 tags:
