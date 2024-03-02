@@ -6,7 +6,7 @@ tags:
   - economics
   - python
 ---
-In college, my area of [[qamo|my economics degree]] was **non-market environments**, which encompass the areas of economics where money isn't used for moral or practical reasons.
+In college, my area of focus during [[qamo|my economics degree]] was **non-market environments**, which encompass the areas of economics where money isn't used for moral or practical reasons.
 
 A presentation I'm particularly proud of is a presentation on David Gale and Lloyd Shapley's 1962 paper [College Admissions and the Stability of Marriage](https://www.eecs.harvard.edu/cs286r/courses/fall09/papers/galeshapley.pdf)
 
