@@ -18,7 +18,7 @@ A good napkin example would be a buyer and seller of digital LCD displays. In th
 One of my intentions with Chaotic Good Computing is to contribute to the free body of knowledge I've benefitted immensely from myself, but to do so in a way that both fits my style and my habits better than traditional blogging or educational entertainment. The commitments that I'm making to you, the reader, are:
 
 - To my knowledge, the things that I'm posting are accurate at the time that I write them down; and
-- If I learn something in the future that corrects something I've written in the past, I'll do my best to make corrections as I find mistakes.
+- If I learn something in the future that corrects something I've written in the past, I'll do my best to make corrections as I find mistakes. ^b786f5
 
 That said, I'm also just *some person on the internet*. I know some things pretty well and other things not-so-much, with a pretty vast in-between. By the very nature of [[horticulture|learning in public]], some things here will be straight-up wrong, if not at least not-as-correct-as-they-could-be.
 
