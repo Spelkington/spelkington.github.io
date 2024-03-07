@@ -1,5 +1,8 @@
 {
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "/assets",
-  "vimMode": true
+  "vimMode": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "notes",
+  "readableLineLength": true
 }

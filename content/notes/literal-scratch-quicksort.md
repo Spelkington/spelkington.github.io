@@ -8,7 +8,7 @@ tags:
   - scratch
 draft: false
 ---
-As an addendum to the [[literal-scratch-piano|Scratch Piano Application]], I also around the same time cooked up an implementation of QuickSort.
+As an addendum to the [[literal-scratch-piano|Scratch Piano Application]], I also around the same time cooked up an implementation of QuickSort. At my partner's recent swim meet I sat next to [[]]
 
 <iframe src="https://scratch.mit.edu/projects/236670084/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
