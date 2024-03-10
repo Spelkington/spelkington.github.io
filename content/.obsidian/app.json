@@ -4,5 +4,14 @@
   "vimMode": true,
   "newFileLocation": "folder",
   "newFileFolderPath": "notes",
-  "readableLineLength": true
+  "readableLineLength": true,
+  "spellcheckDictionary": [
+    "Wrapt",
+    "Wrapt",
+    "VSA",
+    "NWYC",
+    "VSA",
+    "Flamework",
+    "yoink"
+  ]
 }
