@@ -54,3 +54,10 @@ export const defaultListPageLayout: PageLayout = {
   ],
   right: [],
 }
+
+// components for pages that display lists of pages  (e.g. tags or folders)
+export const landingPageLayout: PageLayout = {
+  beforeBody: [Component.PageTitle(), Component.Search(), Component.Graph()],
+  left: [],
+  right: [],
+}

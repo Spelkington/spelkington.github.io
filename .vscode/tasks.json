@@ -5,10 +5,18 @@
          "label": "Start Yarn: Serve",
          "type": "process",
          "command": "yarn",
-         "args": ["serve", "-d", "${input:subContext}"],
+         "args": [
+            "serve",
+            "-d",
+            "${input:subContext}"
+         ],
          "problemMatcher": [],
-         "isBackground": true
-      },
+         "isBackground": true,
+         "group": {
+            "kind": "build",
+            "isDefault": true
+         }
+      }
    ],
    "inputs": [
       {
