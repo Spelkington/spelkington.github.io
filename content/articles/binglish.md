@@ -8,12 +8,12 @@ tags:
 draft: false
 ---
 ## Binglish
-> 
+>
 > *bing·lish*, *noun* (derogatory)
-> 
->  - The default writing style of generative AI text models. (derogatory)
->  - Shorthand for a median style of writing, devoid of personality. (derogatory)
->  - The way that a monkey's paw would grant Microsoft's wish to finally give Bing a generic English term like lowercase-g "google" (very derogatory)
+>
+> - The default writing style of generative AI text models. (derogatory)
+> - Shorthand for a median style of writing, devoid of personality. (derogatory)
+> - The way that a monkey's paw would grant Microsoft's wish to finally give Bing a generic English term like lowercase-g "google" (very derogatory)
 
 In writing a bit more, I've been back-and-forth on the extent to which I want to swear. The style of my writing is more-or-less the way that I speak out loud (which prompted a lot of "couldn't you make this a bit more professional?" feedback on the [[structured-streaming|Databricks post]]), and **when I speak out loud, I swear.** Obviously, the frequency depends - at work it's sparse (but not nil), on a personal level it's pretty frequent - but I do still pepper it in for effect in some places. The only times I can remember *not* swearing is when I was teaching math to K-12 students, and when writing posts here.
 
@@ -39,7 +39,7 @@ For the purposes of this note, I am going to refer to this type of language as *
 
 Binglish, to me, can be described in a few ways:
 
-- It's **Business English**. Office English. [[the-quest-to-kick-the-gremlin#^9d3b38|LinkedIn™]] English. I hope, to those of you reading who have also worked a traditional office job, that you can recognize this shorthand as the type of thing that you'd find in your Outlook inbox;
+- It's **Business English**. Office English. [[the-quest-to-slay-the-goblin#^9d3b38|LinkedIn™]] English. I hope, to those of you reading who have also worked a traditional office job, that you can recognize this shorthand as the type of thing that you'd find in your Outlook inbox;
 - It's **Boring English**. It's the median of the language, absent of all personality or human voice; and
 - It's **Bing English**. Meant to half-heartedly celebrate Microsoft's role in solidifying what is very likely a [self-consuming business model](https://www.youtube.com/watch?v=Si_mGxIzHlU) , poised to consume the very medium it was trained on, this is the type of English that we (currently) see from Bing Copilot, ChatGPT, Gemini, and others
 
@@ -79,4 +79,4 @@ As far as I'm concerned, my responsibility is to ensure that the text is readabl
 
 And if it's not search-engine optimized, or tonally non-neutral, or long-winded? if it contains foul language?
 
-***¯\\_(ツ)_/¯ fuck it.***
+***¯\\*(ツ)*/¯ fuck it.***

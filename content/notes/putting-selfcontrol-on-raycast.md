@@ -3,7 +3,7 @@ title: Watering Down SelfControl into Self Restraint
 date: 2024-02-28
 updated: 2024-02-28
 tags:
-  - gremlin-kicking
+  - goblin-slaying
   - "#engineering"
   - bash
 draft: false
@@ -28,7 +28,7 @@ To alleviate that for awhile, I had used a Chrome-specific app called StayFocuse
 
 I ended up uninstalling it and going with something a bit heavier-duty. [SelfControl](https://selfcontrolapp.com/) is an application for MacOS that blocks out apps across the entire operating system. I had also seen [Focus](https://heyfocus.com/) listed as a possible solution, but... *$49?* For effectively the same thing with a prettier interface? *yeesh.*
 
-Ironically, though, SelfControl requires self control to use, which is [[the-quest-to-kick-the-gremlin|exactly what got me in this situation to begin with]]. It is *incredibly* easy to "take a break" and then *just-a-couple-more-minutes* yourself out of any semblance of flow. As a nice surprise, though, [SelfControl comes with a CLI](https://github.com/SelfControlApp/selfcontrol/wiki/Running-SelfControl-from-the-Terminal), which means we can use it for some more advanced workflows! We can use this to do two things:
+Ironically, though, SelfControl requires self control to use, which is [[the-quest-to-slay-the-goblin|exactly what got me in this situation to begin with]]. It is *incredibly* easy to "take a break" and then *just-a-couple-more-minutes* yourself out of any semblance of flow. As a nice surprise, though, [SelfControl comes with a CLI](https://github.com/SelfControlApp/selfcontrol/wiki/Running-SelfControl-from-the-Terminal), which means we can use it for some more advanced workflows! We can use this to do two things:
 
 1. Schedule blocks of self-control for the future, e.g. "In 10 minutes, I will focus for 50 minutes"; and
 2. Connect that behavior to [[raycast-review|Raycast]], which will help us lower the bar to starting Raycast (as, admittedly, having to swipe back to the main Mac desktop is a pain in the ass and puts it out-of-the-way)
