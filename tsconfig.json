@@ -15,6 +15,7 @@
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
     "sourceMap": true,
+    "baseUrl": ".",
   },
   "include": ["**/*.ts", "**/*.tsx", "./package.json"],
   "exclude": ["build/**/*.d.ts"],

@@ -21,6 +21,8 @@ import RecentNotes from "./RecentNotes"
 import Breadcrumbs from "./Breadcrumbs"
 import Logo from "./Logo"
 import LineBreak from "./LineBreak"
+import * as LandingPage from "./landing"
+import * as Utilities from "./utilities"
 
 export {
   ArticleTitle,
@@ -46,4 +48,6 @@ export {
   Breadcrumbs,
   Logo,
   LineBreak,
+  LandingPage,
+  Utilities,
 }

@@ -55,9 +55,18 @@ export const defaultListPageLayout: PageLayout = {
   right: [],
 }
 
-// components for pages that display lists of pages  (e.g. tags or folders)
+// Used for the root-level index
 export const landingPageLayout: PageLayout = {
-  beforeBody: [Component.PageTitle(), Component.Search(), Component.Graph()],
+  beforeBody: [
+    Component.Utilities.Centered([
+      Component.LandingPage.TitleLogo(),
+      Component.PageTitle(),
+      Component.Spacer(),
+      Component.Search(),
+    ]),
+    Component.Graph(),
+    Component.Utilities.Centered([Component.ArticleTitle()]),
+  ],
   left: [],
   right: [],
 }
