@@ -2,12 +2,11 @@
 title: Zen, and the Art of Laziness
 date: 2021-08-28
 tags:
-  - economics
-  - python
-  - visualizations
   - data
-  - engineering
   - games
+  - engineering/python
+  - viz
+  - "#economics/market-design"
 ---
 [[season-of-rhythm|I am awful at sticking to routines]] - the only thing I can bear to check on every day is Twitter. Even if it means spending twice as long over the course of a weekend, I will *always* try to find a way to automate away routine manual work.
 

@@ -2,9 +2,9 @@
 title: 'From the Archive: "What *are* Supply Chains, Anyway?"'
 date: 2019-07-01
 tags:
-  - python
-  - economics
-  - visualizations
+  - economics/finance
+  - engineering/python
+  - viz
 updated: 2024-02-27
 ---
 Below, you'll find some graphs. These are what is known in the field of [[visualizations|data visualization]] as "bad."

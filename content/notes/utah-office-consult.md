@@ -2,10 +2,10 @@
 title: 'From the Archive: "Utah Office Consult"'
 date: 2021-03-01
 tags:
-  - consulting
-  - visualizations
-  - python
   - data
+  - engineering/python
+  - viz
+  - economics/consulting
 updated: 2024-02-27
 ---
 <iframe src="https://docs.google.com/gview?url=https://chaoticgood.computer/assets/utah_office_update.pdf&embedded=true"></iframe>

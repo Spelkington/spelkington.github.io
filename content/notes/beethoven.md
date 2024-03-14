@@ -2,8 +2,7 @@
 title: 'From the Archive: "Reading the Room with Beethoven"'
 date: 2019-08-01
 tags:
-  - "#engineering"
-  - typescript
+  - engineering/typescript
 ---
 Beethoven was a project for [HackTheU 2019](https://hacktheu-2019.devpost.com/), where a team and I (mostly the team) created an application for providing live captions to deaf students by using a remote microphone to stream audio and captioning to a user's local device.
 

@@ -3,9 +3,8 @@ title: "From the Archive: Scratch Piano Application"
 date: 2018-07-18
 updated: 2024-03-02
 tags:
-  - engineering
   - mentoring
-  - scratch
+  - engineering/scratch
 draft: false
 ---
 Back in 2018, I taught at the [[2024-03-02#^92e444|GREAT Camp at the University of Utah]] as an instructor for ~4th-6th grade students interested in intro programming in [Scratch](https://scratch.mit.edu/). Honestly, as a CS student at the time, it was actually really cool to try and put things I'd made in actual languages and translate them into Scratch, especially if they required manually implementing data structures like stacks and heaps.

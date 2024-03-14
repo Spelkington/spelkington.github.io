@@ -3,8 +3,8 @@ title: Unstable Marriage
 date: 2024-02-27
 updated: 2024-02-27
 tags:
-  - "#economics"
   - data
+  - economics/market-design
 draft: false
 ---
 I've spent a whole lot of time researching [[stability-of-marriage|matchmaking algorithms]], and yet I'd never considered - didn't even *mention* in the presentation - what would happen in odd-numbered sets.

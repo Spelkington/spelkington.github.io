@@ -3,11 +3,11 @@ title: "Don't Double Down: Using Spark Structured Streaming to Wrangle Growing D
 date: 2022-07-14
 tags:
   - data
-  - engineering
-  - python
-  - aws
-  - tutorials
-  - visualizations
+  - engineering/devops
+  - engineering/python
+  - mentoring/tutorials
+  - viz/doodles
+  - economics/finance
 ---
 > This post was written during my time as a software engineer at M Science as a joint project with Databricks. You can view the original post [here](https://www.databricks.com/blog/2022/07/14/using-spark-structured-streaming-to-scale-your-analytics.html)
 
