@@ -1,5 +1,5 @@
 ---
-title: Notes
+title: Spencer's Notes
 ---
 These are notes - they're things that are structured, albeit not necessarily as structured or refined as [[articles/index|CGC articles]].
 
