@@ -1,5 +1,5 @@
 ---
-title: Binglish as a Dead Language (BaaDL)
+title: "Binglish: The New Normal"
 date: 2024-03-01
 updated: 2024-03-01
 tags:
