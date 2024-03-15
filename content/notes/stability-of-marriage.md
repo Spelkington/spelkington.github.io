@@ -16,4 +16,4 @@ This presentation happened at a personally odd time during a globally odd year, 
 
 There are a few things that were cut for the presentation for time - in particular, the incredibly interesting concept of **matchmaking lattices**. Eventually, I'd like to include some additional written resources here on the topic, because it's pretty cool. One of the cut slides is available [[some1-entry|here.]]
 
-The absolutely incredible [Dr. Allison Stashko](https://sites.google.com/view/allisonstashko/home) is the only reason this presentation was possible - she was incredibly kind and encouraging during a difficult period, and is in large part the reason why non-market environments are my primary interest in economics.
+The absolutely incredible [Dr. Allison Stashko](https://sites.google.com/view/allisonstashko/home) is the only reason this presentation was possible - she was incredibly kind and encouraging during a difficult period, and is in large part the reason why non-market environments are my primary interest in economics. ^635c68

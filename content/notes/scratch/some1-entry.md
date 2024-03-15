@@ -19,7 +19,7 @@ Awhile ago, the channel 3blue1brown announced an internship and public competiti
 Largely taken from [[stability-of-marriage|a presentation on stable matching algorithms]]
 ![[stable_matching_1.png]]
 ![[stable_matching_2.png]]
-![[stable_matching_3.png]]
+![[stable_matching_3.png]] ^77ff26
 
 ## Optimal Stopping Problem
 
