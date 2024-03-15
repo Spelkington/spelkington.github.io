@@ -13,7 +13,7 @@ draft: false
 > - **[[{{date}}#Afternoon Block|Afternoon Block]]**: Afternoon work session - usually the bulk of work. 12pm - 5pm
 > - **[[{{date}}#Evening Block|Evening Block]]**: Evening work session for CGC-related work, 5pm - ???
 
-### M-Block
+### Morning Block
 
 #### {{TASK}}
 
@@ -24,7 +24,7 @@ draft: false
 - **DELIVERABLES:** 
 	1. 
 
-### A-Block
+### Afternoon Block
 
 #### {{TASK}}
 
@@ -35,7 +35,7 @@ draft: false
 - **DELIVERABLES:** 
 	1. 
 
-### E-Block
+### Evening Block
 
 #### {{TASK}}
 
