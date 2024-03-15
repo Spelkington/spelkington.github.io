@@ -2,34 +2,49 @@
 title: "{{date}}"
 date: "{{date}}"
 updated: "{{date}}"
-tags: []
+tags: 
 draft: false
 ---
 ⇐ [[<% tp.date.now("YYYY-MM-DD", -1) %>]] |  [[<% tp.date.now("YYYY-MM-DD", +1) %>]] ⇒
 
 ## Today's Plan
 
-> - **[[{{date}}#M-Block|Morning Block]]**: Morning work session, typically 9am - 12pm
-> - **[[{{date}}#A-Block|Afternoon Block]]**: Afternoon work session - usually the bulk of work. 12pm - 5pm
-> - **[[{{date}}#E-Block|Evening Block]]**: Evening work session for CGC-related work, 5pm - ???
+> - **[[{{date}}#Morning Block|Morning Block]]**: Morning work session, typically 9am - 12pm
+> - **[[{{date}}#Afternoon Block|Afternoon Block]]**: Afternoon work session - usually the bulk of work. 12pm - 5pm
+> - **[[{{date}}#Evening Block|Evening Block]]**: Evening work session for CGC-related work, 5pm - ???
 
 ### M-Block
 
-#### TODO
+#### {{TASK}}
+
+{{Description}}
+
 - **PLAN:** 
+	1. 
 - **DELIVERABLES:** 
+	1. 
 
 ### A-Block
 
-#### TODO
+#### {{TASK}}
+
+{{Description}}
+
 - **PLAN:** 
+	1. 
 - **DELIVERABLES:** 
+	1. 
 
 ### E-Block
 
-#### TODO
+#### {{TASK}}
+
+{{Description}}
+
 - **PLAN:** 
+	1. 
 - **DELIVERABLES:** 
+	1. 
 
 ## Today's Report
 
