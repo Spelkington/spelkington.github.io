@@ -5,29 +5,36 @@ updated: "{{date}}"
 tags: []
 draft: false
 ---
-
-> [[caveat-lector|CAVEAT LECTOR]]: This is a daily note! Sometimes they'll be structured, sometimes they won't. These are more for the benefit of my near- and long-term future self, but I do tend to publish them in case they're somehow helpful for other people.
+⇐ [[<% tp.date.now("YYYY-MM-DD", -1) %>]] |  [[<% tp.date.now("YYYY-MM-DD", +1) %>]] ⇒
 
 ## Today's Plan
 
-N/A
-
-### B-Block
-
-- N/A
+> - **[[{{date}}#M-Block|Morning Block]]**: Morning work session, typically 9am - 12pm
+> - **[[{{date}}#A-Block|Afternoon Block]]**: Afternoon work session - usually the bulk of work. 12pm - 5pm
+> - **[[{{date}}#E-Block|Evening Block]]**: Evening work session for CGC-related work, 5pm - ???
 
 ### M-Block
 
-- N/A
+#### TODO
+- **PLAN:** 
+- **DELIVERABLES:** 
+
+### A-Block
+
+#### TODO
+- **PLAN:** 
+- **DELIVERABLES:** 
 
 ### E-Block
 
-- N/A
+#### TODO
+- **PLAN:** 
+- **DELIVERABLES:** 
 
 ## Today's Report
 
-> To have the full intended experience, please listen to the [Pikmin 2 "Today's Report" theme](https://www.youtube.com/watch?v=l1fCmKZnq3U&list=PLwyW5mbdZMGN8mGTqvDhsBs37SW4TkHcw&index=85) while reading & writing this
+> To have the full intended experience, please listen to the [Pikmin 2 "Today's Report" theme](https://www.youtube.com/watch?v=l1fCmKZnq3U&list=PLwyW5mbdZMGN8mGTqvDhsBs37SW4TkHcw&index=85) while reading
 
 N/A
 
-## Notes
+[^1]: [[caveat-lector|caveat lector]] — This is a daily note! I don't actively maintain any information in daily notes, so please be cautious in following any advice here.

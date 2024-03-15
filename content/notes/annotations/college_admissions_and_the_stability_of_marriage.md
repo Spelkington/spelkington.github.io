@@ -10,7 +10,6 @@ annotation-target: https://www.math.utoronto.ca/mccann/assignments/477/GaleShapl
 ---
 
 
-
 >%%
 >```annotation-json
 >{"text":"This is a little test of something I'd like to do - keeping annotations of papers I've read on the CGC website, provided that they are open-access (which, unfortunately, is not always the case.)\n\nThis is being done with the [Obsidian Annotator](https://github.com/elias-sundqvist/obsidian-annotator) plugin. I have *absolutely no idea* how quartz is going to handle this, so... we'll see! There's a very real chance that this is going to end up being a substantially heavier lift on the frontend and design side than my feeble backend brain can handle. So, if you're seeing this, feel free to pat me on the back for figuring it out (☞ﾟヮﾟ)☞","target":[{"source":"https://www.math.utoronto.ca/mccann/assignments/477/GaleShapley62.pdf","selector":[{"type":"TextPositionSelector","start":0,"end":48},{"type":"TextQuoteSelector","exact":"College Admissions and the Stability of Marriage","prefix":"th50%75%100%125%150%200%300%400%","suffix":"Author(s): D. Gale and L. S. Sha"}]}],"created":"2024-03-14T22:23:53.656Z","updated":"2024-03-14T22:23:53.656Z","document":{"title":"College Admissions and the Stability of Marriage","link":[{"href":"urn:x-pdf:dd0c1fc592ad4dea981aaf84679261c3"},{"href":"https://www.math.utoronto.ca/mccann/assignments/477/GaleShapley62.pdf"}],"documentFingerprint":"dd0c1fc592ad4dea981aaf84679261c3"},"uri":"https://www.math.utoronto.ca/mccann/assignments/477/GaleShapley62.pdf"}
@@ -121,7 +120,7 @@ annotation-target: https://www.math.utoronto.ca/mccann/assignments/477/GaleShapl
 >
 >Ultimately, if you take an analysis of the average placement of the assigner group (in this case, men), you'll see that **the assigner group's average in Gale-Shapley is the highest of all possible stable configurations**.
 >
->Ultimately, if you were to rank-order all possible stable matching sets on the matchmaking lattice on a spectrum of "Benefits Group A" to "Benefits Group B", the outputs of `gale_shapley(A, B)` and `gale_shapley(B, A)` calculate the ends of the lattice.
+>Ultimately, if you were to rank-order all possible stable matching sets on the matchmaking lattice on a spectrum of "Benefit to Group A" to "Benefits to Group B", the outputs of `gale_shapley(A, B)` and `gale_shapley(B, A)` calculate the ends of the lattice.
 >
 >This also implies a bit of a potential ethical issue. Depending on the context, there is an active decision made for "who gets better outcomes" by simply putting them into the algorithm first. Even within this paper, the marriage example itself generates the stable marriage output that provides men with the optimal output.
 >
