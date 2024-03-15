@@ -1,5 +1,5 @@
 ---
-title: The Quest to Kick The Goblin
+title: The Quest to Slay The Goblin
 date: 2024-02-27
 updated: 2024-02-27
 tags:
