@@ -5,9 +5,10 @@ tags:
   - economics/finance
   - engineering/python
   - viz
+  - notes
 updated: 2024-02-27
 ---
-Below, you'll find some graphs. These are what is known in the field of [[visualizations|data visualization]] as "bad."
+Below, you'll find some graphs. These are what is known in the field of [[tags/viz/index|data visualization]] as "bad."
 
 These graphs are (as far as I can recall) my first attempts at using & visualizing network structures. As much as I would like to say they're not too bad for a first attempt, they don't "speak for themselves" as much as they "scream torments in the face of the viewer."
 

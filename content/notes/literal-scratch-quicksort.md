@@ -5,6 +5,7 @@ updated: 2024-03-03
 tags:
   - mentoring
   - engineering/scratch
+  - notes
 draft: false
 ---
 As an addendum to the [[literal-scratch-piano|Scratch Piano Application]], I also around the same time cooked up an implementation of QuickSort. At my partner's recent swim meet I sat next to [[2024-03-02#Today's Report|a couple kids who've been learning Scratch]] and they were showing off some games they'd made.

@@ -4,6 +4,7 @@ date: 2024-02-27
 updated: 2024-02-27
 tags:
   - goblin-slaying
+  - notes
 draft: false
 ---
 I am terrified by how quickly, without structure and habits, my life devolves into a cycle of sleeping, eating, procrastinating, and repeating until the visage of death sweeps me from this mortal coil.

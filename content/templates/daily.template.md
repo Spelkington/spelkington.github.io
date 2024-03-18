@@ -2,7 +2,8 @@
 title: "{{date}}"
 date: "{{date}}"
 updated: "{{date}}"
-tags: 
+tags:
+  - notes/daily
 draft: false
 ---
 ⇐ [[<% tp.date.now("YYYY-MM-DD", -1) %>]] |  [[<% tp.date.now("YYYY-MM-DD", +1) %>]] ⇒

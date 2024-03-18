@@ -6,6 +6,7 @@ tags:
   - goblin-slaying
   - "#engineering"
   - mentoring/tutorials
+  - notes
 draft: false
 ---
 > I talk a lot in this post. You may want to skip to [[putting-selfcontrol-on-raycast#The Useful Part|the useful part]].

@@ -2,14 +2,16 @@
 title: The Shop Highlight draft note
 date: 2024-03-06
 updated: 2024-03-06
-tags: 
+tags:
+  - notes/scratch
+  - business/admin
 draft: true
 ---
 > Draft space for The Shop's highlight page
 
 1. Tell me more about your company, what do you all do?
 
-   - CGC: Refine, trim [[economics]] notes
+   - CGC: Refine, trim [[tags/economics/index]] notes
    - god, i need to work on an elevator pitch that isn't "GDPR guidance for children"
 
 2. What is your favorite part about the work that you do?

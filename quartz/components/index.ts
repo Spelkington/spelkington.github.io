@@ -23,6 +23,7 @@ import Logo from "./Logo"
 import LineBreak from "./LineBreak"
 import * as LandingPage from "./landing"
 import * as Utilities from "./utilities"
+import TagExplorer from "./TagExplorer"
 
 export {
   ArticleTitle,
@@ -50,4 +51,5 @@ export {
   LineBreak,
   LandingPage,
   Utilities,
+  TagExplorer,
 }

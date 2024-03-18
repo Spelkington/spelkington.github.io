@@ -4,6 +4,8 @@ date: 2024-03-05
 updated: 2024-03-05
 tags:
   - engineering
+  - notes
+  - economics/project-management
 draft: false
 ---
 > This note ended up having a lot of front-loaded context — feel free to skip to [[strong-and-weak-opinions#The Point|the point]]
@@ -16,7 +18,7 @@ There's a term that floats around that *feels* new. It's not something that I'd 
 
 What… does this mean? I'd never seen it in an academic slide deck before, but I can name a few high-profile instances of the label used. While it's usually surrounding frameworks, I've seen it used in other places as well:
 
-- During C# related work — I have previously used [Wrapt](https://wrapt.dev/) as a [[csharp|C#]] web API scaffolding tool, which [describes its default options as opinionated](https://wrapt.dev/docs/customizing-wrapt-projects#smart-defaults)
+- During C# related work — I have previously used [Wrapt](https://wrapt.dev/) as a [[csharp]] web API scaffolding tool, which [describes its default options as opinionated](https://wrapt.dev/docs/customizing-wrapt-projects#smart-defaults)
 	- On wandering through the chain of opinions, Wrapt's opinions are, in turn, based on the Vertical Slice Architecture (VSA) opinions I'd first seen in [Jimmy Bogart's post on VSA](https://www.jimmybogard.com/vertical-slice-architecture/), a recommended must-read by my team at NWYC
 - During [[roblox]]-related CGC work: [“Flamework is a highly opinionated game framework”](https://www.npmjs.com/package/@flamework/core)
 	- Interestingly, this description has since been replaced to say (as of writing) “Flamework is an extensible game framework.” — thought I was going insane in trailing back after seeing that phrase there months ago and not finding it, but [[Pasted image 20240305234056.png|a stale Google Index reference]] shows that I'm not crazy (on this one, at least). I am curious about the onus behind the wording change, because I do actually believe that the new description better captures the intent of the Flamework package.

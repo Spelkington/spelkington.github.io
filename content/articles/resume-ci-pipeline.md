@@ -4,6 +4,7 @@ date: 2021-07-29
 tags:
   - mentoring/tutorials
   - engineering/devops
+  - articles
 ---
 > NOTE: THIS IS OUTDATED. There are now *far* better PDF markup languages to use, such as [Typst](https://typst.app). These will be detailed in a later blog post.
 

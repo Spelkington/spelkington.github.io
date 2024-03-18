@@ -2,7 +2,8 @@
 title: What is the best side of the road to drive on?
 date: 2024-03-06
 updated: 2024-03-06
-tags: []
+tags:
+  - notes/scratch
 draft: false
 ---
 > *The best side of the road to drive on is the side everybody else has agreed to drive on.*
