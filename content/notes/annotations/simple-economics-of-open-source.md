@@ -6,6 +6,7 @@ tags:
   - consulting
   - economics/market-design
   - projects/economics-of-open-source
+  - annotations
 draft: false
 annotation-target: https://www.nber.org/system/files/working_papers/w7600/w7600.pdf
 ---

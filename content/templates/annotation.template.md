@@ -2,7 +2,8 @@
 title: TODO
 date: "{{date}}"
 updated: "{{date}}"
-tags: 
+tags:
+  - annotations
 draft: false
 annotation-target:
 ---
