@@ -16,36 +16,15 @@ draft: false
 
 ### Morning Block
 
-#### {{TASK}}
 
-{{Description}}
-
-- **PLAN:** 
-	1. 
-- **DELIVERABLES:** 
-	1. 
 
 ### Afternoon Block
 
-#### {{TASK}}
 
-{{Description}}
-
-- **PLAN:** 
-	1. 
-- **DELIVERABLES:** 
-	1. 
 
 ### Evening Block
 
-#### {{TASK}}
 
-{{Description}}
-
-- **PLAN:** 
-	1. 
-- **DELIVERABLES:** 
-	1. 
 
 ## Today's Report
 
