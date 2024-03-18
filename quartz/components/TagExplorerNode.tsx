@@ -239,6 +239,7 @@ export function TagExplorerNode({ node, opts, fullPath, fileData }: TagExplorerN
               // Inline style for left folder paddings
               style={{
                 paddingLeft: node.name !== "" ? "1.4rem" : "0",
+                listStyleType: "disc", // Add bullet point to unordered list
               }}
               class="content"
               data-folderul={folderPath}
