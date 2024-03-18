@@ -3,7 +3,7 @@ title: "Before You Slabtop Your Laptop: A Brief Warning"
 date: 2024-03-03
 updated: 2024-03-03
 tags:
-  - engineering/homelab
+  - projects/personal/homelab
   - notes/scratch
 draft: false
 ---
