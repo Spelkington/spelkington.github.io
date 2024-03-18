@@ -5,9 +5,6 @@
     <loc>https://blog.chaoticgood.computer/articles/hello-blog</loc>
     <lastmod>2021-07-28T00:00:00.000Z</lastmod>
   </url><url>
-    <loc>https://blog.chaoticgood.computer/articles/</loc>
-    <lastmod>2024-03-17T21:53:16.141Z</lastmod>
-  </url><url>
     <loc>https://blog.chaoticgood.computer/articles/littlefield</loc>
     <lastmod>2021-08-28T00:00:00.000Z</lastmod>
   </url><url>
@@ -21,13 +18,13 @@
     <lastmod>2022-07-14T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://blog.chaoticgood.computer/</loc>
-    <lastmod>2024-03-17T21:53:16.293Z</lastmod>
+    <lastmod>2024-03-18T00:08:10.728Z</lastmod>
   </url><url>
-    <loc>https://blog.chaoticgood.computer/notes/annotations/college_admissions_and_the_stability_of_marriage</loc>
+    <loc>https://blog.chaoticgood.computer/notes/annotations/college-admissions-and-the-stability-of-marriage</loc>
     <lastmod>2024-03-14T00:00:00.000Z</lastmod>
   </url><url>
-    <loc>https://blog.chaoticgood.computer/notes/annotations/</loc>
-    <lastmod>2024-03-17T21:53:16.293Z</lastmod>
+    <loc>https://blog.chaoticgood.computer/notes/annotations/simple-economics-of-open-source</loc>
+    <lastmod>2024-03-17T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://blog.chaoticgood.computer/notes/arc-review</loc>
     <lastmod>2024-02-28T00:00:00.000Z</lastmod>
@@ -98,14 +95,8 @@
     <loc>https://blog.chaoticgood.computer/notes/dailies/2024-03-17</loc>
     <lastmod>2024-03-17T00:00:00.000Z</lastmod>
   </url><url>
-    <loc>https://blog.chaoticgood.computer/notes/dailies/</loc>
-    <lastmod>2024-03-17T21:53:16.297Z</lastmod>
-  </url><url>
     <loc>https://blog.chaoticgood.computer/notes/digital-gardening-with-quartz</loc>
     <lastmod>2024-02-25T00:00:00.000Z</lastmod>
-  </url><url>
-    <loc>https://blog.chaoticgood.computer/notes/</loc>
-    <lastmod>2024-03-17T21:53:16.297Z</lastmod>
   </url><url>
     <loc>https://blog.chaoticgood.computer/notes/literal-scratch-piano</loc>
     <lastmod>2018-07-18T00:00:00.000Z</lastmod>
@@ -130,9 +121,6 @@
   </url><url>
     <loc>https://blog.chaoticgood.computer/notes/scratch/brevity</loc>
     <lastmod>2024-03-01T00:00:00.000Z</lastmod>
-  </url><url>
-    <loc>https://blog.chaoticgood.computer/notes/scratch/</loc>
-    <lastmod>2024-03-17T21:53:16.297Z</lastmod>
   </url><url>
     <loc>https://blog.chaoticgood.computer/notes/scratch/press-f-to-commit</loc>
     <lastmod>2024-02-28T00:00:00.000Z</lastmod>
@@ -170,33 +158,66 @@
     <loc>https://blog.chaoticgood.computer/notes/utah-office-consult</loc>
     <lastmod>2021-03-01T00:00:00.000Z</lastmod>
   </url><url>
-    <loc>https://blog.chaoticgood.computer/tags/csharp</loc>
-    <lastmod>2024-03-17T21:53:16.297Z</lastmod>
+    <loc>https://blog.chaoticgood.computer/tags/annotations</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
   </url><url>
-    <loc>https://blog.chaoticgood.computer/tags/doodles</loc>
-    <lastmod>2024-03-17T21:53:16.297Z</lastmod>
+    <loc>https://blog.chaoticgood.computer/tags/articles</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
   </url><url>
-    <loc>https://blog.chaoticgood.computer/tags/economics</loc>
-    <lastmod>2024-03-17T21:53:16.297Z</lastmod>
+    <loc>https://blog.chaoticgood.computer/tags/business/admin</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
   </url><url>
-    <loc>https://blog.chaoticgood.computer/tags/engineering</loc>
-    <lastmod>2024-03-17T21:53:16.297Z</lastmod>
+    <loc>https://blog.chaoticgood.computer/tags/economics/finance</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
+  </url><url>
+    <loc>https://blog.chaoticgood.computer/tags/economics/</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
+  </url><url>
+    <loc>https://blog.chaoticgood.computer/tags/economics/market-design</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
+  </url><url>
+    <loc>https://blog.chaoticgood.computer/tags/economics/project-management</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
+  </url><url>
+    <loc>https://blog.chaoticgood.computer/tags/economics/strategy</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
+  </url><url>
+    <loc>https://blog.chaoticgood.computer/tags/engineering/csharp</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
+  </url><url>
+    <loc>https://blog.chaoticgood.computer/tags/engineering/</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
+  </url><url>
+    <loc>https://blog.chaoticgood.computer/tags/engineering/python</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
+  </url><url>
+    <loc>https://blog.chaoticgood.computer/tags/games/roblox</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
   </url><url>
     <loc>https://blog.chaoticgood.computer/tags/goblin-slaying</loc>
-    <lastmod>2024-03-17T21:53:16.297Z</lastmod>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
   </url><url>
     <loc>https://blog.chaoticgood.computer/tags/horticulture</loc>
-    <lastmod>2024-03-17T21:53:16.297Z</lastmod>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
   </url><url>
-    <loc>https://blog.chaoticgood.computer/tags/mentoring</loc>
-    <lastmod>2024-03-17T21:53:16.297Z</lastmod>
+    <loc>https://blog.chaoticgood.computer/tags/mentoring/</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
   </url><url>
-    <loc>https://blog.chaoticgood.computer/tags/python</loc>
-    <lastmod>2024-03-17T21:53:16.297Z</lastmod>
+    <loc>https://blog.chaoticgood.computer/tags/mentoring/tutorials</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
   </url><url>
-    <loc>https://blog.chaoticgood.computer/tags/roblox</loc>
-    <lastmod>2024-03-17T21:53:16.297Z</lastmod>
+    <loc>https://blog.chaoticgood.computer/tags/notes/daily</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
   </url><url>
-    <loc>https://blog.chaoticgood.computer/tags/visualizations</loc>
-    <lastmod>2024-03-17T21:53:16.297Z</lastmod>
+    <loc>https://blog.chaoticgood.computer/tags/notes/</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
+  </url><url>
+    <loc>https://blog.chaoticgood.computer/tags/notes/scratch</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
+  </url><url>
+    <loc>https://blog.chaoticgood.computer/tags/viz/doodles</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
+  </url><url>
+    <loc>https://blog.chaoticgood.computer/tags/viz/</loc>
+    <lastmod>2024-03-18T00:08:10.732Z</lastmod>
   </url></urlset>
