@@ -6,7 +6,7 @@ tags:
   - engineering/devops
   - articles
 ---
-> NOTE: THIS IS OUTDATED. There are now *far* better PDF markup languages to use, such as [Typst](https://typst.app). These will be detailed in a later blog post.
+> NOTE: THIS IS OUTDATED. There are now *far* better PDF markup languages to use, such as [Typst](https://typst.app). I wrote [[typst-resume-template|A new guide for the template here!]]
 
 After trying - and failing - to *constantly* keep my resume up-to-date in a dozen different places, I took a page out of the wild world of software development and found the solution: **continuous integration.**
 
