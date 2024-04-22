@@ -12,6 +12,21 @@
     "NWYC",
     "VSA",
     "Flamework",
-    "yoink"
-  ]
+    "yoink",
+    "NSYNC",
+    "GPAs"
+  ],
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 80
+  },
+  "promptDelete": false,
+  "tabSize": 4,
+  "useTab": false,
+  "smartIndentList": false,
+  "strictLineBreaks": false,
+  "showLineNumber": false,
+  "rightToLeft": false
 }

@@ -1,8 +1,0 @@
-#### {{TASK}}
-
-{{Description}}
-
-- **PLAN:** 
-	- [ ] 
-- **DELIVERABLES:** 
-	- [ ] 

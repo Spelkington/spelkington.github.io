@@ -1,9 +1,8 @@
 ---
-title: TODO
-date: "{{date}}"
-updated: "{{date}}"
+title:
+date: <% tp.date.now() %>
 tags:
   - annotations
+annotation-target: 
 draft: false
-annotation-target:
 ---

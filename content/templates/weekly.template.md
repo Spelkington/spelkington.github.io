@@ -27,45 +27,57 @@ const latestFileInFolder = app.vault.getMarkdownFiles().reduce((acc, file) => {
   return acc;
 }, null);
 
+let latestFileTitle = latestFileInFolder.noteTitle;
 let latestFileSeasonTag = `seasons/${latestFileInFolder.file.basename}`
 
 let startDate = moment(latestFileInFolder.createdAt);
 let now = moment();
 
-let days = now.diff(startDate, 'days', true);
-let roundedDays = Math.ceil(days);
+let weeks = now.diff(startDate, 'weeks', true);
+let roundedWeeks = Math.ceil(weeks);
 
-let sanitizedTag = latestFileInFolder.file.basename
-sanitizedTag = sanitizedTag.charAt(0).toUpperCase() + sanitizedTag.slice(1)
-let title = `${sanitizedTag}: Day ${roundedDays}`
+let title = `${latestFileTitle}: Week ${roundedWeeks}`
 
 -%>---
 title: "<% title %>"
 date: <% tp.date.now() %>
 tags:
   - <% latestFileSeasonTag %>
-  - notes/daily
+  - notes/weekly
 draft: false
 ---
-⇐ [[<% tp.date.now("YYYY-MM-DD", -1) %>]] | [[<% tp.date.now("YYYY-MM-DD", +1) %>]] ⇒
+## Up & Coming
+
+TODO
+
+### Projects
+
+TODO
+
+## Tasks
+
+### Due
 
 ```dataview
 TASK
 WHERE !completed
   AND typeof(due) = "date"
-  AND due <= date("<% tp.date.now() %>") + dur(2 days)
+  AND due <= date("<% tp.date.now() %>") + dur(7 days)
 SORT date ASC
 GROUP BY file.link
 ```
 
-## Today's Plan
+### Done
 
+```dataview
+TASK
+WHERE typeof(completion) = "date"
+  AND completion >= date("<% tp.date.now() %>")
+  AND completion < date("<% tp.date.now() %>") + dur(7 days)
+SORT date DESC
+GROUP BY file.link
+```
 
+## Hindsight
 
-## Today's Report
-
-> To have the full intended experience, please listen to the [Pikmin 2 "Today's Report" theme](https://www.youtube.com/watch?v=l1fCmKZnq3U&list=PLwyW5mbdZMGN8mGTqvDhsBs37SW4TkHcw&index=85) while reading
-
-N/A
-
-[^1]: [[caveat-lector|caveat lector]] — This is a daily note! I don't actively maintain any information in daily notes, so please be cautious in following any advice here.
+TODO
